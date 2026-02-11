@@ -175,3 +175,116 @@ const Rigging = () => {
                     </ul>
                   </div>
                 </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Materials Section */}
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-navy-900 mb-4">
+              Materiais Premium
+            </h2>
+            <p className="text-xl text-gray-600">
+              Trabalhamos apenas com as melhores marcas do mercado
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+            {materials.map((material, index) => (
+              <div 
+                key={index}
+                className="bg-gray-50 p-6 rounded-lg text-center hover:shadow-lg transition-all"
+              >
+                <h3 className="text-xl font-bold text-navy-900 mb-2">{material.name}</h3>
+                <p className="text-gray-600">{material.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Warning Signs Section */}
+      <section className="py-20 bg-red-50">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-12">
+              <AlertTriangle className="w-16 h-16 text-red-600 mx-auto mb-4" />
+              <h2 className="text-4xl font-bold text-navy-900 mb-4">
+                Sinais de Alerta
+              </h2>
+              <p className="text-xl text-gray-700">
+                Quando é hora de inspecionar ou substituir o rigging?
+              </p>
+            </div>
+
+            <div className="bg-white p-8 rounded-xl shadow-lg">
+              <ul className="grid md:grid-cols-2 gap-4">
+                {warningsSigns.map((sign, index) => (
+                  <li key={index} className="flex items-start gap-3">
+                    <AlertTriangle className="w-6 h-6 text-red-600 flex-shrink-0 mt-1" />
+                    <span className="text-gray-700">{sign}</span>
+                  </li>
+                ))}
+              </ul>
+              <div className="mt-8 p-6 bg-red-50 rounded-lg">
+                <p className="text-gray-700 font-semibold">
+                  ⚠️ Se identificar qualquer um destes sinais, contacte-nos imediatamente para uma inspeção profissional.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Advantages Section */}
+      <section className="py-20 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-navy-900 mb-4">
+              Vantagens do Rigging Profissional
+            </h2>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            {advantages.map((advantage, index) => (
+              <div 
+                key={index}
+                className="bg-white p-8 rounded-xl shadow-lg text-center hover:shadow-2xl transition-all"
+              >
+                <div className="text-ocean-500 mb-4 flex justify-center">
+                  {advantage.icon}
+                </div>
+                <h3 className="text-2xl font-bold text-navy-900 mb-3">{advantage.title}</h3>
+                <p className="text-gray-600">{advantage.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="py-20 bg-navy-900 text-white text-center">
+        <div className="container mx-auto px-4">
+          <h2 className="text-4xl font-bold mb-6">
+            Pronto para garantir a segurança do seu veleiro?
+          </h2>
+          <p className="text-xl mb-8 text-gray-300 max-w-2xl mx-auto">
+            Solicite uma inspeção completa do rigging ou um orçamento sem compromisso
+          </p>
+          <Link 
+            to="/contact"
+            className="inline-block bg-ocean-500 hover:bg-ocean-600 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all transform hover:scale-105"
+          >
+            Contactar Agora
+          </Link>
+        </div>
+      </section>
+    </div>
+  );
+};
+
+export default Rigging;
