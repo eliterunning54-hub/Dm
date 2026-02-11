@@ -9,8 +9,8 @@ import Refit from './pages/Refit';
 import Rigging from './pages/Rigging';
 import About from './pages/About';
 import Gallery from './pages/Gallery';
-import FAQ from './pages/FAQ';
 import Contact from './pages/Contact';
+
 
 function App() {
   return (
@@ -25,8 +25,8 @@ function App() {
             <Route path="/rigging" element={<Rigging />} />
             <Route path="/sobre" element={<About />} />
             <Route path="/galeria" element={<Gallery />} />
-            <Route path="/faq" element={<FAQ />} />
             <Route path="/contato" element={<Contact />} />
+            
           </Routes>
         </main>
         <Footer />
