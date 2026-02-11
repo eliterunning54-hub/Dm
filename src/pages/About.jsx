@@ -126,3 +126,26 @@ const About = () => {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="py-20 bg-navy-900 text-white text-center">
+        <div className="container mx-auto px-4">
+          <h2 className="text-4xl font-bold mb-6">Pronto para cuidar do seu veleiro?</h2>
+          <p className="text-xl mb-8 text-gray-300">
+            Entre em contacto connosco e descubra como podemos ajudar
+          </p>
+          <Link 
+            to="/contact"
+            className="inline-block bg-ocean-500 hover:bg-ocean-600 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all transform hover:scale-105"
+          >
+            Pedir Orçamento
+          </Link>
+        </div>
+      </section>
+    </div>
+  );
+};
+
+export default About;
