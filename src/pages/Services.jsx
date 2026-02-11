@@ -125,4 +125,63 @@ const Services = () => {
                 className={`service-detail flex flex-col ${index % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'} gap-12 items-center`}
               >
                 <div className="lg:w-1/3">
-                  <div className="bg-white p-12 rounded-2xl shadow-xl t
+                  <div className="bg-white p-12 rounded-2xl shadow-xl text-center">
+                    <div className="text-ocean-500 mb-6 flex justify-center">
+                      {service.icon}
+                    </div>
+                    <h3 className="text-2xl font-bold text-navy-900 mb-4">
+                      {service.title}
+                    </h3>
+                  </div>
+                </div>
+
+                <div className="lg:w-2/3">
+                  <div className="bg-white p-8 rounded-xl shadow-lg">
+                    <p className="text-gray-700 text-lg mb-6">
+                      {service.description}
+                    </p>
+                    <ul className="space-y-3 mb-8">
+                      {service.features.map((feature, idx) => (
+                        <li key={idx} className="flex items-start gap-3">
+                          <CheckCircle className="w-6 h-6 text-ocean-500 flex-shrink-0 mt-1" />
+                          <span className="text-gray-700">{feature}</span>
+                        </li>
+                      ))}
+                    </ul>
+                    <Link
+                      to={service.link}
+                      className="inline-flex items-center gap-2 bg-ocean-500 hover:bg-ocean-600 text-white px-6 py-3 rounded-lg font-semibold transition-all"
+                    >
+                      Solicitar Orçamento
+                      <ArrowRight className="w-5 h-5" />
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="py-20 bg-navy-900 text-white text-center">
+        <div className="container mx-auto px-4">
+          <h2 className="text-4xl font-bold mb-6">
+            Precisa de um serviço personalizado?
+          </h2>
+          <p className="text-xl mb-8 text-gray-300 max-w-2xl mx-auto">
+            Entre em contacto connosco para discutir as necessidades específicas do seu veleiro
+          </p>
+          <Link
+            to="/contact"
+            className="inline-block bg-ocean-500 hover:bg-ocean-600 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all transform hover:scale-105"
+          >
+            Contactar Agora
+          </Link>
+        </div>
+      </section>
+    </div>
+  );
+};
+
+export default Services;
