@@ -27,9 +27,9 @@ const Header = () => {
     { path: '/rigging', label: 'Rigging' },
     { path: '/sobre', label: 'Sobre Nós' },
     { path: '/galeria', label: 'Galeria' },
-    { path: '/faq', label: 'FAQ' },
     { path: '/contato', label: 'Contato' }
   ];
+  
 
   return (
     <header 
