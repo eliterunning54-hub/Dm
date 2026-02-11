@@ -183,4 +183,14 @@ const Gallery = () => {
                 {selectedImage.title}
               </h2>
               <p className="text-gray-700 text-lg">
-                {selectedImage.descr
+                {selectedImage.description}
+              </p>
+            </div>
+          </div>
+        </div>
+      )}
+    </div>
+  );
+};
+
+export default Gallery;
