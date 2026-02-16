@@ -1,5 +1,68 @@
 {
   "nav": {
-    "home": "Home"
+    "home": "Home",
+    "services": "Services",
+    "refit": "Refit & Repairs",
+    "rigging": "Rigging",
+    "about": "About Us",
+    "gallery": "Gallery",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Professional Sailboat Maintenance in the Algarve",
+    "subtitle": "Experts in structural repairs, rigging, antifouling and full refits.",
+    "whatsapp": "WhatsApp Us"
+  },
+  "cta": {
+    "quote": "Request a Quote",
+    "finalTitle": "Ready to transform your sailboat?",
+    "finalSubtitle": "Contact us today and receive a personalised quote.",
+    "finalBtn": "Get a Quote"
+  },
+  "stats": {
+    "exp": "Years of Experience",
+    "projects": "Projects Completed",
+    "satisfaction": "% Satisfaction",
+    "support": "24/7 Support"
+  },
+  "services": {
+    "sectionTitle": "Technical Services for Maximum Performance",
+    "sectionSubtitle": "Complete solutions to keep your sailboat in top condition.",
+    "learnMore": "Learn More",
+    "hull": {
+      "title": "Hull Treatment & Antifouling",
+      "desc": "Professional hull protection for maximum performance."
+    },
+    "rigging": {
+      "title": "Professional Rigging",
+      "desc": "Installation and inspection of standing and running rigging."
+    },
+    "refit": {
+      "title": "Refit & Structural Repairs",
+      "desc": "Complete technical modernisation and renewal."
+    }
+  },
+  "why": {
+    "title": "Why Choose Our Team?",
+    "items": [
+      "Over 15 years of experience",
+      "Certified premium materials",
+      "Personalised service",
+      "Quality guarantee",
+      "Efficiency and reliability",
+      "Ongoing customer support"
+    ]
+  },
+  "testimonials": {
+    "title": "What Our Clients Say",
+    "carlos": {
+      "text": "Impeccable service and highly professional team."
+    },
+    "maria": {
+      "text": "My sailboat looks brand new. Highly recommended."
+    },
+    "joao": {
+      "text": "Top quality work and excellent communication."
+    }
   }
 }
