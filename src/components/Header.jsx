@@ -36,13 +36,13 @@ const Header = () => {
     <div className="flex items-center gap-3 ml-4 border-l pl-4 border-gray-200">
       <button 
         onClick={() => i18n.changeLanguage('pt')}
-        className={`transition-transform hover:scale-110 ${i18n.language === 'pt' ? 'opacity-100 ring-2 ring-ocean-500 rounded-sm' : 'opacity-50'}`}
+        className={`transition-transform hover:scale-110 ${i18n.language === 'pt' ? 'opacity-80 ring-2 ring-ocean-500 rounded-sm' : 'opacity-50'}`}
       >
         <img src="https://flagcdn.com/w40/pt.png" alt="Português" className="w-6 h-auto shadow-sm" />
       </button>
       <button 
         onClick={() => i18n.changeLanguage('en')}
-        className={`transition-transform hover:scale-110 ${i18n.language === 'en' ? 'opacity-100 ring-2 ring-ocean-500 rounded-sm' : 'opacity-50'}`}
+        className={`transition-transform hover:scale-110 ${i18n.language === 'en' ? 'opacity-80 ring-2 ring-ocean-500 rounded-sm' : 'opacity-50'}`}
       >
         <img src="https://flagcdn.com/w40/gb.png" alt="English" className="w-6 h-auto shadow-sm" />
       </button>
