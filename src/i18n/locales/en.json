@@ -92,4 +92,7 @@
       "fixed": { "title": "Standing Rigging", "items": ["Mast inspection", "Stainless wire", "Terminals", "Rig tuning"] },
       "mobile": { "title": "Running Rigging", "items": ["Halyards & Sheets", "Dyneema ropes", "Blocks & Sheaves"] }
     },
-    "warnings": { "
+    "warnings": { "title": "Warning Signs", "list": ["Broken strands", "Corrosion", "Loose mast", "10+ years old"] }
+  },
+  "refit": { "hero": { "title": "Refit & Structural Repairs", "subtitle": "Bringing new life to your sailboat with technical upgrades." }, "services": { "title": "Our Refit Specialties" } }
+}
