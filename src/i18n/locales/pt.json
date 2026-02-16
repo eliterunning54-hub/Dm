@@ -1,227 +1,95 @@
 {
-  "nav": {
-    "home": "Home",
-    "services": "Serviços",
-    "refit": "Refit & Reparos",
-    "rigging": "Rigging",
-    "about": "Sobre Nós",
-    "gallery": "Galeria",
-    "contact": "Contato"
-  },
-  "cta": {
-    "quote": "Orçamento",
-    "finalTitle": "Pronto para melhorar seu veleiro?",
-    "finalSubtitle": "Entre em contato conosco para um orçamento personalizado.",
-    "finalBtn": "Solicitar Orçamento"
-  },
-  "footer": {
-    "description": "Especialistas em manutenção e conserto de veleiros no Algarve desde 2010.",
-    "rights": "Todos os direitos reservados.",
-    "quickLinks": "Links Rápidos",
-    "servicesTitle": "Serviços",
-    "refit": "Refit",
-    "painting": "Pintura",
-    "maintenance": "Manutenção",
-    "contactTitle": "Contato"
-  },
-  "hero": {
-    "title": "Conserto e Manutenção Profissional de Veleiros no Algarve",
-    "subtitle": "Especialistas em reparos estruturais, rigging, antifouling e refit completo.",
-    "whatsapp": "Falar no WhatsApp"
-  },
-  "stats": {
-    "exp": "Anos de Experiência",
-    "projects": "Projetos Concluídos",
-    "satisfaction": "% Satisfação",
-    "support": "Suporte"
-  },
-  "services": {
-    "sectionTitle": "Serviços Técnicos para Máxima Performance",
-    "sectionSubtitle": "Oferecemos soluções completas para o seu veleiro.",
-    "learnMore": "Saiba Mais",
-    "hull": {
-      "title": "Tratamento de Casco e Antifouling",
-      "desc": "Proteção profissional do casco para máxima performance."
-    },
-    "rigging": {
-      "title": "Rigging Profissional",
-      "desc": "Instalação e inspeção de rigging fixo e móvel."
-    },
-    "refit": {
-      "title": "Refit & Reparos Estruturais",
-      "desc": "Damos nova vida ao seu veleiro com modernização técnica."
-    },
-    "painting": {
-      "title": "Pintura & Gelcoat",
-      "desc": "Acabamento profissional que protege e valoriza o seu veleiro."
-    },
-    "maintenance": {
-      "title": "Manutenção Preventiva",
-      "desc": "Cuidados regulares para garantir desempenho e segurança."
-    }
-  },
-  "why": {
-    "title": "Por Que Escolher a Nossa Equipa?",
-    "item1": "Profissionais experientes",
-    "item2": "Materiais de alta qualidade",
-    "item3": "Serviço personalizado",
-    "item4": "Rapidez e eficiência",
-    "item5": "Suporte contínuo",
-    "item6": "Satisfação garantida"
-  },
-  "testimonials": {
-    "title": "O Que Dizem os Nossos Clientes",
-    "carlos": { "text": "Serviço excelente e atenção aos detalhes." },
-    "maria": { "text": "Profissionais competentes, meu veleiro ficou como novo!" },
-    "joao": { "text": "Recomendo sem hesitar, ótima experiência." }
-  },
-  "about": {
+  "refit": {
     "hero": {
-      "title": "Sobre a DM Yacht Care",
-      "subtitle": "Paixão pelo mar e compromisso com a excelência náutica."
+      "title": "Refit & Reparos",
+      "subtitle": "Modernizamos e restauramos o seu veleiro com excelência.",
+      "cta": "Solicitar Orçamento"
     },
-    "story": {
-      "title": "Nossa História",
-      "p1": "Fundada em 2010, somos referência em manutenção no Algarve.",
-      "p2": "Oferecemos serviços completos para veleiros de todas as dimensões.",
-      "p3": "Priorizamos qualidade, segurança e satisfação do cliente.",
-      "p4": "Nosso objetivo é prolongar a vida útil do seu veleiro com excelência."
-    },
-    "values": {
-      "title": "Nossos Valores",
-      "subtitle": "O que nos guia todos os dias",
-      "quality": {
-        "title": "Qualidade Premium",
-        "desc": "Materiais certificados e técnicos experientes."
+    "services": {
+      "sectionTitle": "Nossos Serviços de Refit",
+      "sectionSubtitle": "Oferecemos soluções completas para o seu veleiro",
+      "electrical": {
+        "title": "Serviços Elétricos",
+        "desc": "Revisão e instalação elétrica completa a bordo.",
+        "items": [
+          "Instalação de painéis elétricos",
+          "Revisão de cabos e conexões",
+          "Iluminação interna e externa",
+          "Baterias e carregadores"
+        ]
       },
-      "team": {
-        "title": "Equipe Profissional",
-        "desc": "Profissionais qualificados e apaixonados pelo que fazem."
+      "hydraulic": {
+        "title": "Hidráulica",
+        "desc": "Sistemas hidráulicos e bombas de água revisados e instalados.",
+        "items": [
+          "Bombas de água e hidráulicas",
+          "Mangueiras e conexões",
+          "Manutenção preventiva",
+          "Instalação de sistemas novos"
+        ]
       },
-      "focus": {
-        "title": "Foco no Cliente",
-        "desc": "Cada projeto é personalizado para atender suas necessidades."
+      "aesthetic": {
+        "title": "Estética & Acabamento",
+        "desc": "Pintura, gelcoat e detalhes estéticos.",
+        "items": [
+          "Pintura do casco",
+          "Gelcoat",
+          "Acabamentos internos",
+          "Detalhes personalizados"
+        ]
       },
-      "commitment": {
-        "title": "Compromisso",
-        "desc": "Garantia de excelência em cada detalhe."
+      "navigation": {
+        "title": "Navegação & Eletrónica",
+        "desc": "Instalação e manutenção de equipamentos de navegação.",
+        "items": [
+          "Instrumentos de navegação",
+          "Sistemas GPS e radar",
+          "Automatizações",
+          "Manutenção de equipamentos existentes"
+        ]
+      },
+      "propulsion": {
+        "title": "Propulsão",
+        "desc": "Motores e sistemas de propulsão revisados e reparados.",
+        "items": [
+          "Revisão do motor",
+          "Hélices e eixos",
+          "Sistema de combustível",
+          "Controle de transmissão"
+        ]
       }
+    },
+    "process": {
+      "title": "Nosso Processo",
+      "subtitle": "Etapas que garantem qualidade e segurança",
+      "s1": { "title": "Avaliação", "desc": "Inspeção completa do veleiro para planejar o refit." },
+      "s2": { "title": "Planeamento", "desc": "Definição do cronograma e recursos necessários." },
+      "s3": { "title": "Preparação", "desc": "Desmontagem e preparação das áreas de trabalho." },
+      "s4": { "title": "Execução", "desc": "Reparos e modernizações conforme plano definido." },
+      "s5": { "title": "Testes", "desc": "Verificação de todos os sistemas antes da entrega." },
+      "s6": { "title": "Entrega", "desc": "Veleiro pronto para navegar com segurança e performance." }
+    },
+    "why": {
+      "reasons": [
+        "Equipe experiente e qualificada",
+        "Materiais de alta qualidade",
+        "Serviço personalizado",
+        "Rapidez e eficiência",
+        "Suporte contínuo",
+        "Satisfação garantida"
+      ]
+    },
+    "examples": {
+      "p1": { "desc": "Reestruturação completa do casco e sistemas elétricos do Beneteau Oceanis 45." },
+      "p2": { "desc": "Modernização do Contest 50 com equipamentos de navegação atualizados." },
+      "p3": { "desc": "Refit do Bavaria 46 Cruiser incluindo pintura e interiores renovados." },
+      "duration": "Duração",
+      "months": "meses"
     },
     "cta": {
-      "title": "Pronto para começar?",
-      "subtitle": "Entre em contato e saiba como podemos ajudar seu veleiro.",
-      "button": "Solicitar Contato"
+      "title": "Pronto para transformar seu veleiro?",
+      "subtitle": "Entre em contato para um orçamento personalizado.",
+      "button": "Solicitar Orçamento"
     }
-  },
-  "contact": {
-    "hero": {
-      "title": "Entre em Contacto",
-      "subtitle": "Envie-nos uma mensagem ou solicite orçamento"
-    },
-    "form": {
-      "title": "Formulário de Contacto",
-      "name": "Nome",
-      "namePlaceholder": "Seu nome completo",
-      "email": "Email",
-      "emailPlaceholder": "seu@email.com",
-      "phone": "Telefone",
-      "phonePlaceholder": "+351 ...",
-      "boatType": "Tipo de Barco",
-      "boatTypePlaceholder": "Ex: Beneteau Oceanis 45",
-      "service": "Serviço Desejado",
-      "serviceSelect": "Selecione um serviço",
-      "services": {
-        "antifouling": "Antifouling",
-        "rigging": "Rigging",
-        "refit": "Refit Completo",
-        "painting": "Pintura/Gelcoat",
-        "maintenance": "Manutenção Preventiva"
-      },
-      "serviceOther": "Outro",
-      "message": "Mensagem",
-      "messagePlaceholder": "Escreva a sua mensagem...",
-      "button": "Enviar Mensagem",
-      "alert": "Formulário enviado com sucesso!"
-    },
-    "info": {
-      "title": "Informações de Contacto",
-      "phone": "Telefone",
-      "email": "Email",
-      "location": "Localização",
-      "hours": "Horário de Funcionamento",
-      "weekdays": "Seg-Sex",
-      "saturday": "Sábado",
-      "sunday": "Domingo",
-      "closed": "Encerrado"
-    }
-  },
-  "gallery": {
-    "title": "Galeria de Veleiros",
-    "subtitle": "Confira alguns dos nossos projetos concluídos."
-  },
-  "refit": {
-    "title": "Refit & Reparos",
-    "subtitle": "Modernizamos e restauramos o seu veleiro com excelência.",
-    "desc": "Oferecemos serviços completos de refit: casco, rigging, pintura e interiores.",
-    "services": {
-      "structural": "Reparos Estruturais",
-      "hull": "Tratamento de Casco",
-      "rigging": "Rigging e Instalação",
-      "painting": "Pintura e Gelcoat",
-      "maintenance": "Manutenção Preventiva"
-    }
-  },
-  "rigging": {
-    "hero": {
-      "title": "Rigging Profissional",
-      "subtitle": "Instalação, inspeção e manutenção de todo tipo de rigging.",
-      "cta": "Solicitar Inspeção"
-    },
-    "services": {
-      "title": "Serviços de Rigging",
-      "subtitle": "Soluções completas para todos os sistemas de rigging",
-      "standing": {
-        "title": "Rigging Fixo",
-        "desc": "Instalação e manutenção de estais e brandais",
-        "items": ["Inspeção completa de mastros", "Substituição de cabos de aço inox", "Instalação de novos estais", "Substituição de terminais Sta-Lok/Norseman", "Tensionamento e afinação do rig", "Verificação de parafusos e fixações"]
-      },
-      "running": {
-        "title": "Rigging Móvel",
-        "desc": "Escotas, adriças e cabos de manobra",
-        "items": ["Substituição de adriças", "Instalação de escotas novas", "Cabos de alta performance (Dyneema)", "Sistemas de redução de fricção", "Roldanas e blocos de qualidade", "Passadores e terminais especializados"]
-      },
-      "equip": {
-        "title": "Instalação de Equipamentos",
-        "desc": "Winches, blocos e ferragens",
-        "items": ["Instalação de winches Harken/Lewmar", "Montagem de blocos e roldanas", "Furlers e enroladores", "Boom vangs e cunninghams", "Travellers e carros de escota", "Sistemas hidráulicos"]
-      },
-      "inspection": {
-        "title": "Inspeção e Manutenção",
-        "desc": "Prevenção e segurança",
-        "items": ["Inspeção anual completa", "Relatórios fotográficos detalhados", "Teste de carga em terminais", "Verificação de corrosão", "Lubrificação de equipamentos", "Plano de manutenção preventiva"]
-      }
-    },
-    "materials": {
-      "title": "Materiais Premium",
-      "subtitle": "Trabalhamos apenas com as melhores marcas do mercado",
-      "m1": { "name": "Cabo de Aço Inox 316", "desc": "Alta resistência à corrosão marítima" },
-      "m2": { "name": "Dyneema / Spectra", "desc": "Cabos de alta performance e baixo peso" },
-      "m3": { "name": "Terminais Sta-Lok", "desc": "Terminais mecânicos de fácil instalação" },
-      "m4": { "name": "Terminais Norseman", "desc": "Máxima resistência e durabilidade" },
-      "m5": { "name": "Harken / Lewmar", "desc": "Blocos e equipamentos premium" },
-      "m6": { "name": "Spinlock", "desc": "Stoppers e clutches de qualidade" }
-    },
-    "warnings": {
-      "title": "Sinais de Alerta",
-      "subtitle": "Quando é hora de inspecionar ou substituir o rigging?",
-      "items": ["Cabos de aço com fios partidos", "Corrosão visível nos terminais", "Mastro com movimento excessivo", "Terminais soltos ou com folga", "Roldanas emperradas ou ruidosas", "Desgaste irregular nos cabos", "Mais de 10 anos sem substituição", "Escotas com desgaste visível"],
-      "alert": "⚠️ Se identificar qualquer um destes sinais, contacte-nos imediatamente para uma inspeção profissional."
-    },
-    "advantages": {
-      "adv1": { "title": "Segurança Máxima", "desc": "Rigging bem mantido é fundamental para a segurança da tripulação" },
-      "adv2": { "title": "Performance", "desc": "Melhor controlo das velas e performance de navegação" },
-      "adv3": { "title": "Durabilidade", "desc": "Materiais premium garantem anos de uso sem preocupações" }
-    },
-    "cta": { "title": "Pronto para garantir a segurança do seu veleiro?", "subtitle": "Solicite uma inspeção completa do rigging ou um orçamento sem compromisso", "button": "Contactar Agora" }
   }
 }
