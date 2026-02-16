@@ -9,7 +9,7 @@ i18n
     resources: {
       pt: {
         translation: {
-          // Navegação (Menu)
+          // --- GLOBAL & NAV ---
           "nav.home": "Home",
           "nav.services": "Serviços",
           "nav.refit": "Refit & Reparos",
@@ -18,78 +18,70 @@ i18n
           "nav.gallery": "Galeria",
           "nav.contact": "Contato",
           "cta.quote": "Orçamento",
+          "footer.description": "Especialistas em manutenção e conserto de veleiros no Algarve desde 2010.",
+          "footer.rights": "Todos os direitos reservados.",
 
-          // Home.jsx
+          // --- HOME ---
           "hero.title": "Conserto e Manutenção Profissional de Veleiros no Algarve",
-          "hero.subtitle": "Especialistas em reparos estruturais, rigging, antifouling e refit completo para veleiros e iates",
+          "hero.subtitle": "Especialistas em reparos estruturais, rigging, antifouling e refit completo.",
           "hero.whatsapp": "Falar no WhatsApp",
           "stats.exp": "Anos de Experiência",
           "stats.projects": "Projetos Concluídos",
           "stats.satisfaction": "% Satisfação",
-          "stats.support": "Horas Suporte",
           "services.sectionTitle": "Serviços Técnicos para Máxima Performance",
-          "services.sectionSubtitle": "Soluções completas de manutenção náutica com qualidade profissional",
-          "services.hull.title": "Tratamento de Casco",
-          "services.hull.desc": "Antifouling profissional, limpeza e proteção do casco para máxima performance.",
-          "services.rigging.title": "Rigging Completo",
-          "services.rigging.desc": "Instalação e manutenção de rigging fixo e móvel com materiais premium.",
-          "services.refit.title": "Refit & Reparos",
-          "services.refit.desc": "Modernização completa e reparos estruturais com acabamento profissional.",
-          "services.learnMore": "Saber mais",
           "why.title": "Por Que Escolher a Nossa Equipa?",
-          "why.item1": "Equipa especializada em rigging",
-          "why.item2": "Materiais premium certificados",
-          "why.item3": "Transparência no orçamento",
-          "why.item4": "Atendimento personalizado",
-          "why.item5": "Foco em durabilidade e segurança",
-          "why.item6": "Prazos cumpridos rigorosamente",
           "testimonials.title": "O Que Dizem os Nossos Clientes",
-          "cta.finalTitle": "O Seu Veleiro Merece o Melhor",
-          "cta.finalSubtitle": "Entre em contacto connosco e receba uma avaliação técnica profissional",
-          "cta.finalBtn": "Solicitar Avaliação Técnica",
 
-          // About.jsx
-          "about.hero.title": "Sobre a DM Yacht Care",
-          "about.hero.subtitle": "Especialistas em manutenção náutica com paixão pelo mar e compromisso com a excelência",
-          "about.story.title": "A Nossa História",
-          "about.story.p1": "Fundada em 2010, a DM Yacht Care nasceu da paixão pelo mar e do compromisso em oferecer serviços de manutenção náutica de excelência no Algarve.",
-          "about.values.title": "Os Nossos Valores",
-          "about.values.quality.title": "Qualidade Premium",
-          "about.values.quality.desc": "Utilizamos apenas materiais certificados e técnicas profissionais.",
+          // --- SERVICES PAGE (Página Detalhada) ---
+          "services.page.title": "Serviços de Manutenção e Conserto",
+          "services.page.subtitle": "Soluções completas para manter o seu veleiro em perfeito estado.",
+          "services.requestQuote": "Solicitar Orçamento",
+          "services.hull.title": "Tratamento de Casco e Antifouling",
+          "services.hull.desc": "Proteção profissional do casco para máxima performance.",
+          "services.items.hull.features": ["Limpeza profunda", "Primers especializados", "Antifouling premium", "Hélices e ânodos"],
+          "services.items.paint.title": "Pintura Naval e Gelcoat",
+          "services.items.paint.desc": "Restauração e pintura completa com acabamento profissional.",
+          "services.items.paint.features": ["Reparação de gelcoat", "Pintura completa", "Proteção UV", "Correção de osmose"],
+          "services.items.covers.title": "Capotas e Proteções",
+          "services.items.covers.desc": "Fabrico e instalação de toldos e capotas personalizadas.",
+          "services.items.covers.features": ["Desenho personalizado", "Tecidos premium", "Proteção UV", "Reparações"],
 
-          // Rigging.jsx
+          // --- RIGGING PAGE ---
           "rigging.hero.title": "Rigging Profissional",
-          "rigging.hero.subtitle": "Instalação, manutenção e inspeção de rigging fixo e móvel com materiais certificados",
-          "rigging.hero.cta": "Solicitar Inspeção",
+          "rigging.hero.subtitle": "Instalação e inspeção de rigging fixo e móvel com materiais certificados.",
           "rigging.svc.fixed.title": "Rigging Fixo",
           "rigging.svc.fixed.items": ["Inspeção de mastros", "Cabos de aço inox", "Terminais Sta-Lok", "Afinação do rig"],
+          "rigging.svc.mobile.title": "Rigging Móvel",
+          "rigging.svc.mobile.items": ["Adriças e Escotas", "Cabos Dyneema", "Roldanas e Blocos"],
           "rigging.warnings.title": "Sinais de Alerta",
-          "rigging.warnings.notice": "⚠️ Se identificar qualquer um destes sinais, contacte-nos imediatamente.",
+          "rigging.warnings.list": ["Fios partidos", "Corrosão", "Mastro com folga", "Mais de 10 anos"],
 
-          // Refit.jsx
+          // --- REFIT PAGE ---
           "refit.hero.title": "Refit & Reparos Estruturais",
-          "refit.hero.subtitle": "Damos nova vida ao seu veleiro com modernização técnica e estética",
-          "refit.services.painting": "Pintura e Gelcoat",
-          "refit.services.fiber": "Reparos em Fibra de Vidro",
+          "refit.hero.subtitle": "Damos nova vida ao seu veleiro com modernização técnica.",
+          "refit.services.title": "Nossas Especialidades em Refit",
+          "services.items.refit.features": ["Sistemas elétricos", "Upgrade de navegação", "Renovação de interiores", "Hidráulica"],
 
-          // Gallery.jsx
+          // --- ABOUT PAGE ---
+          "about.hero.title": "Sobre a DM Yacht Care",
+          "about.hero.subtitle": "Paixão pelo mar e compromisso com a excelência náutica.",
+          "about.story.title": "Nossa História",
+          "about.story.p1": "Fundada em 2010, somos referência em manutenção no Algarve.",
+          "about.values.quality.title": "Qualidade Premium",
+          "about.values.quality.desc": "Materiais certificados e técnicos experientes.",
+
+          // --- GALLERY PAGE ---
           "gallery.hero.title": "Galeria de Projetos",
-          "gallery.hero.subtitle": "Conheça alguns dos nossos trabalhos realizados com excelência",
           "gallery.categories.all": "Todos",
           "gallery.categories.refit": "Refit",
           "gallery.categories.rigging": "Rigging",
 
-          // Contact.jsx
+          // --- CONTACT PAGE ---
           "contact.hero.title": "Solicite o Seu Orçamento",
-          "contact.hero.subtitle": "Entre em contacto connosco. Responderemos em menos de 24 horas.",
-          "contact.form.name": "Nome Completo",
+          "contact.form.name": "Nome",
           "contact.form.email": "Email",
           "contact.form.message": "Mensagem",
-          "contact.form.button": "Enviar Mensagem",
-
-          // Footer
-          "footer.description": "Especialistas em manutenção e conserto de veleiros no Algarve desde 2010.",
-          "footer.rights": "Todos os direitos reservados."
+          "contact.form.button": "Enviar Mensagem"
         }
       },
       en: {
@@ -102,71 +94,63 @@ i18n
           "nav.gallery": "Gallery",
           "nav.contact": "Contact",
           "cta.quote": "Quote",
+          "footer.description": "Sailboat maintenance specialists in the Algarve since 2010.",
+          "footer.rights": "All rights reserved.",
 
-          "hero.title": "Professional Sailboat Repair and Maintenance in the Algarve",
-          "hero.subtitle": "Specialists in structural repairs, rigging, antifouling and full refit",
-          "hero.whatsapp": "Chat on WhatsApp",
+          "hero.title": "Professional Sailboat Maintenance in the Algarve",
+          "hero.subtitle": "Experts in structural repairs, rigging, antifouling, and full refit.",
+          "hero.whatsapp": "WhatsApp Us",
           "stats.exp": "Years of Experience",
-          "stats.projects": "Completed Projects",
+          "stats.projects": "Projects Completed",
           "stats.satisfaction": "% Satisfaction",
-          "stats.support": "Support Hours",
           "services.sectionTitle": "Technical Services for Maximum Performance",
-          "services.sectionSubtitle": "Complete nautical maintenance solutions with professional quality",
-          "services.hull.title": "Hull Treatment",
-          "services.hull.desc": "Professional antifouling, hull cleaning and protection.",
-          "services.rigging.title": "Full Rigging",
-          "services.rigging.desc": "Installation and maintenance of standing and running rigging.",
-          "services.refit.title": "Refit & Repairs",
-          "services.refit.desc": "Complete modernization and structural repairs.",
-          "services.learnMore": "Learn more",
           "why.title": "Why Choose Our Team?",
-          "why.item1": "Specialized rigging team",
-          "why.item2": "Certified premium materials",
-          "why.item3": "Transparent pricing",
-          "why.item4": "Personalized service",
-          "why.item5": "Focus on durability and safety",
-          "why.item6": "Strictly met deadlines",
           "testimonials.title": "What Our Clients Say",
-          "cta.finalTitle": "Your Yacht Deserves the Best",
-          "cta.finalSubtitle": "Contact us and receive a professional technical evaluation",
-          "cta.finalBtn": "Request Technical Evaluation",
 
-          "about.hero.title": "About DM Yacht Care",
-          "about.hero.subtitle": "Nautical maintenance specialists with a passion for the sea",
-          "about.story.title": "Our History",
-          "about.story.p1": "Founded in 2010, DM Yacht Care was born from a passion for the sea in the Algarve.",
-          "about.values.title": "Our Values",
-          "about.values.quality.title": "Premium Quality",
-          "about.values.quality.desc": "We use only certified materials and professional techniques.",
+          "services.page.title": "Maintenance & Repair Services",
+          "services.page.subtitle": "Complete solutions to keep your sailboat in top condition.",
+          "services.requestQuote": "Request a Quote",
+          "services.hull.title": "Hull Treatment & Antifouling",
+          "services.hull.desc": "Professional hull protection for maximum performance.",
+          "services.items.hull.features": ["Deep cleaning", "Specialized primers", "Premium antifouling", "Anodes"],
+          "services.items.paint.title": "Marine Paint & Gelcoat",
+          "services.items.paint.desc": "Professional restoration and painting services.",
+          "services.items.paint.features": ["Gelcoat repair", "Full painting", "UV protection", "Osmosis correction"],
+          "services.items.covers.title": "Covers & Canvas",
+          "services.items.covers.desc": "Custom manufacture and installation of marine covers.",
+          "services.items.covers.features": ["Custom design", "Premium fabrics", "UV protection", "Repairs"],
 
           "rigging.hero.title": "Professional Rigging",
-          "rigging.hero.subtitle": "Installation and maintenance with certified materials",
-          "rigging.hero.cta": "Request Inspection",
+          "rigging.hero.subtitle": "Installation and inspection of standing and running rigging.",
           "rigging.svc.fixed.title": "Standing Rigging",
-          "rigging.svc.fixed.items": ["Mast inspection", "Stainless wire", "Sta-Lok terminals", "Rig tuning"],
+          "rigging.svc.fixed.items": ["Mast inspection", "Stainless wire", "Terminals", "Rig tuning"],
+          "rigging.svc.mobile.title": "Running Rigging",
+          "rigging.svc.mobile.items": ["Halyards & Sheets", "Dyneema ropes", "Blocks & Sheaves"],
           "rigging.warnings.title": "Warning Signs",
-          "rigging.warnings.notice": "⚠️ If you identify any of these signs, contact us immediately.",
+          "rigging.warnings.list": ["Broken strands", "Corrosion", "Loose mast", "10+ years old"],
 
           "refit.hero.title": "Refit & Structural Repairs",
-          "refit.hero.subtitle": "Giving new life to your boat with technical modernization",
-          "refit.services.painting": "Painting and Gelcoat",
-          "refit.services.fiber": "Fiberglass Repairs",
+          "refit.hero.subtitle": "Bringing new life to your sailboat with technical upgrades.",
+          "refit.services.title": "Our Refit Specialties",
+          "services.items.refit.features": ["Electrical systems", "Navigation upgrades", "Interior renovation", "Hydraulics"],
+
+          "about.hero.title": "About DM Yacht Care",
+          "about.hero.subtitle": "Passion for the sea and commitment to nautical excellence.",
+          "about.story.title": "Our History",
+          "about.story.p1": "Founded in 2010, we are a reference for maintenance in the Algarve.",
+          "about.values.quality.title": "Premium Quality",
+          "about.values.quality.desc": "Certified materials and experienced technicians.",
 
           "gallery.hero.title": "Project Gallery",
-          "gallery.hero.subtitle": "Discover some of our excellence-driven works",
           "gallery.categories.all": "All",
           "gallery.categories.refit": "Refit",
           "gallery.categories.rigging": "Rigging",
 
           "contact.hero.title": "Request a Quote",
-          "contact.hero.subtitle": "Get in touch. We respond in less than 24 hours.",
-          "contact.form.name": "Full Name",
+          "contact.form.name": "Name",
           "contact.form.email": "Email",
           "contact.form.message": "Message",
-          "contact.form.button": "Send Message",
-
-          "footer.description": "Sailboat maintenance specialists in the Algarve since 2010.",
-          "footer.rights": "All rights reserved."
+          "contact.form.button": "Send Message"
         }
       }
     },
