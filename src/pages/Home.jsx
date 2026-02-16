@@ -11,7 +11,6 @@ const Home = () => {
   const { t } = useTranslation();
 
   useEffect(() => {
-    // Animações GSAP
     gsap.from('.hero-title', { opacity: 0, y: 50, duration: 1, delay: 0.3 });
     gsap.from('.hero-subtitle', { opacity: 0, y: 30, duration: 1, delay: 0.6 });
     gsap.from('.hero-buttons', { opacity: 0, y: 30, duration: 1, delay: 0.9 });
@@ -38,6 +37,12 @@ const Home = () => {
     { icon: <Anchor className="w-12 h-12" />, title: t('services.hull.title'), description: t('services.hull.desc'), link: '/servicos' },
     { icon: <Shield className="w-12 h-12" />, title: t('services.rigging.title'), description: t('services.rigging.desc'), link: '/rigging' },
     { icon: <Award className="w-12 h-12" />, title: t('services.refit.title'), description: t('services.refit.desc'), link: '/refit' }
+  ];
+
+  const testimonials = [
+    { name: 'Carlos Silva', boat: 'Beneteau Oceanis 45', text: t('testimonials.carlos.text') },
+    { name: 'Maria Santos', boat: 'Jeanneau Sun Odyssey 42', text: t('testimonials.maria.text') },
+    { name: 'João Rodrigues', boat: 'Bavaria 46', text: t('testimonials.joao.text') }
   ];
 
   return (
@@ -73,12 +78,14 @@ const Home = () => {
 
       {/* Services Section */}
       <section className="services-section py-20 bg-gray-50">
-        <div className="container mx-auto px-4 text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-navy-900 mb-4">{t('services.sectionTitle')}</h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">{t('services.sectionSubtitle')}</p>
-          <div className="grid md:grid-cols-3 gap-8 mt-12">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-navy-900 mb-4">{t('services.sectionTitle')}</h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">{t('services.sectionSubtitle')}</p>
+          </div>
+          <div className="grid md:grid-cols-3 gap-8">
             {services.map((service, index) => (
-              <div key={index} className="service-card bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all transform hover:-translate-y-2 text-left">
+              <div key={index} className="service-card bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all transform hover:-translate-y-2">
                 <div className="text-ocean-500 mb-4">{service.icon}</div>
                 <h3 className="text-2xl font-bold text-navy-900 mb-3">{service.title}</h3>
                 <p className="text-gray-600 mb-6">{service.description}</p>
@@ -88,6 +95,50 @@ const Home = () => {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Why Choose Us */}
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-4xl md:text-5xl font-bold text-navy-900 mb-12">{t('why.title')}</h2>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto text-left">
+            {[1, 2, 3, 4, 5, 6].map((i) => (
+              <div key={i} className="flex items-start gap-3">
+                <div className="text-ocean-500 mt-1">✓</div>
+                <span className="text-gray-700 text-lg">{t(`why.item${i}`)}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials */}
+      <section className="py-20 bg-navy-900 text-white">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-4xl md:text-5xl font-bold mb-12">{t('testimonials.title')}</h2>
+          <div className="grid md:grid-cols-3 gap-8 text-left">
+            {testimonials.map((tst, idx) => (
+              <div key={idx} className="bg-navy-800 p-8 rounded-xl">
+                <p className="text-gray-300 mb-6 italic">"{tst.text}"</p>
+                <div>
+                  <div className="font-bold text-ocean-500">{tst.name}</div>
+                  <div className="text-gray-400 text-sm">{tst.boat}</div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Final */}
+      <section className="py-20 bg-ocean-500 text-white text-center">
+        <div className="container mx-auto px-4">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6">{t('cta.finalTitle')}</h2>
+          <p className="text-xl mb-8 max-w-2xl mx-auto">{t('cta.finalSubtitle')}</p>
+          <Link to="/contato" className="bg-white text-ocean-600 px-10 py-4 rounded-lg font-bold text-lg inline-flex items-center gap-2 hover:bg-gray-100 transition-all transform hover:scale-105">
+            {t('cta.finalBtn')} <ArrowRight className="w-5 h-5" />
+          </Link>
         </div>
       </section>
     </div>
