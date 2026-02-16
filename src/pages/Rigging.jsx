@@ -8,6 +8,7 @@ const Rigging = () => {
 
   const renderList = (key) => {
     const items = t(key, { returnObjects: true });
+    if (!items || !Array.isArray(items)) return null; // previne erro se não existir
     return (
       <ul className="list-disc list-inside space-y-2 text-gray-700">
         {items.map((item, idx) => (
