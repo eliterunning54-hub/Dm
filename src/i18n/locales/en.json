@@ -55,14 +55,18 @@
   },
   "testimonials": {
     "title": "What Our Clients Say",
-    "carlos": {
-      "text": "Impeccable service and highly professional team."
-    },
-    "maria": {
-      "text": "My sailboat looks brand new. Highly recommended."
-    },
-    "joao": {
-      "text": "Top quality work and excellent communication."
-    }
+    "carlos": { "text": "Impeccable service and highly professional team." },
+    "maria": { "text": "My sailboat looks brand new. Highly recommended." },
+    "joao": { "text": "Top quality work and excellent communication." }
+  },
+  "footer": {
+    "description": "Sailboat maintenance specialists in the Algarve since 2010.",
+    "rights": "All rights reserved.",
+    "quickLinks": "Quick Links",
+    "servicesTitle": "Services",
+    "refit": "Refit & Repairs",
+    "painting": "Marine Painting",
+    "maintenance": "Maintenance",
+    "contactTitle": "Contact"
   }
 }
