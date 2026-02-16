@@ -90,28 +90,12 @@
     "values": {
       "title": "Nossos Valores",
       "subtitle": "O que nos guia todos os dias",
-      "quality": {
-        "title": "Qualidade Premium",
-        "desc": "Materiais certificados e técnicos experientes."
-      },
-      "team": {
-        "title": "Equipe Profissional",
-        "desc": "Profissionais qualificados e apaixonados pelo que fazem."
-      },
-      "focus": {
-        "title": "Foco no Cliente",
-        "desc": "Cada projeto é personalizado para atender suas necessidades."
-      },
-      "commitment": {
-        "title": "Compromisso",
-        "desc": "Garantia de excelência em cada detalhe."
-      }
+      "quality": { "title": "Qualidade Premium", "desc": "Materiais certificados e técnicos experientes." },
+      "team": { "title": "Equipe Profissional", "desc": "Profissionais qualificados e apaixonados pelo que fazem." },
+      "focus": { "title": "Foco no Cliente", "desc": "Cada projeto é personalizado para atender suas necessidades." },
+      "commitment": { "title": "Compromisso", "desc": "Garantia de excelência em cada detalhe." }
     },
-    "cta": {
-      "title": "Pronto para começar?",
-      "subtitle": "Entre em contato e saiba como podemos ajudar seu veleiro.",
-      "button": "Solicitar Contato"
-    }
+    "cta": { "title": "Pronto para começar?", "subtitle": "Entre em contato e saiba como podemos ajudar seu veleiro.", "button": "Solicitar Contato" }
   },
   "contact": {
     "hero": {
@@ -160,16 +144,38 @@
     "subtitle": "Confira alguns dos nossos projetos concluídos."
   },
   "refit": {
-    "title": "Refit & Reparos",
-    "subtitle": "Modernizamos e restauramos o seu veleiro com excelência.",
-    "desc": "Oferecemos serviços completos de refit: casco, rigging, pintura e interiores.",
+    "hero": {
+      "title": "Refit & Reparos",
+      "subtitle": "Modernizamos e restauramos o seu veleiro com excelência.",
+      "cta": "Solicitar Orçamento"
+    },
     "services": {
-      "structural": "Reparos Estruturais",
-      "hull": "Tratamento de Casco",
-      "rigging": "Rigging e Instalação",
-      "painting": "Pintura e Gelcoat",
-      "maintenance": "Manutenção Preventiva"
-    }
+      "electrical": { "title": "Sistema Elétrico", "desc": "Instalação e reparos elétricos completos.", "items": ["Cabos e fiação", "Painéis elétricos", "Baterias", "Iluminação"] },
+      "hydraulic": { "title": "Sistema Hidráulico", "desc": "Manutenção e instalação hidráulica.", "items": ["Bombas hidráulicas", "Mangueiras", "Válvulas", "Serviços de pressão"] },
+      "aesthetic": { "title": "Estética & Pintura", "desc": "Acabamento e gelcoat.", "items": ["Lixa e polimento", "Pintura de casco", "Reparo de gelcoat", "Detalhes estéticos"] },
+      "navigation": { "title": "Navegação", "desc": "Atualização de instrumentos e eletrônica.", "items": ["GPS e plotters", "Instrumentos de navegação", "Radar", "Autopilot"] },
+      "propulsion": { "title": "Propulsão", "desc": "Manutenção de motor e propulsão.", "items": ["Motor principal", "Hélices", "Transmissão", "Tanques de combustível"] }
+    },
+    "process": {
+      "title": "Nosso Processo",
+      "subtitle": "Passo a passo para modernizar seu veleiro",
+      "s1": { "title": "Inspeção", "desc": "Analisamos cada detalhe do seu veleiro" },
+      "s2": { "title": "Planejamento", "desc": "Planejamos todos os reparos necessários" },
+      "s3": { "title": "Execução", "desc": "Realizamos o refit conforme o plano" },
+      "s4": { "title": "Controle de Qualidade", "desc": "Verificação detalhada em cada etapa" },
+      "s5": { "title": "Finalização", "desc": "Testes e ajustes finais" },
+      "s6": { "title": "Entrega", "desc": "Entrega do veleiro pronto para navegação" }
+    },
+    "why": { "reasons": ["Profissionais experientes", "Materiais de alta qualidade", "Serviço personalizado", "Rapidez e eficiência", "Suporte contínuo", "Satisfação garantida"] },
+    "examples": {
+      "title": "Exemplos de Refit",
+      "p1": { "desc": "Beneteau Oceanis 45 - refit completo de casco e interiores" },
+      "p2": { "desc": "Contest 50 - modernização técnica e estética" },
+      "p3": { "desc": "Bavaria 46 Cruiser - manutenção preventiva e pintura" },
+      "duration": "Duração",
+      "months": "meses"
+    },
+    "cta": { "title": "Pronto para melhorar seu veleiro?", "subtitle": "Entre em contato e solicite um orçamento personalizado", "button": "Solicitar Orçamento" }
   },
   "rigging": {
     "hero": {
@@ -180,26 +186,10 @@
     "services": {
       "title": "Serviços de Rigging",
       "subtitle": "Soluções completas para todos os sistemas de rigging",
-      "standing": {
-        "title": "Rigging Fixo",
-        "desc": "Instalação e manutenção de estais e brandais",
-        "items": ["Inspeção completa de mastros", "Substituição de cabos de aço inox", "Instalação de novos estais", "Substituição de terminais Sta-Lok/Norseman", "Tensionamento e afinação do rig", "Verificação de parafusos e fixações"]
-      },
-      "running": {
-        "title": "Rigging Móvel",
-        "desc": "Escotas, adriças e cabos de manobra",
-        "items": ["Substituição de adriças", "Instalação de escotas novas", "Cabos de alta performance (Dyneema)", "Sistemas de redução de fricção", "Roldanas e blocos de qualidade", "Passadores e terminais especializados"]
-      },
-      "equip": {
-        "title": "Instalação de Equipamentos",
-        "desc": "Winches, blocos e ferragens",
-        "items": ["Instalação de winches Harken/Lewmar", "Montagem de blocos e roldanas", "Furlers e enroladores", "Boom vangs e cunninghams", "Travellers e carros de escota", "Sistemas hidráulicos"]
-      },
-      "inspection": {
-        "title": "Inspeção e Manutenção",
-        "desc": "Prevenção e segurança",
-        "items": ["Inspeção anual completa", "Relatórios fotográficos detalhados", "Teste de carga em terminais", "Verificação de corrosão", "Lubrificação de equipamentos", "Plano de manutenção preventiva"]
-      }
+      "standing": { "title": "Rigging Fixo", "desc": "Instalação e manutenção de estais e brandais", "items": ["Inspeção completa de mastros", "Substituição de cabos de aço inox", "Instalação de novos estais", "Substituição de terminais Sta-Lok/Norseman", "Tensionamento e afinação do rig", "Verificação de parafusos e fixações"] },
+      "running": { "title": "Rigging Móvel", "desc": "Escotas, adriças e cabos de manobra", "items": ["Substituição de adriças", "Instalação de escotas novas", "Cabos de alta performance (Dyneema)", "Sistemas de redução de fricção", "Roldanas e blocos de qualidade", "Passadores e terminais especializados"] },
+      "equip": { "title": "Instalação de Equipamentos", "desc": "Winches, blocos e ferragens", "items": ["Instalação de winches Harken/Lewmar", "Montagem de blocos e roldanas", "Furlers e enroladores", "Boom vangs e cunninghams", "Travellers e carros de escota", "Sistemas hidráulicos"] },
+      "inspection": { "title": "Inspeção e Manutenção", "desc": "Prevenção e segurança", "items": ["Inspeção anual completa", "Relatórios fotográficos detalhados", "Teste de carga em terminais", "Verificação de corrosão", "Lubrificação de equipamentos", "Plano de manutenção preventiva"] }
     },
     "materials": {
       "title": "Materiais Premium",
