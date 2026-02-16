@@ -62,12 +62,14 @@
   },
   "why": {
     "title": "Why Choose Our Team?",
-    "item1": "Experienced professionals",
-    "item2": "High-quality materials",
-    "item3": "Personalized service",
-    "item4": "Speed and efficiency",
-    "item5": "Continuous support",
-    "item6": "Guaranteed satisfaction"
+    "items": [
+      "Experienced professionals",
+      "High-quality materials",
+      "Personalized service",
+      "Speed and efficiency",
+      "Continuous support",
+      "Guaranteed satisfaction"
+    ]
   },
   "testimonials": {
     "title": "What Our Clients Say",
@@ -90,15 +92,34 @@
     "values": {
       "title": "Our Values",
       "subtitle": "What guides us every day",
-      "quality": { "title": "Premium Quality", "desc": "Certified materials and experienced technicians." },
-      "team": { "title": "Professional Team", "desc": "Qualified professionals passionate about what they do." },
-      "focus": { "title": "Customer Focus", "desc": "Each project is tailored to meet your needs." },
-      "commitment": { "title": "Commitment", "desc": "Excellence guaranteed in every detail." }
+      "quality": {
+        "title": "Premium Quality",
+        "desc": "Certified materials and experienced technicians."
+      },
+      "team": {
+        "title": "Professional Team",
+        "desc": "Qualified professionals passionate about what they do."
+      },
+      "focus": {
+        "title": "Customer Focus",
+        "desc": "Each project is tailored to meet your needs."
+      },
+      "commitment": {
+        "title": "Commitment",
+        "desc": "Excellence guaranteed in every detail."
+      }
     },
-    "cta": { "title": "Ready to get started?", "subtitle": "Contact us to learn how we can help your sailboat.", "button": "Request Contact" }
+    "cta": {
+      "title": "Ready to get started?",
+      "subtitle": "Contact us to learn how we can help your sailboat.",
+      "button": "Request Contact"
+    }
   },
   "contact": {
-    "hero": { "title": "Get in Touch", "subtitle": "Send us a message or request a quote" },
+    "hero": {
+      "title": "Get in Touch",
+      "subtitle": "Send us a message or request a quote"
+    },
     "form": {
       "title": "Contact Form",
       "name": "Name",
@@ -137,7 +158,8 @@
     }
   },
   "gallery": {
-    "hero": { "title": "Sailboat Gallery", "subtitle": "Check out some of our completed projects." },
+    "title": "Sailboat Gallery",
+    "subtitle": "Check out some of our completed projects.",
     "categories": {
       "all": "All",
       "refit": "Refit",
@@ -147,23 +169,28 @@
       "maintenance": "Maintenance"
     },
     "projects": {
-      "p1": { "title": "XYZ Sailboat Refit", "desc": "Full refit including hull and interiors." },
-      "p2": { "title": "Beneteau Oceanis 40", "desc": "Antifouling and full hull maintenance." },
-      "p3": { "title": "Contessa 32 Rigging", "desc": "Cable replacement and full rigging inspection." },
-      "p4": { "title": "Bavaria 46 Painting", "desc": "New painting and professional Gelcoat finishing." },
-      "p5": { "title": "Jeanneau Sun Odyssey Maintenance", "desc": "Preventive maintenance and full review." },
-      "p6": { "title": "Dufour 45 Refit", "desc": "Technical refit and full modernization." },
-      "p7": { "title": "Hanse 415 Rigging", "desc": "Complete rigging installation and maintenance." },
-      "p8": { "title": "Oceanis 48 Painting", "desc": "Exterior and interior finishing, Gelcoat restored." },
-      "p9": { "title": "Sunbeam 42 Antifouling", "desc": "Hull treatment and premium antifouling application." }
+      "p1": { "title": "Beneteau Oceanis 45", "desc": "Complete refit of hull and interiors" },
+      "p2": { "title": "Beneteau Oceanis 38", "desc": "Antifouling and maintenance service" },
+      "p3": { "title": "Rigging Bavaria 46", "desc": "Complete rigging replacement" },
+      "p4": { "title": "Painting Lagoon 40", "desc": "Professional painting and gelcoat" },
+      "p5": { "title": "Maintenance Jeanneau 42", "desc": "Full preventive maintenance" },
+      "p6": { "title": "Beneteau Oceanis 50", "desc": "Partial refit of hull and interiors" },
+      "p7": { "title": "Rigging Hanse 445", "desc": "Rigging inspection and adjustment" },
+      "p8": { "title": "Painting Bavaria 46", "desc": "Painting and gelcoat finishing" },
+      "p9": { "title": "Antifouling Dufour 412", "desc": "Professional antifouling application" }
     },
     "viewDetails": "View Details"
   },
   "refit": {
-    "title": "Refit & Repairs",
-    "subtitle": "We modernize and restore your sailboat with excellence.",
-    "desc": "We provide complete refit services: hull, rigging, painting, and interiors.",
+    "hero": {
+      "title": "Refit & Repairs",
+      "subtitle": "We modernize and restore your sailboat with excellence.",
+      "desc": "We provide complete refit services: hull, rigging, painting, and interiors.",
+      "cta": "Request Quote"
+    },
     "services": {
+      "title": "Refit Services",
+      "subtitle": "Complete solutions for your sailboat",
       "structural": "Structural Repairs",
       "hull": "Hull Treatment",
       "rigging": "Rigging & Installation",
@@ -172,10 +199,12 @@
     }
   },
   "rigging": {
-    "hero": { "title": "Professional Rigging", "subtitle": "Installation, inspection, and maintenance of all types of rigging.", "cta": "Request Inspection" },
+    "hero": {
+      "title": "Professional Rigging",
+      "subtitle": "Installation, inspection, and maintenance of all types of rigging.",
+      "cta": "Request Inspection"
+    },
     "services": {
-      "title": "Rigging Services",
-      "subtitle": "Complete solutions for all rigging systems",
       "standing": {
         "title": "Standing Rigging",
         "desc": "Installation and maintenance of shrouds and stays",
@@ -196,28 +225,6 @@
         "desc": "Prevention and safety",
         "items": ["Full annual inspection", "Detailed photo reports", "Load testing of terminals", "Corrosion check", "Equipment lubrication", "Preventive maintenance plan"]
       }
-    },
-    "materials": {
-      "title": "Premium Materials",
-      "subtitle": "We work only with the best brands on the market",
-      "m1": { "name": "316 Stainless Steel Wire", "desc": "High resistance to marine corrosion" },
-      "m2": { "name": "Dyneema / Spectra", "desc": "High-performance, lightweight lines" },
-      "m3": { "name": "Sta-Lok Terminals", "desc": "Mechanical terminals for easy installation" },
-      "m4": { "name": "Norseman Terminals", "desc": "Maximum strength and durability" },
-      "m5": { "name": "Harken / Lewmar", "desc": "Premium blocks and equipment" },
-      "m6": { "name": "Spinlock", "desc": "High-quality stoppers and clutches" }
-    },
-    "warnings": {
-      "title": "Warning Signs",
-      "subtitle": "When to inspect or replace your rigging?",
-      "items": ["Frayed steel wires", "Visible corrosion on terminals", "Excessive mast movement", "Loose or worn terminals", "Stiff or noisy blocks", "Uneven wear on lines", "Over 10 years without replacement", "Worn sheets"],
-      "alert": "⚠️ If you notice any of these signs, contact us immediately for a professional inspection."
-    },
-    "advantages": {
-      "adv1": { "title": "Maximum Safety", "desc": "Well-maintained rigging is essential for crew safety" },
-      "adv2": { "title": "Performance", "desc": "Better sail control and sailing performance" },
-      "adv3": { "title": "Durability", "desc": "Premium materials ensure years of worry-free use" }
-    },
-    "cta": { "title": "Ready to ensure your sailboat's safety?", "subtitle": "Request a full rigging inspection or a free quote", "button": "Contact Now" }
+    }
   }
 }
