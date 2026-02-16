@@ -10,9 +10,9 @@
   },
   "cta": {
     "quote": "Quote",
-    "finalTitle": "Need help with your sailboat?",
-    "finalSubtitle": "Contact us and discover how we can take care of your sailboat.",
-    "finalBtn": "Request a Quote"
+    "finalTitle": "Ready to upgrade your sailboat?",
+    "finalSubtitle": "Get in touch for a personalized quote.",
+    "finalBtn": "Request Quote"
   },
   "footer": {
     "description": "Sailboat maintenance specialists in the Algarve since 2010.",
@@ -24,75 +24,85 @@
     "maintenance": "Maintenance",
     "contactTitle": "Contact"
   },
-  "home": {
-    "hero": {
-      "title": "Professional Sailboat Maintenance in the Algarve",
-      "subtitle": "Experts in structural repairs, rigging, antifouling, and full refit.",
-      "whatsapp": "WhatsApp Us"
+  "hero": {
+    "title": "Professional Sailboat Maintenance in the Algarve",
+    "subtitle": "Experts in structural repairs, rigging, antifouling, and full refit.",
+    "whatsapp": "WhatsApp Us"
+  },
+  "stats": {
+    "exp": "Years of Experience",
+    "projects": "Projects Completed",
+    "satisfaction": "% Satisfaction",
+    "support": "Support"
+  },
+  "services": {
+    "sectionTitle": "Technical Services for Maximum Performance",
+    "sectionSubtitle": "We provide complete solutions for your sailboat.",
+    "learnMore": "Learn More",
+    "hull": {
+      "title": "Hull Treatment & Antifouling",
+      "desc": "Professional hull protection for maximum performance."
     },
-    "stats": { "exp": "Years of Experience", "projects": "Projects Completed", "satisfaction": "% Satisfaction", "support": "Clients Served" },
-    "services": {
-      "sectionTitle": "Technical Services for Maximum Performance",
-      "sectionSubtitle": "Complete solutions to keep your sailboat in top condition.",
-      "learnMore": "Learn More",
-      "hull": { "title": "Hull Treatment & Antifouling", "desc": "Professional hull protection for maximum performance." },
-      "rigging": { "title": "Professional Rigging", "desc": "Installation and inspection of standing and running rigging." },
-      "refit": { "title": "Refit & Structural Repairs", "desc": "Technical upgrades and complete repairs for your sailboat." }
+    "rigging": {
+      "title": "Professional Rigging",
+      "desc": "Installation and inspection of standing and running rigging."
     },
-    "why": {
-      "title": "Why Choose Our Team?",
-      "item1": "Specialized professionals",
-      "item2": "Premium quality materials",
-      "item3": "Personalized service",
-      "item4": "Commitment to safety",
-      "item5": "Over 10 years of experience",
-      "item6": "Proven results"
-    },
-    "testimonials": {
-      "title": "What Our Clients Say",
-      "carlos": { "text": "Impeccable and professional service!" },
-      "maria": { "text": "100% recommended, excellent service." },
-      "joao": { "text": "My sailboat feels like new!" }
+    "refit": {
+      "title": "Refit & Structural Repairs",
+      "desc": "Bringing new life to your sailboat with technical upgrades."
     }
   },
+  "why": {
+    "title": "Why Choose Our Team?",
+    "item1": "Experienced professionals",
+    "item2": "High-quality materials",
+    "item3": "Personalized service",
+    "item4": "Speed and efficiency",
+    "item5": "Continuous support",
+    "item6": "Guaranteed satisfaction"
+  },
+  "testimonials": {
+    "title": "What Our Clients Say",
+    "carlos": { "text": "Excellent service and attention to detail." },
+    "maria": { "text": "Competent professionals, my sailboat looks new!" },
+    "joao": { "text": "I highly recommend them, great experience." }
+  },
   "about": {
-    "hero": { "title": "About DM Yacht Care", "subtitle": "Passion for the sea and commitment to nautical excellence." },
+    "hero": {
+      "title": "About DM Yacht Care",
+      "subtitle": "Passion for the sea and commitment to nautical excellence."
+    },
     "story": {
       "title": "Our History",
       "p1": "Founded in 2010, we are a reference for maintenance in the Algarve.",
-      "p2": "Our mission is to ensure each sailboat receives top-quality maintenance and repairs.",
-      "p3": "We work with certified materials and modern techniques for maximum efficiency.",
-      "p4": "Our commitment is to client satisfaction and vessel safety."
+      "p2": "We provide complete services for sailboats of all sizes.",
+      "p3": "We prioritize quality, safety, and customer satisfaction.",
+      "p4": "Our goal is to extend the life of your sailboat with excellence."
     },
     "values": {
       "title": "Our Values",
-      "subtitle": "Principles guiding our daily work",
-      "quality": { "title": "Premium Quality", "desc": "Certified materials and experienced technicians." },
-      "team": { "title": "Specialized Team", "desc": "Professionals trained and passionate about their work." },
-      "focus": { "title": "Customer Focus", "desc": "Tailored solutions for every sailboat." },
-      "commitment": { "title": "Commitment", "desc": "We always deliver the best, on time and with excellence." }
+      "subtitle": "What drives us every day",
+      "quality": {
+        "title": "Premium Quality",
+        "desc": "Certified materials and experienced technicians."
+      },
+      "team": {
+        "title": "Professional Team",
+        "desc": "Qualified and passionate professionals."
+      },
+      "focus": {
+        "title": "Customer Focus",
+        "desc": "Each project is customized to meet your needs."
+      },
+      "commitment": {
+        "title": "Commitment",
+        "desc": "Excellence guaranteed in every detail."
+      }
     },
-    "cta": { "title": "Want to know more about our services?", "subtitle": "Contact us and discover how we can take care of your sailboat.", "button": "Contact Now" }
-  },
-  "contact": { "hero": { "title": "Request a Quote" }, "form": { "name": "Name", "email": "Email", "message": "Message", "button": "Send Message" } },
-  "gallery": { "hero": { "title": "Project Gallery" }, "categories": { "all": "All", "refit": "Refit", "rigging": "Rigging" } },
-  "services": {
-    "page": { "title": "Maintenance & Repair Services", "subtitle": "Complete solutions to keep your sailboat in top condition." },
-    "requestQuote": "Request a Quote",
-    "items": {
-      "hull": { "features": ["Deep cleaning", "Specialized primers", "Premium antifouling", "Anodes"] },
-      "paint": { "title": "Marine Paint & Gelcoat", "desc": "Professional restoration and painting services.", "features": ["Gelcoat repair", "Full painting", "UV protection", "Osmosis correction"] },
-      "covers": { "title": "Covers & Canvas", "desc": "Custom manufacture and installation of marine covers.", "features": ["Custom design", "Premium fabrics", "UV protection", "Repairs"] },
-      "refit": { "features": ["Electrical systems", "Navigation upgrades", "Interior renovation", "Hydraulics"] }
+    "cta": {
+      "title": "Ready to get started?",
+      "subtitle": "Contact us to see how we can help your sailboat.",
+      "button": "Request Contact"
     }
-  },
-  "rigging": {
-    "hero": { "title": "Professional Rigging", "subtitle": "Installation and inspection of standing and running rigging." },
-    "svc": {
-      "fixed": { "title": "Standing Rigging", "items": ["Mast inspection", "Stainless wire", "Terminals", "Rig tuning"] },
-      "mobile": { "title": "Running Rigging", "items": ["Halyards & Sheets", "Dyneema ropes", "Blocks & Sheaves"] }
-    },
-    "warnings": { "title": "Warning Signs", "list": ["Broken strands", "Corrosion", "Loose mast", "10+ years old"] }
-  },
-  "refit": { "hero": { "title": "Refit & Structural Repairs", "subtitle": "Bringing new life to your sailboat with technical upgrades." }, "services": { "title": "Our Refit Specialties" } }
+  }
 }
