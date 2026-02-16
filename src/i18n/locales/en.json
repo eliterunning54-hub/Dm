@@ -9,8 +9,8 @@
     "contact": "Contact"
   },
   "cta": {
-    "quote": "Get a Quote",
-    "finalTitle": "Ready to improve your sailboat?",
+    "quote": "Quote",
+    "finalTitle": "Ready to upgrade your sailboat?",
     "finalSubtitle": "Contact us for a personalized quote.",
     "finalBtn": "Request Quote"
   },
@@ -25,8 +25,8 @@
     "contactTitle": "Contact"
   },
   "hero": {
-    "title": "Professional Sailboat Repair and Maintenance in the Algarve",
-    "subtitle": "Experts in structural repairs, rigging, antifouling, and full refit.",
+    "title": "Professional Sailboat Repair & Maintenance in the Algarve",
+    "subtitle": "Specialists in structural repairs, rigging, antifouling, and full refit.",
     "whatsapp": "Chat on WhatsApp"
   },
   "stats": {
@@ -37,7 +37,7 @@
   },
   "services": {
     "sectionTitle": "Technical Services for Maximum Performance",
-    "sectionSubtitle": "We provide complete solutions for your sailboat.",
+    "sectionSubtitle": "We offer complete solutions for your sailboat.",
     "learnMore": "Learn More",
     "hull": {
       "title": "Hull Treatment & Antifouling",
@@ -45,15 +45,15 @@
     },
     "rigging": {
       "title": "Professional Rigging",
-      "desc": "Installation and inspection of fixed and movable rigging."
+      "desc": "Installation and inspection of standing and running rigging."
     },
     "refit": {
       "title": "Refit & Structural Repairs",
-      "desc": "Give your sailboat a new life with technical upgrades."
+      "desc": "We give your sailboat new life with technical modernization."
     },
     "painting": {
       "title": "Painting & Gelcoat",
-      "desc": "Professional finish to protect and enhance your sailboat."
+      "desc": "Professional finishing that protects and enhances your sailboat."
     },
     "maintenance": {
       "title": "Preventive Maintenance",
@@ -62,18 +62,18 @@
   },
   "why": {
     "title": "Why Choose Our Team?",
-    "item1": "Experienced Professionals",
-    "item2": "High-Quality Materials",
-    "item3": "Personalized Service",
-    "item4": "Fast and Efficient",
-    "item5": "Continuous Support",
-    "item6": "Guaranteed Satisfaction"
+    "item1": "Experienced professionals",
+    "item2": "High-quality materials",
+    "item3": "Personalized service",
+    "item4": "Speed and efficiency",
+    "item5": "Continuous support",
+    "item6": "Guaranteed satisfaction"
   },
   "testimonials": {
     "title": "What Our Clients Say",
     "carlos": { "text": "Excellent service and attention to detail." },
-    "maria": { "text": "Skilled professionals, my sailboat looks brand new!" },
-    "joao": { "text": "Highly recommended, great experience." }
+    "maria": { "text": "Competent professionals, my sailboat looks like new!" },
+    "joao": { "text": "Highly recommend, great experience." }
   },
   "about": {
     "hero": {
@@ -85,7 +85,7 @@
       "p1": "Founded in 2010, we are a reference in maintenance in the Algarve.",
       "p2": "We offer complete services for sailboats of all sizes.",
       "p3": "We prioritize quality, safety, and customer satisfaction.",
-      "p4": "Our goal is to extend the lifespan of your sailboat with excellence."
+      "p4": "Our goal is to extend the life of your sailboat with excellence."
     },
     "values": {
       "title": "Our Values",
@@ -100,7 +100,7 @@
       },
       "focus": {
         "title": "Customer Focus",
-        "desc": "Every project is customized to meet your needs."
+        "desc": "Each project is tailored to meet your needs."
       },
       "commitment": {
         "title": "Commitment",
@@ -109,7 +109,7 @@
     },
     "cta": {
       "title": "Ready to get started?",
-      "subtitle": "Contact us to see how we can help your sailboat.",
+      "subtitle": "Contact us to learn how we can help your sailboat.",
       "button": "Request Contact"
     }
   },
@@ -128,7 +128,7 @@
       "phonePlaceholder": "+351 ...",
       "boatType": "Boat Type",
       "boatTypePlaceholder": "Ex: Beneteau Oceanis 45",
-      "service": "Requested Service",
+      "service": "Desired Service",
       "serviceSelect": "Select a service",
       "services": {
         "antifouling": "Antifouling",
@@ -141,7 +141,7 @@
       "message": "Message",
       "messagePlaceholder": "Write your message...",
       "button": "Send Message",
-      "alert": "Form submitted successfully!"
+      "alert": "Form successfully sent!"
     },
     "info": {
       "title": "Contact Information",
@@ -172,14 +172,56 @@
     }
   },
   "rigging": {
-    "title": "Professional Rigging",
-    "subtitle": "Installation, inspection, and maintenance of all rigging types.",
-    "desc": "We ensure safety, performance, and reliability for your sailboat.",
+    "hero": {
+      "title": "Professional Rigging",
+      "subtitle": "Installation, inspection, and maintenance of all types of rigging.",
+      "cta": "Request Inspection"
+    },
     "services": {
-      "installation": "Complete Installation",
-      "inspection": "Inspection & Adjustments",
-      "maintenance": "Preventive Maintenance",
-      "replacement": "Component Replacement"
-    }
+      "title": "Rigging Services",
+      "subtitle": "Complete solutions for all rigging systems",
+      "standing": {
+        "title": "Standing Rigging",
+        "desc": "Installation and maintenance of shrouds and stays",
+        "items": ["Full mast inspection", "Replacement of stainless steel wires", "Installation of new stays", "Replacement of Sta-Lok/Norseman terminals", "Rig tensioning and tuning", "Checking bolts and fasteners"]
+      },
+      "running": {
+        "title": "Running Rigging",
+        "desc": "Sheets, halyards, and control lines",
+        "items": ["Replacement of halyards", "Installation of new sheets", "High-performance lines (Dyneema)", "Low-friction systems", "Quality blocks and pulleys", "Specialized fairleads and terminals"]
+      },
+      "equip": {
+        "title": "Equipment Installation",
+        "desc": "Winches, blocks, and fittings",
+        "items": ["Installation of Harken/Lewmar winches", "Assembly of blocks and pulleys", "Furlers and reefers", "Boom vangs and cunninghams", "Travelers and sheet cars", "Hydraulic systems"]
+      },
+      "inspection": {
+        "title": "Inspection & Maintenance",
+        "desc": "Prevention and safety",
+        "items": ["Full annual inspection", "Detailed photo reports", "Load testing of terminals", "Corrosion check", "Equipment lubrication", "Preventive maintenance plan"]
+      }
+    },
+    "materials": {
+      "title": "Premium Materials",
+      "subtitle": "We work only with the best brands on the market",
+      "m1": { "name": "316 Stainless Steel Wire", "desc": "High resistance to marine corrosion" },
+      "m2": { "name": "Dyneema / Spectra", "desc": "High-performance, lightweight lines" },
+      "m3": { "name": "Sta-Lok Terminals", "desc": "Mechanical terminals for easy installation" },
+      "m4": { "name": "Norseman Terminals", "desc": "Maximum strength and durability" },
+      "m5": { "name": "Harken / Lewmar", "desc": "Premium blocks and equipment" },
+      "m6": { "name": "Spinlock", "desc": "High-quality stoppers and clutches" }
+    },
+    "warnings": {
+      "title": "Warning Signs",
+      "subtitle": "When to inspect or replace your rigging?",
+      "items": ["Frayed steel wires", "Visible corrosion on terminals", "Excessive mast movement", "Loose or worn terminals", "Stiff or noisy blocks", "Uneven wear on lines", "Over 10 years without replacement", "Worn sheets"],
+      "alert": "⚠️ If you notice any of these signs, contact us immediately for a professional inspection."
+    },
+    "advantages": {
+      "adv1": { "title": "Maximum Safety", "desc": "Well-maintained rigging is essential for crew safety" },
+      "adv2": { "title": "Performance", "desc": "Better sail control and sailing performance" },
+      "adv3": { "title": "Durability", "desc": "Premium materials ensure years of worry-free use" }
+    },
+    "cta": { "title": "Ready to ensure your sailboat's safety?", "subtitle": "Request a full rigging inspection or a free quote", "button": "Contact Now" }
   }
 }
