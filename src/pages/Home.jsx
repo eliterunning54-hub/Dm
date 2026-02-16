@@ -1,66 +1,97 @@
-resources: {
-      pt: {
-        translation: {
-          // ... (mantenha as de nav e footer que já fizemos)
-          "hero.title": "Conserto e Manutenção Profissional de Veleiros no Algarve",
-          "hero.subtitle": "Especialistas em reparos estruturais, rigging, antifouling e refit completo para veleiros e iates",
-          "hero.whatsapp": "Falar no WhatsApp",
-          "stats.exp": "Anos de Experiência",
-          "stats.projects": "Projetos Concluídos",
-          "stats.satisfaction": "% Satisfação",
-          "stats.support": "Horas Suporte",
-          "services.sectionTitle": "Serviços Técnicos para Máxima Performance",
-          "services.sectionSubtitle": "Soluções completas de manutenção náutica com qualidade profissional",
-          "services.hull.title": "Tratamento de Casco",
-          "services.hull.desc": "Antifouling profissional, limpeza e proteção do casco para máxima performance.",
-          "services.rigging.title": "Rigging Completo",
-          "services.rigging.desc": "Instalação e manutenção de rigging fixo e móvel com materiais premium.",
-          "services.refit.title": "Refit & Reparos",
-          "services.refit.desc": "Modernização completa e reparos estruturais com acabamento profissional.",
-          "services.learnMore": "Saber mais",
-          "why.title": "Por Que Escolher a Nossa Equipa?",
-          "why.item1": "Equipa especializada em rigging",
-          "why.item2": "Materiais premium certificados",
-          "why.item3": "Transparência no orçamento",
-          "why.item4": "Atendimento personalizado",
-          "why.item5": "Foco em durabilidade e segurança",
-          "why.item6": "Prazos cumpridos rigorosamente",
-          "testimonials.title": "O Que Dizem os Nossos Clientes",
-          "cta.finalTitle": "O Seu Veleiro Merece o Melhor",
-          "cta.finalSubtitle": "Entre em contacto connosco e receba uma avaliação técnica profissional",
-          "cta.finalBtn": "Solicitar Avaliação Técnica"
-        }
-      },
-      en: {
-        translation: {
-          // ... (mantenha as de nav e footer)
-          "hero.title": "Professional Sailboat Repair and Maintenance in the Algarve",
-          "hero.subtitle": "Specialists in structural repairs, rigging, antifouling and full refit for sailboats and yachts",
-          "hero.whatsapp": "Chat on WhatsApp",
-          "stats.exp": "Years of Experience",
-          "stats.projects": "Completed Projects",
-          "stats.satisfaction": "% Satisfaction",
-          "stats.support": "Support Hours",
-          "services.sectionTitle": "Technical Services for Maximum Performance",
-          "services.sectionSubtitle": "Complete nautical maintenance solutions with professional quality",
-          "services.hull.title": "Hull Treatment",
-          "services.hull.desc": "Professional antifouling, hull cleaning and protection for maximum performance.",
-          "services.rigging.title": "Full Rigging",
-          "services.rigging.desc": "Installation and maintenance of standing and running rigging with premium materials.",
-          "services.refit.title": "Refit & Repairs",
-          "services.refit.desc": "Complete modernization and structural repairs with professional finishing.",
-          "services.learnMore": "Learn more",
-          "why.title": "Why Choose Our Team?",
-          "why.item1": "Specialized rigging team",
-          "why.item2": "Certified premium materials",
-          "why.item3": "Transparent pricing",
-          "why.item4": "Personalized service",
-          "why.item5": "Focus on durability and safety",
-          "why.item6": "Strictly met deadlines",
-          "testimonials.title": "What Our Clients Say",
-          "cta.finalTitle": "Your Yacht Deserves the Best",
-          "cta.finalSubtitle": "Contact us and receive a professional technical evaluation",
-          "cta.finalBtn": "Request Technical Evaluation"
-        }
-      }
-    }
+import React, { useEffect } from 'react';
+import { Link } from 'react-router-dom';
+import { Anchor, Shield, Award, ArrowRight, Phone } from 'lucide-react';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { useTranslation } from 'react-i18next';
+
+gsap.registerPlugin(ScrollTrigger);
+
+const Home = () => {
+  const { t } = useTranslation();
+
+  useEffect(() => {
+    // Animações GSAP
+    gsap.from('.hero-title', { opacity: 0, y: 50, duration: 1, delay: 0.3 });
+    gsap.from('.hero-subtitle', { opacity: 0, y: 30, duration: 1, delay: 0.6 });
+    gsap.from('.hero-buttons', { opacity: 0, y: 30, duration: 1, delay: 0.9 });
+
+    gsap.from('.service-card', {
+      scrollTrigger: { trigger: '.services-section', start: 'top 80%' },
+      opacity: 0, y: 50, stagger: 0.2, duration: 0.8
+    });
+
+    const stats = document.querySelectorAll('.stat-number');
+    stats.forEach(stat => {
+      const target = parseInt(stat.getAttribute('data-target'));
+      gsap.to(stat, {
+        scrollTrigger: { trigger: stat, start: 'top 80%' },
+        innerHTML: target,
+        duration: 2,
+        snap: { innerHTML: 1 },
+        onUpdate: function() { stat.innerHTML = Math.ceil(stat.innerHTML); }
+      });
+    });
+  }, []);
+
+  const services = [
+    { icon: <Anchor className="w-12 h-12" />, title: t('services.hull.title'), description: t('services.hull.desc'), link: '/servicos' },
+    { icon: <Shield className="w-12 h-12" />, title: t('services.rigging.title'), description: t('services.rigging.desc'), link: '/rigging' },
+    { icon: <Award className="w-12 h-12" />, title: t('services.refit.title'), description: t('services.refit.desc'), link: '/refit' }
+  ];
+
+  return (
+    <div className="home-page">
+      {/* Hero Section */}
+      <section className="relative h-screen flex items-center justify-center bg-gradient-to-br from-navy-900 to-ocean-600 overflow-hidden">
+        <div className="absolute inset-0 opacity-30" style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1569263979104-865ab7cd8d13?q=80&w=2000)', backgroundSize: 'cover', backgroundPosition: 'center' }} />
+        <div className="relative z-10 text-center text-white px-4 max-w-5xl mx-auto">
+          <h1 className="hero-title text-5xl md:text-7xl font-bold mb-6">{t('hero.title')}</h1>
+          <p className="hero-subtitle text-xl md:text-2xl mb-8 text-gray-200">{t('hero.subtitle')}</p>
+          <div className="hero-buttons flex flex-col sm:flex-row gap-4 justify-center">
+            <Link to="/contato" className="bg-ocean-500 hover:bg-ocean-600 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all transform hover:scale-105 inline-flex items-center justify-center gap-2">
+              {t('cta.quote')} <ArrowRight className="w-5 h-5" />
+            </Link>
+            <a href="https://wa.me/351915730843" target="_blank" rel="noopener noreferrer" className="bg-white hover:bg-gray-100 text-navy-900 px-8 py-4 rounded-lg font-semibold text-lg transition-all transform hover:scale-105 inline-flex items-center justify-center gap-2">
+              <Phone className="w-5 h-5" /> {t('hero.whatsapp')}
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* Stats Section */}
+      <section className="py-16 bg-navy-900 text-white">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            <div><div className="stat-number text-5xl font-bold text-ocean-500 mb-2" data-target="15">0</div><div className="text-gray-300">{t('stats.exp')}</div></div>
+            <div><div className="stat-number text-5xl font-bold text-ocean-500 mb-2" data-target="500">0</div><div className="text-gray-300">{t('stats.projects')}</div></div>
+            <div><div className="stat-number text-5xl font-bold text-ocean-500 mb-2" data-target="98">0</div><div className="text-gray-300">{t('stats.satisfaction')}</div></div>
+            <div><div className="stat-number text-5xl font-bold text-ocean-500 mb-2" data-target="24">0</div><div className="text-gray-300">{t('stats.support')}</div></div>
+          </div>
+        </div>
+      </section>
+
+      {/* Services Section */}
+      <section className="services-section py-20 bg-gray-50">
+        <div className="container mx-auto px-4 text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold text-navy-900 mb-4">{t('services.sectionTitle')}</h2>
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">{t('services.sectionSubtitle')}</p>
+          <div className="grid md:grid-cols-3 gap-8 mt-12">
+            {services.map((service, index) => (
+              <div key={index} className="service-card bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all transform hover:-translate-y-2 text-left">
+                <div className="text-ocean-500 mb-4">{service.icon}</div>
+                <h3 className="text-2xl font-bold text-navy-900 mb-3">{service.title}</h3>
+                <p className="text-gray-600 mb-6">{service.description}</p>
+                <Link to={service.link} className="text-ocean-500 font-semibold inline-flex items-center gap-2 hover:gap-3 transition-all">
+                  {t('services.learnMore')} <ArrowRight className="w-4 h-4" />
+                </Link>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+};
+
+export default Home;
