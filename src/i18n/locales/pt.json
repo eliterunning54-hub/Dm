@@ -90,34 +90,15 @@
     "values": {
       "title": "Nossos Valores",
       "subtitle": "O que nos guia todos os dias",
-      "quality": {
-        "title": "Qualidade Premium",
-        "desc": "Materiais certificados e técnicos experientes."
-      },
-      "team": {
-        "title": "Equipe Profissional",
-        "desc": "Profissionais qualificados e apaixonados pelo que fazem."
-      },
-      "focus": {
-        "title": "Foco no Cliente",
-        "desc": "Cada projeto é personalizado para atender suas necessidades."
-      },
-      "commitment": {
-        "title": "Compromisso",
-        "desc": "Garantia de excelência em cada detalhe."
-      }
+      "quality": { "title": "Qualidade Premium", "desc": "Materiais certificados e técnicos experientes." },
+      "team": { "title": "Equipe Profissional", "desc": "Profissionais qualificados e apaixonados pelo que fazem." },
+      "focus": { "title": "Foco no Cliente", "desc": "Cada projeto é personalizado para atender suas necessidades." },
+      "commitment": { "title": "Compromisso", "desc": "Garantia de excelência em cada detalhe." }
     },
-    "cta": {
-      "title": "Pronto para começar?",
-      "subtitle": "Entre em contato e saiba como podemos ajudar seu veleiro.",
-      "button": "Solicitar Contato"
-    }
+    "cta": { "title": "Pronto para começar?", "subtitle": "Entre em contato e saiba como podemos ajudar seu veleiro.", "button": "Solicitar Contato" }
   },
   "contact": {
-    "hero": {
-      "title": "Entre em Contacto",
-      "subtitle": "Envie-nos uma mensagem ou solicite orçamento"
-    },
+    "hero": { "title": "Entre em Contacto", "subtitle": "Envie-nos uma mensagem ou solicite orçamento" },
     "form": {
       "title": "Formulário de Contacto",
       "name": "Nome",
@@ -156,79 +137,42 @@
     }
   },
   "gallery": {
-    "hero": {
-      "title": "Galeria de Veleiros",
-      "subtitle": "Confira alguns dos nossos projetos concluídos."
-    }
+    "hero": { "title": "Galeria de Veleiros", "subtitle": "Confira alguns dos nossos projetos concluídos." },
+    "categories": {
+      "all": "Todos",
+      "refit": "Refit",
+      "rigging": "Rigging",
+      "antifouling": "Antifouling",
+      "painting": "Pintura",
+      "maintenance": "Manutenção"
+    },
+    "projects": {
+      "p1": { "title": "Veleiro XYZ Refit", "desc": "Refit completo do veleiro XYZ incluindo casco e interiores." },
+      "p2": { "title": "Beneteau Oceanis 40", "desc": "Antifouling e manutenção completa do casco." },
+      "p3": { "title": "Rigging Contessa 32", "desc": "Substituição de cabos e inspeção completa de rigging." },
+      "p4": { "title": "Pintura Bavaria 46", "desc": "Nova pintura e acabamento Gelcoat profissional." },
+      "p5": { "title": "Manutenção Jeanneau Sun Odyssey", "desc": "Manutenção preventiva e revisão geral." },
+      "p6": { "title": "Refit Dufour 45", "desc": "Refit técnico e modernização completa do veleiro." },
+      "p7": { "title": "Rigging Hanse 415", "desc": "Instalação e manutenção de rigging completo." },
+      "p8": { "title": "Pintura Oceanis 48", "desc": "Acabamento exterior e interior, Gelcoat restaurado." },
+      "p9": { "title": "Antifouling Sunbeam 42", "desc": "Tratamento de casco e aplicação de antifouling premium." }
+    },
+    "viewDetails": "Ver Detalhes"
   },
   "refit": {
-    "hero": {
-      "title": "Refit & Reparos",
-      "subtitle": "Modernizamos e restauramos o seu veleiro com excelência."
-    },
+    "title": "Refit & Reparos",
+    "subtitle": "Modernizamos e restauramos o seu veleiro com excelência.",
+    "desc": "Oferecemos serviços completos de refit: casco, rigging, pintura e interiores.",
     "services": {
-      "sectionTitle": "Serviços de Refit",
-      "sectionSubtitle": "Oferecemos soluções completas de refit e reparos.",
-      "electrical": {
-        "title": "Eletricidade",
-        "desc": "Instalação e manutenção elétrica do seu veleiro.",
-        "items": ["Instalação de novos cabos", "Substituição de quadros", "Verificação de sistemas elétricos"]
-      },
-      "hydraulic": {
-        "title": "Hidráulica",
-        "desc": "Sistemas hidráulicos e bombas.",
-        "items": ["Manutenção de bombas", "Substituição de válvulas", "Verificação de tubagens"]
-      },
-      "aesthetic": {
-        "title": "Estética",
-        "desc": "Pintura, gelcoat e acabamento estético.",
-        "items": ["Polimento do casco", "Reparos de gelcoat", "Pintura interior e exterior"]
-      },
-      "navigation": {
-        "title": "Navegação",
-        "desc": "Equipamentos de navegação e instrumentos.",
-        "items": ["Instalação de bússolas", "Atualização de GPS", "Testes de instrumentos"]
-      },
-      "propulsion": {
-        "title": "Propulsão",
-        "desc": "Motores e sistemas de propulsão.",
-        "items": ["Manutenção de motores", "Substituição de hélices", "Verificação de sistemas de propulsão"]
-      }
-    },
-    "process": {
-      "title": "Nosso Processo",
-      "subtitle": "Como realizamos o refit passo a passo",
-      "s1": { "title": "Avaliação", "desc": "Inspeção detalhada do veleiro." },
-      "s2": { "title": "Planejamento", "desc": "Definição de etapas e prioridades." },
-      "s3": { "title": "Execução", "desc": "Trabalhos técnicos em casco, rigging e interiores." },
-      "s4": { "title": "Monitoramento", "desc": "Acompanhamento contínuo do projeto." },
-      "s5": { "title": "Finalização", "desc": "Testes finais e ajustes necessários." },
-      "s6": { "title": "Entrega", "desc": "Entrega do veleiro pronto para navegar." }
-    },
-    "why": {
-      "title": "Por Que Fazer Refit?",
-      "reasons": ["Aumenta a segurança", "Melhora a performance", "Atualiza equipamentos", "Valoriza o veleiro", "Serviço profissional", "Garantia de qualidade"]
-    },
-    "examples": {
-      "title": "Exemplos de Refit",
-      "p1": { "desc": "Beneteau Oceanis 45 com atualização completa." },
-      "p2": { "desc": "Contest 50 modernizado para alta performance." },
-      "p3": { "desc": "Bavaria 46 Cruiser restaurado com cuidado." },
-      "duration": "Duração",
-      "months": "meses"
-    },
-    "cta": {
-      "title": "Pronto para transformar seu veleiro?",
-      "subtitle": "Entre em contato para um orçamento personalizado.",
-      "button": "Solicitar Orçamento"
+      "structural": "Reparos Estruturais",
+      "hull": "Tratamento de Casco",
+      "rigging": "Rigging e Instalação",
+      "painting": "Pintura e Gelcoat",
+      "maintenance": "Manutenção Preventiva"
     }
   },
   "rigging": {
-    "hero": {
-      "title": "Rigging Profissional",
-      "subtitle": "Instalação, inspeção e manutenção de todo tipo de rigging.",
-      "cta": "Solicitar Inspeção"
-    },
+    "hero": { "title": "Rigging Profissional", "subtitle": "Instalação, inspeção e manutenção de todo tipo de rigging.", "cta": "Solicitar Inspeção" },
     "services": {
       "title": "Serviços de Rigging",
       "subtitle": "Soluções completas para todos os sistemas de rigging",
