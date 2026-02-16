@@ -1,5 +1,68 @@
 {
   "nav": {
-    "home": "Home"
+    "home": "Home",
+    "services": "Serviços",
+    "refit": "Refit & Reparos",
+    "rigging": "Rigging",
+    "about": "Sobre Nós",
+    "gallery": "Galeria",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "title": "Conserto e Manutenção Profissional de Veleiros no Algarve",
+    "subtitle": "Especialistas em reparos estruturais, rigging, antifouling e refit completo.",
+    "whatsapp": "Falar no WhatsApp"
+  },
+  "cta": {
+    "quote": "Solicitar Orçamento",
+    "finalTitle": "Pronto para transformar o seu veleiro?",
+    "finalSubtitle": "Entre em contacto connosco hoje mesmo e receba um orçamento personalizado.",
+    "finalBtn": "Pedir Orçamento"
+  },
+  "stats": {
+    "exp": "Anos de Experiência",
+    "projects": "Projetos Concluídos",
+    "satisfaction": "% Satisfação",
+    "support": "Suporte 24/7"
+  },
+  "services": {
+    "sectionTitle": "Serviços Técnicos para Máxima Performance",
+    "sectionSubtitle": "Soluções completas para manter o seu veleiro em perfeitas condições.",
+    "learnMore": "Saiba Mais",
+    "hull": {
+      "title": "Tratamento de Casco & Antifouling",
+      "desc": "Proteção profissional do casco para máxima performance."
+    },
+    "rigging": {
+      "title": "Rigging Profissional",
+      "desc": "Instalação e inspeção de rigging fixo e móvel."
+    },
+    "refit": {
+      "title": "Refit & Reparos Estruturais",
+      "desc": "Modernização e renovação técnica completa."
+    }
+  },
+  "why": {
+    "title": "Por Que Escolher a Nossa Equipa?",
+    "items": [
+      "Mais de 15 anos de experiência",
+      "Materiais certificados e premium",
+      "Atendimento personalizado",
+      "Garantia de qualidade",
+      "Rapidez e eficiência",
+      "Suporte contínuo ao cliente"
+    ]
+  },
+  "testimonials": {
+    "title": "O Que Dizem os Nossos Clientes",
+    "carlos": {
+      "text": "Serviço impecável e equipa extremamente profissional."
+    },
+    "maria": {
+      "text": "O meu veleiro ficou como novo. Recomendo totalmente."
+    },
+    "joao": {
+      "text": "Trabalho de alta qualidade e excelente comunicação."
+    }
   }
 }
