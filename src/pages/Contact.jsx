@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import { Phone, Mail, MapPin, Clock, Send } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 const Contact = () => {
+  const { t } = useTranslation();
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -15,7 +17,7 @@ const Contact = () => {
     e.preventDefault();
     // Aqui você pode adicionar a integração com API de email
     console.log('Form submitted:', formData);
-    alert('Mensagem enviada com sucesso! Entraremos em contacto em breve.');
+    alert(t('contact.form.alert'));
   };
 
   const handleChange = (e) => {
@@ -31,10 +33,10 @@ const Contact = () => {
       <section className="relative py-20 bg-gradient-to-br from-navy-900 to-ocean-600 text-white">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-5xl md:text-6xl font-bold mb-6">
-            Solicite o Seu Orçamento
+            {t('contact.hero.title')}
           </h1>
           <p className="text-xl text-gray-200 max-w-2xl mx-auto">
-            Entre em contacto connosco. Responderemos em menos de 24 horas.
+            {t('contact.hero.subtitle')}
           </p>
         </div>
       </section>
@@ -47,13 +49,13 @@ const Contact = () => {
             {/* Contact Form */}
             <div className="bg-white p-8 rounded-2xl shadow-xl">
               <h2 className="text-3xl font-bold text-navy-900 mb-6">
-                Envie a Sua Mensagem
+                {t('contact.form.title')}
               </h2>
               
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
                   <label className="block text-gray-700 font-semibold mb-2">
-                    Nome Completo *
+                    {t('contact.form.name')} *
                   </label>
                   <input
                     type="text"
@@ -62,13 +64,13 @@ const Contact = () => {
                     value={formData.name}
                     onChange={handleChange}
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-ocean-500 focus:border-transparent outline-none transition-all"
-                    placeholder="O seu nome"
+                    placeholder={t('contact.form.namePlaceholder')}
                   />
                 </div>
 
                 <div>
                   <label className="block text-gray-700 font-semibold mb-2">
-                    Email *
+                    {t('contact.form.email')} *
                   </label>
                   <input
                     type="email"
@@ -83,7 +85,7 @@ const Contact = () => {
 
                 <div>
                   <label className="block text-gray-700 font-semibold mb-2">
-                    Telefone *
+                    {t('contact.form.phone')} *
                   </label>
                   <input
                     type="tel"
@@ -98,7 +100,7 @@ const Contact = () => {
 
                 <div>
                   <label className="block text-gray-700 font-semibold mb-2">
-                    Tipo de Embarcação
+                    {t('contact.form.boatType')}
                   </label>
                   <input
                     type="text"
@@ -112,7 +114,7 @@ const Contact = () => {
 
                 <div>
                   <label className="block text-gray-700 font-semibold mb-2">
-                    Serviço Desejado *
+                    {t('contact.form.service')} *
                   </label>
                   <select
                     name="service"
@@ -121,19 +123,19 @@ const Contact = () => {
                     onChange={handleChange}
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-ocean-500 focus:border-transparent outline-none transition-all"
                   >
-                    <option value="">Selecione um serviço</option>
+                    <option value="">{t('contact.form.serviceSelect')}</option>
                     <option value="antifouling">Antifouling</option>
                     <option value="rigging">Rigging</option>
                     <option value="refit">Refit Completo</option>
                     <option value="pintura">Pintura/Gelcoat</option>
                     <option value="manutencao">Manutenção Preventiva</option>
-                    <option value="outro">Outro</option>
+                    <option value="outro">{t('contact.form.serviceOther')}</option>
                   </select>
                 </div>
 
                 <div>
                   <label className="block text-gray-700 font-semibold mb-2">
-                    Mensagem *
+                    {t('contact.form.message')} *
                   </label>
                   <textarea
                     name="message"
@@ -142,7 +144,7 @@ const Contact = () => {
                     onChange={handleChange}
                     rows="5"
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-ocean-500 focus:border-transparent outline-none transition-all resize-none"
-                    placeholder="Descreva o serviço que necessita..."
+                    placeholder={t('contact.form.messagePlaceholder')}
                   />
                 </div>
 
@@ -151,7 +153,7 @@ const Contact = () => {
                   className="w-full bg-ocean-500 hover:bg-ocean-600 text-white py-4 rounded-lg font-bold text-lg flex items-center justify-center gap-2 transition-all transform hover:scale-105"
                 >
                   <Send className="w-5 h-5" />
-                  Enviar Mensagem
+                  {t('contact.form.button')}
                 </button>
               </form>
             </div>
@@ -160,7 +162,7 @@ const Contact = () => {
             <div className="space-y-8">
               <div className="bg-white p-8 rounded-2xl shadow-xl">
                 <h2 className="text-3xl font-bold text-navy-900 mb-6">
-                  Informações de Contacto
+                  {t('contact.info.title')}
                 </h2>
                 
                 <div className="space-y-6">
@@ -169,7 +171,7 @@ const Contact = () => {
                       <Phone className="w-6 h-6" />
                     </div>
                     <div>
-                      <h3 className="font-bold text-navy-900 mb-1">Telefone</h3>
+                      <h3 className="font-bold text-navy-900 mb-1">{t('contact.info.phone')}</h3>
                       <a href="tel:+351915730843" className="text-ocean-600 hover:text-ocean-700">
                         (+351) 915 730 843
                       </a>
@@ -197,7 +199,7 @@ const Contact = () => {
                       <MapPin className="w-6 h-6" />
                     </div>
                     <div>
-                      <h3 className="font-bold text-navy-900 mb-1">Localização</h3>
+                      <h3 className="font-bold text-navy-900 mb-1">{t('contact.info.location')}</h3>
                       <p className="text-gray-700">
                         Marina de Vilamoura<br />
                         8125-409 Quarteira<br />
@@ -211,11 +213,11 @@ const Contact = () => {
                       <Clock className="w-6 h-6" />
                     </div>
                     <div>
-                      <h3 className="font-bold text-navy-900 mb-1">Horário</h3>
+                      <h3 className="font-bold text-navy-900 mb-1">{t('contact.info.hours')}</h3>
                       <p className="text-gray-700">
-                        Segunda a Sexta: 08:00 - 18:00<br />
-                        Sábado: 09:00 - 13:00<br />
-                        Domingo: Fechado
+                        {t('contact.info.weekdays')}: 08:00 - 18:00<br />
+                        {t('contact.info.saturday')}: 09:00 - 13:00<br />
+                        {t('contact.info.sunday')}: {t('contact.info.closed')}
                       </p>
                     </div>
                   </div>
