@@ -62,12 +62,14 @@
   },
   "why": {
     "title": "Why Choose Our Team?",
-    "item1": "Experienced professionals",
-    "item2": "High-quality materials",
-    "item3": "Personalized service",
-    "item4": "Speed and efficiency",
-    "item5": "Continuous support",
-    "item6": "Guaranteed satisfaction"
+    "reasons": [
+      "Experienced professionals",
+      "High-quality materials",
+      "Personalized service",
+      "Speed and efficiency",
+      "Continuous support",
+      "Guaranteed satisfaction"
+    ]
   },
   "testimonials": {
     "title": "What Our Clients Say",
@@ -156,76 +158,55 @@
     }
   },
   "gallery": {
-    "title": "Sailboat Gallery",
-    "subtitle": "Check out some of our completed projects."
+    "hero": {
+      "title": "Sailboat Gallery",
+      "subtitle": "Check out some of our completed projects."
+    }
   },
   "refit": {
     "hero": {
       "title": "Refit & Repairs",
-      "subtitle": "We modernize and restore your sailboat with excellence.",
-      "cta": "Request Quote"
+      "subtitle": "We modernize and restore your sailboat with excellence."
     },
     "services": {
-      "sectionTitle": "Our Refit Services",
-      "sectionSubtitle": "We provide complete modernization and repair solutions.",
-      "electrical": {
-        "title": "Electrical Installations",
-        "desc": "Full review and upgrade of the electrical system.",
-        "items": ["Electrical panels", "Wiring and cables", "Interior and exterior lighting", "Sockets and connections"]
-      },
-      "hydraulic": {
-        "title": "Hydraulic Systems",
-        "desc": "Maintenance and inspection of hydraulic systems.",
-        "items": ["Pumps and valves", "Pipes", "Tanks and connections"]
-      },
-      "aesthetic": {
-        "title": "Aesthetics & Interiors",
-        "desc": "Enhancement of finishes and interiors.",
-        "items": ["Interior painting", "Flooring and coverings", "Furniture", "Detailing"]
-      },
-      "navigation": {
-        "title": "Navigation",
-        "desc": "Navigation systems and instruments.",
-        "items": ["GPS & chartplotter", "Compass", "Electronic instruments"]
-      },
-      "propulsion": {
-        "title": "Propulsion",
-        "desc": "Maintenance and upgrade of engine and propulsion systems.",
-        "items": ["Engine", "Transmission", "Propeller", "Fuel system"]
-      }
+      "structural": "Structural Repairs",
+      "hull": "Hull Treatment",
+      "rigging": "Rigging & Installation",
+      "painting": "Painting & Gelcoat",
+      "maintenance": "Preventive Maintenance"
     },
     "process": {
       "title": "Our Refit Process",
-      "subtitle": "Each step is carefully planned and executed.",
-      "s1": { "title": "Initial Inspection", "desc": "We analyze every detail of your sailboat." },
-      "s2": { "title": "Planning", "desc": "Define the action plan and schedule." },
-      "s3": { "title": "Disassembly & Preparation", "desc": "Prepare areas and remove equipment." },
-      "s4": { "title": "Structural Repairs", "desc": "Hull, deck, and structural repairs." },
-      "s5": { "title": "Technical Modernization", "desc": "System and equipment upgrades." },
-      "s6": { "title": "Final Delivery", "desc": "Sailboat ready for safe navigation." }
+      "subtitle": "Each step is designed for maximum quality",
+      "s1": { "title": "Initial Inspection", "desc": "Complete evaluation of your sailboat." },
+      "s2": { "title": "Planning", "desc": "Detailed definition of necessary interventions." },
+      "s3": { "title": "Execution", "desc": "Work carried out by experienced professionals." },
+      "s4": { "title": "Quality Control", "desc": "Verification of each completed step." },
+      "s5": { "title": "Delivery", "desc": "Sailboat delivered ready to sail." },
+      "s6": { "title": "Feedback", "desc": "Client review and final adjustments." }
     },
     "why": {
-      "title": "Why Refit?",
+      "title": "Why Choose Refit?",
       "reasons": [
-        "Performance improvement",
-        "System upgrades",
-        "Safety enhancement",
-        "Value increase",
-        "Structure preservation",
-        "Owner satisfaction"
+        "Personalized service",
+        "Specialized team",
+        "High-quality materials",
+        "Speed and efficiency",
+        "Guaranteed safety",
+        "Client satisfaction"
       ]
     },
     "examples": {
-      "title": "Refit Examples",
-      "p1": { "desc": "Beneteau Oceanis 45 modernized and ready to sail." },
-      "p2": { "desc": "Contest 50 updated systems and renovated interiors." },
-      "p3": { "desc": "Bavaria 46 Cruiser ready for new adventures." },
+      "title": "Project Examples",
       "duration": "Duration",
-      "months": "months"
+      "months": "months",
+      "p1": { "desc": "Complete replacement of electrical and hydraulic systems." },
+      "p2": { "desc": "Modernization of propulsion and navigation systems." },
+      "p3": { "desc": "Complete hull and interior renovation." }
     },
     "cta": {
       "title": "Ready to modernize your sailboat?",
-      "subtitle": "Contact us and receive a personalized quote.",
+      "subtitle": "Request a personalized quote.",
       "button": "Request Quote"
     }
   },
