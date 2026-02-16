@@ -90,12 +90,28 @@
     "values": {
       "title": "Our Values",
       "subtitle": "What guides us every day",
-      "quality": { "title": "Premium Quality", "desc": "Certified materials and experienced technicians." },
-      "team": { "title": "Professional Team", "desc": "Qualified professionals passionate about what they do." },
-      "focus": { "title": "Customer Focus", "desc": "Each project is tailored to meet your needs." },
-      "commitment": { "title": "Commitment", "desc": "Excellence guaranteed in every detail." }
+      "quality": {
+        "title": "Premium Quality",
+        "desc": "Certified materials and experienced technicians."
+      },
+      "team": {
+        "title": "Professional Team",
+        "desc": "Qualified professionals passionate about what they do."
+      },
+      "focus": {
+        "title": "Customer Focus",
+        "desc": "Each project is tailored to meet your needs."
+      },
+      "commitment": {
+        "title": "Commitment",
+        "desc": "Excellence guaranteed in every detail."
+      }
     },
-    "cta": { "title": "Ready to get started?", "subtitle": "Contact us to learn how we can help your sailboat.", "button": "Request Contact" }
+    "cta": {
+      "title": "Ready to get started?",
+      "subtitle": "Contact us to learn how we can help your sailboat.",
+      "button": "Request Contact"
+    }
   },
   "contact": {
     "hero": {
@@ -144,38 +160,16 @@
     "subtitle": "Check out some of our completed projects."
   },
   "refit": {
-    "hero": {
-      "title": "Refit & Repairs",
-      "subtitle": "We modernize and restore your sailboat with excellence.",
-      "cta": "Request Quote"
-    },
+    "title": "Refit & Repairs",
+    "subtitle": "We modernize and restore your sailboat with excellence.",
+    "desc": "We provide complete refit services: hull, rigging, painting, and interiors.",
     "services": {
-      "electrical": { "title": "Electrical System", "desc": "Complete electrical installation and repairs.", "items": ["Cables and wiring", "Electrical panels", "Batteries", "Lighting"] },
-      "hydraulic": { "title": "Hydraulic System", "desc": "Hydraulic maintenance and installation.", "items": ["Hydraulic pumps", "Hoses", "Valves", "Pressure services"] },
-      "aesthetic": { "title": "Aesthetics & Painting", "desc": "Gelcoat and finishing.", "items": ["Sanding and polishing", "Hull painting", "Gelcoat repair", "Cosmetic details"] },
-      "navigation": { "title": "Navigation", "desc": "Updating instruments and electronics.", "items": ["GPS and plotters", "Navigation instruments", "Radar", "Autopilot"] },
-      "propulsion": { "title": "Propulsion", "desc": "Engine and propulsion maintenance.", "items": ["Main engine", "Propellers", "Transmission", "Fuel tanks"] }
-    },
-    "process": {
-      "title": "Our Process",
-      "subtitle": "Step by step to modernize your sailboat",
-      "s1": { "title": "Inspection", "desc": "We analyze every detail of your sailboat" },
-      "s2": { "title": "Planning", "desc": "We plan all necessary repairs" },
-      "s3": { "title": "Execution", "desc": "We carry out the refit according to plan" },
-      "s4": { "title": "Quality Control", "desc": "Detailed verification at every stage" },
-      "s5": { "title": "Finishing", "desc": "Final tests and adjustments" },
-      "s6": { "title": "Delivery", "desc": "Sailboat delivered ready to sail" }
-    },
-    "why": { "reasons": ["Experienced professionals", "High-quality materials", "Personalized service", "Speed and efficiency", "Continuous support", "Guaranteed satisfaction"] },
-    "examples": {
-      "title": "Refit Examples",
-      "p1": { "desc": "Beneteau Oceanis 45 - complete hull and interior refit" },
-      "p2": { "desc": "Contest 50 - technical and aesthetic modernization" },
-      "p3": { "desc": "Bavaria 46 Cruiser - preventive maintenance and painting" },
-      "duration": "Duration",
-      "months": "months"
-    },
-    "cta": { "title": "Ready to upgrade your sailboat?", "subtitle": "Contact us and request a personalized quote", "button": "Request Quote" }
+      "structural": "Structural Repairs",
+      "hull": "Hull Treatment",
+      "rigging": "Rigging & Installation",
+      "painting": "Painting & Gelcoat",
+      "maintenance": "Preventive Maintenance"
+    }
   },
   "rigging": {
     "hero": {
@@ -186,10 +180,26 @@
     "services": {
       "title": "Rigging Services",
       "subtitle": "Complete solutions for all rigging systems",
-      "standing": { "title": "Standing Rigging", "desc": "Installation and maintenance of shrouds and stays", "items": ["Full mast inspection", "Replacement of stainless steel wires", "Installation of new stays", "Replacement of Sta-Lok/Norseman terminals", "Rig tensioning and tuning", "Checking bolts and fasteners"] },
-      "running": { "title": "Running Rigging", "desc": "Sheets, halyards, and control lines", "items": ["Replacement of halyards", "Installation of new sheets", "High-performance lines (Dyneema)", "Low-friction systems", "Quality blocks and pulleys", "Specialized fairleads and terminals"] },
-      "equip": { "title": "Equipment Installation", "desc": "Winches, blocks, and fittings", "items": ["Installation of Harken/Lewmar winches", "Assembly of blocks and pulleys", "Furlers and reefers", "Boom vangs and cunninghams", "Travelers and sheet cars", "Hydraulic systems"] },
-      "inspection": { "title": "Inspection & Maintenance", "desc": "Prevention and safety", "items": ["Full annual inspection", "Detailed photo reports", "Load testing of terminals", "Corrosion check", "Equipment lubrication", "Preventive maintenance plan"] }
+      "standing": {
+        "title": "Standing Rigging",
+        "desc": "Installation and maintenance of shrouds and stays",
+        "items": ["Full mast inspection", "Replacement of stainless steel wires", "Installation of new stays", "Replacement of Sta-Lok/Norseman terminals", "Rig tensioning and tuning", "Checking bolts and fasteners"]
+      },
+      "running": {
+        "title": "Running Rigging",
+        "desc": "Sheets, halyards, and control lines",
+        "items": ["Replacement of halyards", "Installation of new sheets", "High-performance lines (Dyneema)", "Low-friction systems", "Quality blocks and pulleys", "Specialized fairleads and terminals"]
+      },
+      "equip": {
+        "title": "Equipment Installation",
+        "desc": "Winches, blocks, and fittings",
+        "items": ["Installation of Harken/Lewmar winches", "Assembly of blocks and pulleys", "Furlers and reefers", "Boom vangs and cunninghams", "Travelers and sheet cars", "Hydraulic systems"]
+      },
+      "inspection": {
+        "title": "Inspection & Maintenance",
+        "desc": "Prevention and safety",
+        "items": ["Full annual inspection", "Detailed photo reports", "Load testing of terminals", "Corrosion check", "Equipment lubrication", "Preventive maintenance plan"]
+      }
     },
     "materials": {
       "title": "Premium Materials",
