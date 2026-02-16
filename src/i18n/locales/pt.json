@@ -62,12 +62,14 @@
   },
   "why": {
     "title": "Por Que Escolher a Nossa Equipa?",
-    "item1": "Profissionais experientes",
-    "item2": "Materiais de alta qualidade",
-    "item3": "Serviço personalizado",
-    "item4": "Rapidez e eficiência",
-    "item5": "Suporte contínuo",
-    "item6": "Satisfação garantida"
+    "items": [
+      "Profissionais experientes",
+      "Materiais de alta qualidade",
+      "Serviço personalizado",
+      "Rapidez e eficiência",
+      "Suporte contínuo",
+      "Satisfação garantida"
+    ]
   },
   "testimonials": {
     "title": "O Que Dizem os Nossos Clientes",
@@ -90,17 +92,36 @@
     "values": {
       "title": "Nossos Valores",
       "subtitle": "O que nos guia todos os dias",
-      "quality": { "title": "Qualidade Premium", "desc": "Materiais certificados e técnicos experientes." },
-      "team": { "title": "Equipe Profissional", "desc": "Profissionais qualificados e apaixonados pelo que fazem." },
-      "focus": { "title": "Foco no Cliente", "desc": "Cada projeto é personalizado para atender suas necessidades." },
-      "commitment": { "title": "Compromisso", "desc": "Garantia de excelência em cada detalhe." }
+      "quality": {
+        "title": "Qualidade Premium",
+        "desc": "Materiais certificados e técnicos experientes."
+      },
+      "team": {
+        "title": "Equipe Profissional",
+        "desc": "Profissionais qualificados e apaixonados pelo que fazem."
+      },
+      "focus": {
+        "title": "Foco no Cliente",
+        "desc": "Cada projeto é personalizado para atender suas necessidades."
+      },
+      "commitment": {
+        "title": "Compromisso",
+        "desc": "Garantia de excelência em cada detalhe."
+      }
     },
-    "cta": { "title": "Pronto para começar?", "subtitle": "Entre em contato e saiba como podemos ajudar seu veleiro.", "button": "Solicitar Contato" }
+    "cta": {
+      "title": "Pronto para começar?",
+      "subtitle": "Entre em contato e saiba como podemos ajudar seu veleiro.",
+      "button": "Solicitar Contato"
+    }
   },
   "contact": {
-    "hero": { "title": "Entre em Contacto", "subtitle": "Envie-nos uma mensagem ou solicite orçamento" },
+    "hero": {
+      "title": "Entre em Contato",
+      "subtitle": "Envie-nos uma mensagem ou solicite orçamento"
+    },
     "form": {
-      "title": "Formulário de Contacto",
+      "title": "Formulário de Contato",
       "name": "Nome",
       "namePlaceholder": "Seu nome completo",
       "email": "Email",
@@ -125,7 +146,7 @@
       "alert": "Formulário enviado com sucesso!"
     },
     "info": {
-      "title": "Informações de Contacto",
+      "title": "Informações de Contato",
       "phone": "Telefone",
       "email": "Email",
       "location": "Localização",
@@ -137,7 +158,8 @@
     }
   },
   "gallery": {
-    "hero": { "title": "Galeria de Veleiros", "subtitle": "Confira alguns dos nossos projetos concluídos." },
+    "title": "Galeria de Veleiros",
+    "subtitle": "Confira alguns dos nossos projetos concluídos.",
     "categories": {
       "all": "Todos",
       "refit": "Refit",
@@ -147,23 +169,28 @@
       "maintenance": "Manutenção"
     },
     "projects": {
-      "p1": { "title": "Veleiro XYZ Refit", "desc": "Refit completo do veleiro XYZ incluindo casco e interiores." },
-      "p2": { "title": "Beneteau Oceanis 40", "desc": "Antifouling e manutenção completa do casco." },
-      "p3": { "title": "Rigging Contessa 32", "desc": "Substituição de cabos e inspeção completa de rigging." },
-      "p4": { "title": "Pintura Bavaria 46", "desc": "Nova pintura e acabamento Gelcoat profissional." },
-      "p5": { "title": "Manutenção Jeanneau Sun Odyssey", "desc": "Manutenção preventiva e revisão geral." },
-      "p6": { "title": "Refit Dufour 45", "desc": "Refit técnico e modernização completa do veleiro." },
-      "p7": { "title": "Rigging Hanse 415", "desc": "Instalação e manutenção de rigging completo." },
-      "p8": { "title": "Pintura Oceanis 48", "desc": "Acabamento exterior e interior, Gelcoat restaurado." },
-      "p9": { "title": "Antifouling Sunbeam 42", "desc": "Tratamento de casco e aplicação de antifouling premium." }
+      "p1": { "title": "Beneteau Oceanis 45", "desc": "Refit completo do casco e interiores" },
+      "p2": { "title": "Beneteau Oceanis 38", "desc": "Serviço de antifouling e manutenção" },
+      "p3": { "title": "Rigging Bavaria 46", "desc": "Substituição completa de rigging" },
+      "p4": { "title": "Pintura Lagoon 40", "desc": "Pintura e gelcoat profissional" },
+      "p5": { "title": "Manutenção Jeanneau 42", "desc": "Manutenção preventiva completa" },
+      "p6": { "title": "Beneteau Oceanis 50", "desc": "Refit parcial do casco e interiores" },
+      "p7": { "title": "Rigging Hanse 445", "desc": "Inspeção e ajuste de rigging" },
+      "p8": { "title": "Pintura Bavaria 46", "desc": "Pintura e acabamento gelcoat" },
+      "p9": { "title": "Antifouling Dufour 412", "desc": "Aplicação de antifouling profissional" }
     },
     "viewDetails": "Ver Detalhes"
   },
   "refit": {
-    "title": "Refit & Reparos",
-    "subtitle": "Modernizamos e restauramos o seu veleiro com excelência.",
-    "desc": "Oferecemos serviços completos de refit: casco, rigging, pintura e interiores.",
+    "hero": {
+      "title": "Refit & Reparos",
+      "subtitle": "Modernizamos e restauramos o seu veleiro com excelência.",
+      "desc": "Oferecemos serviços completos de refit: casco, rigging, pintura e interiores.",
+      "cta": "Solicitar Orçamento"
+    },
     "services": {
+      "title": "Serviços de Refit",
+      "subtitle": "Soluções completas para o seu veleiro",
       "structural": "Reparos Estruturais",
       "hull": "Tratamento de Casco",
       "rigging": "Rigging e Instalação",
@@ -172,10 +199,12 @@
     }
   },
   "rigging": {
-    "hero": { "title": "Rigging Profissional", "subtitle": "Instalação, inspeção e manutenção de todo tipo de rigging.", "cta": "Solicitar Inspeção" },
+    "hero": {
+      "title": "Rigging Profissional",
+      "subtitle": "Instalação, inspeção e manutenção de todo tipo de rigging.",
+      "cta": "Solicitar Inspeção"
+    },
     "services": {
-      "title": "Serviços de Rigging",
-      "subtitle": "Soluções completas para todos os sistemas de rigging",
       "standing": {
         "title": "Rigging Fixo",
         "desc": "Instalação e manutenção de estais e brandais",
@@ -196,28 +225,6 @@
         "desc": "Prevenção e segurança",
         "items": ["Inspeção anual completa", "Relatórios fotográficos detalhados", "Teste de carga em terminais", "Verificação de corrosão", "Lubrificação de equipamentos", "Plano de manutenção preventiva"]
       }
-    },
-    "materials": {
-      "title": "Materiais Premium",
-      "subtitle": "Trabalhamos apenas com as melhores marcas do mercado",
-      "m1": { "name": "Cabo de Aço Inox 316", "desc": "Alta resistência à corrosão marítima" },
-      "m2": { "name": "Dyneema / Spectra", "desc": "Cabos de alta performance e baixo peso" },
-      "m3": { "name": "Terminais Sta-Lok", "desc": "Terminais mecânicos de fácil instalação" },
-      "m4": { "name": "Terminais Norseman", "desc": "Máxima resistência e durabilidade" },
-      "m5": { "name": "Harken / Lewmar", "desc": "Blocos e equipamentos premium" },
-      "m6": { "name": "Spinlock", "desc": "Stoppers e clutches de qualidade" }
-    },
-    "warnings": {
-      "title": "Sinais de Alerta",
-      "subtitle": "Quando é hora de inspecionar ou substituir o rigging?",
-      "items": ["Cabos de aço com fios partidos", "Corrosão visível nos terminais", "Mastro com movimento excessivo", "Terminais soltos ou com folga", "Roldanas emperradas ou ruidosas", "Desgaste irregular nos cabos", "Mais de 10 anos sem substituição", "Escotas com desgaste visível"],
-      "alert": "⚠️ Se identificar qualquer um destes sinais, contacte-nos imediatamente para uma inspeção profissional."
-    },
-    "advantages": {
-      "adv1": { "title": "Segurança Máxima", "desc": "Rigging bem mantido é fundamental para a segurança da tripulação" },
-      "adv2": { "title": "Performance", "desc": "Melhor controlo das velas e performance de navegação" },
-      "adv3": { "title": "Durabilidade", "desc": "Materiais premium garantem anos de uso sem preocupações" }
-    },
-    "cta": { "title": "Pronto para garantir a segurança do seu veleiro?", "subtitle": "Solicite uma inspeção completa do rigging ou um orçamento sem compromisso", "button": "Contactar Agora" }
+    }
   }
 }
