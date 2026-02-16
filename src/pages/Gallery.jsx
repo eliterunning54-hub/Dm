@@ -1,81 +1,91 @@
 import React, { useState } from 'react';
 import { X, ZoomIn } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 const Gallery = () => {
+  const { t } = useTranslation();
   const [selectedImage, setSelectedImage] = useState(null);
 
   const projects = [
     {
       id: 1,
-      title: 'Refit Completo - Beneteau Oceanis 45',
-      category: 'Refit',
+      title: t('gallery.projects.p1.title'),
+      category: t('gallery.categories.refit'),
       image: 'https://images.unsplash.com/photo-1567899378494-47b22a2ae96a?w=800',
-      description: 'Modernização completa incluindo sistemas elétricos, pintura e interiores'
+      description: t('gallery.projects.p1.desc')
     },
     {
       id: 2,
-      title: 'Antifouling - Jeanneau Sun Odyssey',
-      category: 'Antifouling',
+      title: t('gallery.projects.p2.title'),
+      category: t('gallery.categories.antifouling'),
       image: 'https://images.unsplash.com/photo-1572542920843-5dera6f6f4b7?w=800',
-      description: 'Aplicação de antifouling premium com preparação completa do casco'
+      description: t('gallery.projects.p2.desc')
     },
     {
       id: 3,
-      title: 'Rigging Completo - Bavaria 46',
-      category: 'Rigging',
+      title: t('gallery.projects.p3.title'),
+      category: t('gallery.categories.rigging'),
       image: 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800',
-      description: 'Substituição total de cabos de aço e instalação de novos estais'
+      description: t('gallery.projects.p3.desc')
     },
     {
       id: 4,
-      title: 'Pintura e Gelcoat - Dufour 412',
-      category: 'Pintura',
+      title: t('gallery.projects.p4.title'),
+      category: t('gallery.categories.painting'),
       image: 'https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=800',
-      description: 'Restauração completa do gelcoat com acabamento espelhado'
+      description: t('gallery.projects.p4.desc')
     },
     {
       id: 5,
-      title: 'Manutenção Preventiva - Hanse 385',
-      category: 'Manutenção',
+      title: t('gallery.projects.p5.title'),
+      category: t('gallery.categories.maintenance'),
       image: 'https://images.unsplash.com/photo-1570993492903-ba4c3088f100?w=800',
-      description: 'Serviço completo de manutenção anual'
+      description: t('gallery.projects.p5.desc')
     },
     {
       id: 6,
-      title: 'Refit Estrutural - Contest 50',
-      category: 'Refit',
+      title: t('gallery.projects.p6.title'),
+      category: t('gallery.categories.refit'),
       image: 'https://images.unsplash.com/photo-1566870040567-56816b77da5b?w=800',
-      description: 'Reparos estruturais e modernização de sistemas'
+      description: t('gallery.projects.p6.desc')
     },
     {
       id: 7,
-      title: 'Instalação Rigging - Hallberg-Rassy 40',
-      category: 'Rigging',
+      title: t('gallery.projects.p7.title'),
+      category: t('gallery.categories.rigging'),
       image: 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800',
-      description: 'Instalação completa de rigging com materiais Dyneema'
+      description: t('gallery.projects.p7.desc')
     },
     {
       id: 8,
-      title: 'Polimento e Proteção - Moody 45',
-      category: 'Pintura',
+      title: t('gallery.projects.p8.title'),
+      category: t('gallery.categories.painting'),
       image: 'https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=800',
-      description: 'Polimento profissional e aplicação de proteção UV'
+      description: t('gallery.projects.p8.desc')
     },
     {
       id: 9,
-      title: 'Antifouling Racing - X-Yachts XP 44',
-      category: 'Antifouling',
+      title: t('gallery.projects.p9.title'),
+      category: t('gallery.categories.antifouling'),
       image: 'https://images.unsplash.com/photo-1572542920843-5dera6f6f4b7?w=800',
-      description: 'Antifouling de alta performance para regatas'
+      description: t('gallery.projects.p9.desc')
     }
   ];
 
-  const categories = ['Todos', 'Refit', 'Rigging', 'Antifouling', 'Pintura', 'Manutenção'];
-  const [activeCategory, setActiveCategory] = useState('Todos');
+  const categories = [
+    { id: 'Todos', label: t('gallery.categories.all') },
+    { id: 'Refit', label: t('gallery.categories.refit') },
+    { id: 'Rigging', label: t('gallery.categories.rigging') },
+    { id: 'Antifouling', label: t('gallery.categories.antifouling') },
+    { id: 'Pintura', label: t('gallery.categories.painting') },
+    { id: 'Manutenção', label: t('gallery.categories.maintenance') }
+  ];
 
-  const filteredProjects = activeCategory === 'Todos' 
+  const [activeCategoryId, setActiveCategoryId] = useState('Todos');
+
+  const filteredProjects = activeCategoryId === 'Todos' 
     ? projects 
-    : projects.filter(p => p.category === activeCategory);
+    : projects.filter(p => p.category === t(`gallery.categories.${activeCategoryId === 'Pintura' ? 'painting' : activeCategoryId === 'Manutenção' ? 'maintenance' : activeCategoryId.toLowerCase()}`));
 
   return (
     <div className="gallery-page">
@@ -83,10 +93,10 @@ const Gallery = () => {
       <section className="relative py-20 bg-gradient-to-br from-navy-900 to-ocean-600 text-white">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-5xl md:text-6xl font-bold mb-6">
-            Galeria de Projetos
+            {t('gallery.hero.title')}
           </h1>
           <p className="text-xl text-gray-200 max-w-2xl mx-auto">
-            Conheça alguns dos nossos trabalhos realizados com excelência
+            {t('gallery.hero.subtitle')}
           </p>
         </div>
       </section>
@@ -95,17 +105,17 @@ const Gallery = () => {
       <section className="py-12 bg-white border-b">
         <div className="container mx-auto px-4">
           <div className="flex flex-wrap justify-center gap-4">
-            {categories.map((category) => (
+            {categories.map((cat) => (
               <button
-                key={category}
-                onClick={() => setActiveCategory(category)}
+                key={cat.id}
+                onClick={() => setActiveCategoryId(cat.id)}
                 className={`px-6 py-3 rounded-lg font-semibold transition-all ${
-                  activeCategory === category
+                  activeCategoryId === cat.id
                     ? 'bg-ocean-500 text-white shadow-lg'
                     : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
                 }`}
               >
-                {category}
+                {cat.label}
               </button>
             ))}
           </div>
@@ -132,7 +142,7 @@ const Gallery = () => {
                     <div className="p-6 text-white">
                       <div className="flex items-center gap-2 mb-2">
                         <ZoomIn className="w-5 h-5" />
-                        <span className="text-sm font-semibold">Ver Detalhes</span>
+                        <span className="text-sm font-semibold">{t('gallery.viewDetails')}</span>
                       </div>
                     </div>
                   </div>
