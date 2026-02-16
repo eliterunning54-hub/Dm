@@ -1,8 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Phone, Mail, MapPin, Facebook, Instagram } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 const Footer = () => {
+  const { t } = useTranslation();
   const currentYear = new Date().getFullYear();
 
   return (
@@ -21,7 +23,7 @@ const Footer = () => {
               </div>
             </div>
             <p className="text-gray-400 mb-4">
-              Especialistas em manutenção e conserto de veleiros no Algarve desde 2010.
+              {t('footer.description')}
             </p>
             <div className="flex gap-4">
               <a 
@@ -45,36 +47,31 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div>
-            <h4 className="text-lg font-bold mb-4">Links Rápidos</h4>
+            <h4 className="text-lg font-bold mb-4">{t('footer.quickLinks')}</h4>
             <ul className="space-y-2">
               <li>
                 <Link to="/" className="text-gray-400 hover:text-ocean-500 transition-colors">
-                  Home
+                  {t('nav.home')}
                 </Link>
               </li>
               <li>
                 <Link to="/servicos" className="text-gray-400 hover:text-ocean-500 transition-colors">
-                  Serviços
+                  {t('nav.services')}
                 </Link>
               </li>
               <li>
                 <Link to="/sobre" className="text-gray-400 hover:text-ocean-500 transition-colors">
-                  Sobre Nós
+                  {t('nav.about')}
                 </Link>
               </li>
               <li>
                 <Link to="/galeria" className="text-gray-400 hover:text-ocean-500 transition-colors">
-                  Galeria
-                </Link>
-              </li>
-              <li>
-                <Link to="/faq" className="text-gray-400 hover:text-ocean-500 transition-colors">
-                  FAQ
+                  {t('nav.gallery')}
                 </Link>
               </li>
               <li>
                 <Link to="/contato" className="text-gray-400 hover:text-ocean-500 transition-colors">
-                  Contato
+                  {t('nav.contact')}
                 </Link>
               </li>
             </ul>
@@ -82,7 +79,7 @@ const Footer = () => {
 
           {/* Services */}
           <div>
-            <h4 className="text-lg font-bold mb-4">Serviços</h4>
+            <h4 className="text-lg font-bold mb-4">{t('footer.servicesTitle')}</h4>
             <ul className="space-y-2">
               <li>
                 <Link to="/servicos" className="text-gray-400 hover:text-ocean-500 transition-colors">
@@ -96,17 +93,17 @@ const Footer = () => {
               </li>
               <li>
                 <Link to="/refit" className="text-gray-400 hover:text-ocean-500 transition-colors">
-                  Refit Completo
+                  {t('footer.refit')}
                 </Link>
               </li>
               <li>
                 <Link to="/servicos" className="text-gray-400 hover:text-ocean-500 transition-colors">
-                  Pintura e Gelcoat
+                  {t('footer.painting')}
                 </Link>
               </li>
               <li>
                 <Link to="/servicos" className="text-gray-400 hover:text-ocean-500 transition-colors">
-                  Manutenção Preventiva
+                  {t('footer.maintenance')}
                 </Link>
               </li>
             </ul>
@@ -114,7 +111,7 @@ const Footer = () => {
 
           {/* Contact Info */}
           <div>
-            <h4 className="text-lg font-bold mb-4">Contacto</h4>
+            <h4 className="text-lg font-bold mb-4">{t('footer.contactTitle')}</h4>
             <div className="space-y-3">
               <div className="flex items-start gap-3">
                 <Phone className="w-5 h-5 text-ocean-500 flex-shrink-0 mt-1" />
@@ -149,7 +146,7 @@ const Footer = () => {
 
         {/* Bottom Bar */}
         <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-          <p>&copy; {currentYear} DM Yacht Care. Todos os direitos reservados.</p>
+          <p>&copy; {currentYear} DM Yacht Care. {t('footer.rights')}</p>
         </div>
       </div>
     </footer>
