@@ -55,14 +55,18 @@
   },
   "testimonials": {
     "title": "O Que Dizem os Nossos Clientes",
-    "carlos": {
-      "text": "Serviço impecável e equipa extremamente profissional."
-    },
-    "maria": {
-      "text": "O meu veleiro ficou como novo. Recomendo totalmente."
-    },
-    "joao": {
-      "text": "Trabalho de alta qualidade e excelente comunicação."
-    }
+    "carlos": { "text": "Serviço impecável e equipa extremamente profissional." },
+    "maria": { "text": "O meu veleiro ficou como novo. Recomendo totalmente." },
+    "joao": { "text": "Trabalho de alta qualidade e excelente comunicação." }
+  },
+  "footer": {
+    "description": "Especialistas em manutenção e conserto de veleiros no Algarve desde 2010.",
+    "rights": "Todos os direitos reservados.",
+    "quickLinks": "Links Rápidos",
+    "servicesTitle": "Serviços",
+    "refit": "Refit & Reparos",
+    "painting": "Pintura Naval",
+    "maintenance": "Manutenção",
+    "contactTitle": "Contacto"
   }
 }
