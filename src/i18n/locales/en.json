@@ -90,34 +90,15 @@
     "values": {
       "title": "Our Values",
       "subtitle": "What guides us every day",
-      "quality": {
-        "title": "Premium Quality",
-        "desc": "Certified materials and experienced technicians."
-      },
-      "team": {
-        "title": "Professional Team",
-        "desc": "Qualified professionals passionate about what they do."
-      },
-      "focus": {
-        "title": "Customer Focus",
-        "desc": "Each project is tailored to meet your needs."
-      },
-      "commitment": {
-        "title": "Commitment",
-        "desc": "Excellence guaranteed in every detail."
-      }
+      "quality": { "title": "Premium Quality", "desc": "Certified materials and experienced technicians." },
+      "team": { "title": "Professional Team", "desc": "Qualified professionals passionate about what they do." },
+      "focus": { "title": "Customer Focus", "desc": "Each project is tailored to meet your needs." },
+      "commitment": { "title": "Commitment", "desc": "Excellence guaranteed in every detail." }
     },
-    "cta": {
-      "title": "Ready to get started?",
-      "subtitle": "Contact us to learn how we can help your sailboat.",
-      "button": "Request Contact"
-    }
+    "cta": { "title": "Ready to get started?", "subtitle": "Contact us to learn how we can help your sailboat.", "button": "Request Contact" }
   },
   "contact": {
-    "hero": {
-      "title": "Get in Touch",
-      "subtitle": "Send us a message or request a quote"
-    },
+    "hero": { "title": "Get in Touch", "subtitle": "Send us a message or request a quote" },
     "form": {
       "title": "Contact Form",
       "name": "Name",
@@ -156,79 +137,42 @@
     }
   },
   "gallery": {
-    "hero": {
-      "title": "Sailboat Gallery",
-      "subtitle": "Check out some of our completed projects."
-    }
+    "hero": { "title": "Sailboat Gallery", "subtitle": "Check out some of our completed projects." },
+    "categories": {
+      "all": "All",
+      "refit": "Refit",
+      "rigging": "Rigging",
+      "antifouling": "Antifouling",
+      "painting": "Painting",
+      "maintenance": "Maintenance"
+    },
+    "projects": {
+      "p1": { "title": "XYZ Sailboat Refit", "desc": "Full refit including hull and interiors." },
+      "p2": { "title": "Beneteau Oceanis 40", "desc": "Antifouling and full hull maintenance." },
+      "p3": { "title": "Contessa 32 Rigging", "desc": "Cable replacement and full rigging inspection." },
+      "p4": { "title": "Bavaria 46 Painting", "desc": "New painting and professional Gelcoat finishing." },
+      "p5": { "title": "Jeanneau Sun Odyssey Maintenance", "desc": "Preventive maintenance and full review." },
+      "p6": { "title": "Dufour 45 Refit", "desc": "Technical refit and full modernization." },
+      "p7": { "title": "Hanse 415 Rigging", "desc": "Complete rigging installation and maintenance." },
+      "p8": { "title": "Oceanis 48 Painting", "desc": "Exterior and interior finishing, Gelcoat restored." },
+      "p9": { "title": "Sunbeam 42 Antifouling", "desc": "Hull treatment and premium antifouling application." }
+    },
+    "viewDetails": "View Details"
   },
   "refit": {
-    "hero": {
-      "title": "Refit & Repairs",
-      "subtitle": "We modernize and restore your sailboat with excellence."
-    },
+    "title": "Refit & Repairs",
+    "subtitle": "We modernize and restore your sailboat with excellence.",
+    "desc": "We provide complete refit services: hull, rigging, painting, and interiors.",
     "services": {
-      "sectionTitle": "Refit Services",
-      "sectionSubtitle": "We provide complete refit and repair solutions.",
-      "electrical": {
-        "title": "Electrical",
-        "desc": "Electrical installation and maintenance on your sailboat.",
-        "items": ["Installation of new cables", "Replacement of panels", "Check electrical systems"]
-      },
-      "hydraulic": {
-        "title": "Hydraulics",
-        "desc": "Hydraulic systems and pumps.",
-        "items": ["Pump maintenance", "Valve replacement", "Pipe inspections"]
-      },
-      "aesthetic": {
-        "title": "Aesthetic",
-        "desc": "Painting, gelcoat and finishing work.",
-        "items": ["Hull polishing", "Gelcoat repairs", "Interior and exterior painting"]
-      },
-      "navigation": {
-        "title": "Navigation",
-        "desc": "Navigation equipment and instruments.",
-        "items": ["Compass installation", "GPS update", "Instrument testing"]
-      },
-      "propulsion": {
-        "title": "Propulsion",
-        "desc": "Engines and propulsion systems.",
-        "items": ["Engine maintenance", "Propeller replacement", "Propulsion system check"]
-      }
-    },
-    "process": {
-      "title": "Our Process",
-      "subtitle": "How we execute refit step by step",
-      "s1": { "title": "Evaluation", "desc": "Detailed inspection of the sailboat." },
-      "s2": { "title": "Planning", "desc": "Define steps and priorities." },
-      "s3": { "title": "Execution", "desc": "Technical work on hull, rigging, and interiors." },
-      "s4": { "title": "Monitoring", "desc": "Continuous tracking of the project." },
-      "s5": { "title": "Finalization", "desc": "Final tests and adjustments." },
-      "s6": { "title": "Delivery", "desc": "Sailboat ready for sailing." }
-    },
-    "why": {
-      "title": "Why Do a Refit?",
-      "reasons": ["Increase safety", "Improve performance", "Update equipment", "Enhance value", "Professional service", "Quality guarantee"]
-    },
-    "examples": {
-      "title": "Refit Examples",
-      "p1": { "desc": "Beneteau Oceanis 45 with full upgrade." },
-      "p2": { "desc": "Contest 50 modernized for high performance." },
-      "p3": { "desc": "Bavaria 46 Cruiser carefully restored." },
-      "duration": "Duration",
-      "months": "months"
-    },
-    "cta": {
-      "title": "Ready to transform your sailboat?",
-      "subtitle": "Contact us for a personalized quote.",
-      "button": "Request Quote"
+      "structural": "Structural Repairs",
+      "hull": "Hull Treatment",
+      "rigging": "Rigging & Installation",
+      "painting": "Painting & Gelcoat",
+      "maintenance": "Preventive Maintenance"
     }
   },
   "rigging": {
-    "hero": {
-      "title": "Professional Rigging",
-      "subtitle": "Installation, inspection, and maintenance of all types of rigging.",
-      "cta": "Request Inspection"
-    },
+    "hero": { "title": "Professional Rigging", "subtitle": "Installation, inspection, and maintenance of all types of rigging.", "cta": "Request Inspection" },
     "services": {
       "title": "Rigging Services",
       "subtitle": "Complete solutions for all rigging systems",
