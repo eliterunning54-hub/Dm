@@ -62,12 +62,14 @@
   },
   "why": {
     "title": "Por Que Escolher a Nossa Equipa?",
-    "item1": "Profissionais experientes",
-    "item2": "Materiais de alta qualidade",
-    "item3": "Serviço personalizado",
-    "item4": "Rapidez e eficiência",
-    "item5": "Suporte contínuo",
-    "item6": "Satisfação garantida"
+    "reasons": [
+      "Profissionais experientes",
+      "Materiais de alta qualidade",
+      "Serviço personalizado",
+      "Rapidez e eficiência",
+      "Suporte contínuo",
+      "Satisfação garantida"
+    ]
   },
   "testimonials": {
     "title": "O Que Dizem os Nossos Clientes",
@@ -115,11 +117,11 @@
   },
   "contact": {
     "hero": {
-      "title": "Entre em Contacto",
+      "title": "Entre em Contato",
       "subtitle": "Envie-nos uma mensagem ou solicite orçamento"
     },
     "form": {
-      "title": "Formulário de Contacto",
+      "title": "Formulário de Contato",
       "name": "Nome",
       "namePlaceholder": "Seu nome completo",
       "email": "Email",
@@ -144,7 +146,7 @@
       "alert": "Formulário enviado com sucesso!"
     },
     "info": {
-      "title": "Informações de Contacto",
+      "title": "Informações de Contato",
       "phone": "Telefone",
       "email": "Email",
       "location": "Localização",
@@ -156,76 +158,55 @@
     }
   },
   "gallery": {
-    "title": "Galeria de Veleiros",
-    "subtitle": "Confira alguns dos nossos projetos concluídos."
+    "hero": {
+      "title": "Galeria de Veleiros",
+      "subtitle": "Confira alguns dos nossos projetos concluídos."
+    }
   },
   "refit": {
     "hero": {
       "title": "Refit & Reparos",
-      "subtitle": "Modernizamos e restauramos o seu veleiro com excelência.",
-      "cta": "Solicitar Orçamento"
+      "subtitle": "Modernizamos e restauramos o seu veleiro com excelência."
     },
     "services": {
-      "sectionTitle": "Nossos Serviços de Refit",
-      "sectionSubtitle": "Oferecemos soluções completas de modernização e reparos.",
-      "electrical": {
-        "title": "Instalações Elétricas",
-        "desc": "Revisão e atualização completa da parte elétrica.",
-        "items": ["Quadros elétricos", "Fiação e cabos", "Iluminação interna e externa", "Tomadas e conexões"]
-      },
-      "hydraulic": {
-        "title": "Sistemas Hidráulicos",
-        "desc": "Revisão e manutenção de sistemas hidráulicos.",
-        "items": ["Bombas e válvulas", "Tubulações", "Tanques e conexões"]
-      },
-      "aesthetic": {
-        "title": "Estética e Interiores",
-        "desc": "Melhoria de acabamentos e interiores do veleiro.",
-        "items": ["Pintura interna", "Revestimentos", "Mobiliário", "Detalhes de acabamento"]
-      },
-      "navigation": {
-        "title": "Navegação",
-        "desc": "Sistemas de navegação e instrumentos.",
-        "items": ["GPS e chartplotter", "Bússola", "Instrumentos eletrônicos"]
-      },
-      "propulsion": {
-        "title": "Propulsão",
-        "desc": "Manutenção e atualização do motor e sistema de propulsão.",
-        "items": ["Motor", "Transmissão", "Hélice", "Sistema de combustível"]
-      }
+      "structural": "Reparos Estruturais",
+      "hull": "Tratamento de Casco",
+      "rigging": "Rigging e Instalação",
+      "painting": "Pintura e Gelcoat",
+      "maintenance": "Manutenção Preventiva"
     },
     "process": {
       "title": "Nosso Processo de Refit",
-      "subtitle": "Cada etapa é cuidadosamente planejada e executada.",
-      "s1": { "title": "Inspeção Inicial", "desc": "Analisamos cada detalhe do seu veleiro." },
-      "s2": { "title": "Planejamento", "desc": "Definimos o plano de ação e cronograma." },
-      "s3": { "title": "Desmontagem e Preparação", "desc": "Preparação de áreas e remoção de equipamentos." },
-      "s4": { "title": "Reparos Estruturais", "desc": "Conserto de casco, convés e estrutura." },
-      "s5": { "title": "Modernização Técnica", "desc": "Atualização de sistemas e equipamentos." },
-      "s6": { "title": "Entrega Final", "desc": "Veleiro pronto para navegação com segurança." }
+      "subtitle": "Cada etapa é pensada para máxima qualidade",
+      "s1": { "title": "Inspeção Inicial", "desc": "Avaliação completa do seu veleiro." },
+      "s2": { "title": "Planejamento", "desc": "Definição detalhada das intervenções necessárias." },
+      "s3": { "title": "Execução", "desc": "Trabalhos realizados por profissionais experientes." },
+      "s4": { "title": "Controle de Qualidade", "desc": "Verificação de cada etapa concluída." },
+      "s5": { "title": "Entrega", "desc": "Entrega do veleiro pronto para navegar." },
+      "s6": { "title": "Feedback", "desc": "Revisão do cliente e ajustes finais." }
     },
     "why": {
-      "title": "Por Que Fazer Refit?",
+      "title": "Por Que Escolher o Refit?",
       "reasons": [
-        "Melhoria da performance",
-        "Atualização de sistemas",
-        "Aumento da segurança",
-        "Valorização do veleiro",
-        "Conservação da estrutura",
-        "Satisfação do proprietário"
+        "Serviço personalizado",
+        "Equipe especializada",
+        "Materiais de alta qualidade",
+        "Rapidez e eficiência",
+        "Segurança garantida",
+        "Satisfação do cliente"
       ]
     },
     "examples": {
-      "title": "Exemplos de Refit",
-      "p1": { "desc": "Beneteau Oceanis 45 modernizado e pronto para velejar." },
-      "p2": { "desc": "Contest 50 com sistemas atualizados e interiores renovados." },
-      "p3": { "desc": "Bavaria 46 Cruiser pronto para novas aventuras." },
+      "title": "Exemplos de Projetos",
       "duration": "Duração",
-      "months": "meses"
+      "months": "meses",
+      "p1": { "desc": "Substituição completa de sistemas elétricos e hidráulicos." },
+      "p2": { "desc": "Modernização da propulsão e sistema de navegação." },
+      "p3": { "desc": "Renovação completa do casco e interiores." }
     },
     "cta": {
       "title": "Pronto para modernizar seu veleiro?",
-      "subtitle": "Entre em contato e receba um orçamento personalizado.",
+      "subtitle": "Solicite um orçamento personalizado.",
       "button": "Solicitar Orçamento"
     }
   },
