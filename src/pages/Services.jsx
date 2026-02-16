@@ -28,35 +28,30 @@ const Services = () => {
       icon: <Anchor className="w-16 h-16" />,
       title: t('services.hull.title'),
       description: t('services.hull.desc'),
-      features: t('services.hull.features', { returnObjects: true }) || [],
       link: '/contact'
     },
     {
       icon: <Paintbrush className="w-16 h-16" />,
       title: t('services.painting.title'),
       description: t('services.painting.desc'),
-      features: t('services.painting.features', { returnObjects: true }) || [],
       link: '/contact'
     },
     {
       icon: <Shield className="w-16 h-16" />,
       title: t('services.rigging.title'),
       description: t('services.rigging.desc'),
-      features: t('services.rigging.features', { returnObjects: true }) || [],
       link: '/rigging'
     },
     {
       icon: <Ship className="w-16 h-16" />,
       title: t('services.refit.title'),
       description: t('services.refit.desc'),
-      features: t('services.refit.features', { returnObjects: true }) || [],
       link: '/refit'
     },
     {
       icon: <Wrench className="w-16 h-16" />,
       title: t('services.maintenance.title'),
       description: t('services.maintenance.desc'),
-      features: t('services.maintenance.features', { returnObjects: true }) || [],
       link: '/contact'
     }
   ];
@@ -66,12 +61,8 @@ const Services = () => {
       {/* Hero */}
       <section className="relative py-32 bg-gradient-to-br from-navy-900 to-ocean-600 text-white">
         <div className="container mx-auto px-4 text-center">
-          <h1 className="text-5xl md:text-6xl font-bold mb-6">
-            {t('services.page.title')}
-          </h1>
-          <p className="text-xl md:text-2xl text-gray-200 max-w-3xl mx-auto">
-            {t('services.page.subtitle')}
-          </p>
+          <h1 className="text-5xl md:text-6xl font-bold mb-6">{t('services.sectionTitle')}</h1>
+          <p className="text-xl md:text-2xl text-gray-200 max-w-3xl mx-auto">{t('services.sectionSubtitle')}</p>
         </div>
       </section>
 
@@ -93,21 +84,11 @@ const Services = () => {
                 <div className="lg:w-2/3">
                   <div className="bg-white p-8 rounded-xl shadow-lg">
                     <p className="text-gray-700 text-lg mb-6">{service.description}</p>
-                    {service.features.length > 0 && (
-                      <ul className="space-y-3 mb-8">
-                        {service.features.map((feature, idx) => (
-                          <li key={idx} className="flex items-start gap-3">
-                            <CheckCircle className="w-6 h-6 text-ocean-500 flex-shrink-0 mt-1" />
-                            <span className="text-gray-700">{feature}</span>
-                          </li>
-                        ))}
-                      </ul>
-                    )}
                     <Link
                       to={service.link}
                       className="inline-flex items-center gap-2 bg-ocean-500 hover:bg-ocean-600 text-white px-6 py-3 rounded-lg font-semibold transition-all"
                     >
-                      {t('services.requestQuote')}
+                      {t('cta.quote')}
                       <ArrowRight className="w-5 h-5" />
                     </Link>
                   </div>
@@ -121,13 +102,13 @@ const Services = () => {
       {/* CTA */}
       <section className="py-20 bg-navy-900 text-white text-center">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold mb-6">{t('services.cta.title')}</h2>
-          <p className="text-xl mb-8 text-gray-300 max-w-2xl mx-auto">{t('services.cta.subtitle')}</p>
+          <h2 className="text-4xl font-bold mb-6">{t('cta.finalTitle')}</h2>
+          <p className="text-xl mb-8 text-gray-300 max-w-2xl mx-auto">{t('cta.finalSubtitle')}</p>
           <Link
             to="/contact"
             className="inline-block bg-ocean-500 hover:bg-ocean-600 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all transform hover:scale-105"
           >
-            {t('services.cta.button')}
+            {t('cta.finalBtn')}
           </Link>
         </div>
       </section>
