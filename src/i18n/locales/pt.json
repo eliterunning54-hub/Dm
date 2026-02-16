@@ -50,6 +50,14 @@
     "refit": {
       "title": "Refit & Reparos Estruturais",
       "desc": "Damos nova vida ao seu veleiro com modernização técnica."
+    },
+    "painting": {
+      "title": "Pintura & Gelcoat",
+      "desc": "Acabamento profissional que protege e valoriza o seu veleiro."
+    },
+    "maintenance": {
+      "title": "Manutenção Preventiva",
+      "desc": "Cuidados regulares para garantir desempenho e segurança."
     }
   },
   "why": {
@@ -103,6 +111,75 @@
       "title": "Pronto para começar?",
       "subtitle": "Entre em contato e saiba como podemos ajudar seu veleiro.",
       "button": "Solicitar Contato"
+    }
+  },
+  "contact": {
+    "hero": {
+      "title": "Entre em Contacto",
+      "subtitle": "Envie-nos uma mensagem ou solicite orçamento"
+    },
+    "form": {
+      "title": "Formulário de Contacto",
+      "name": "Nome",
+      "namePlaceholder": "Seu nome completo",
+      "email": "Email",
+      "emailPlaceholder": "seu@email.com",
+      "phone": "Telefone",
+      "phonePlaceholder": "+351 ...",
+      "boatType": "Tipo de Barco",
+      "boatTypePlaceholder": "Ex: Beneteau Oceanis 45",
+      "service": "Serviço Desejado",
+      "serviceSelect": "Selecione um serviço",
+      "services": {
+        "antifouling": "Antifouling",
+        "rigging": "Rigging",
+        "refit": "Refit Completo",
+        "painting": "Pintura/Gelcoat",
+        "maintenance": "Manutenção Preventiva"
+      },
+      "serviceOther": "Outro",
+      "message": "Mensagem",
+      "messagePlaceholder": "Escreva a sua mensagem...",
+      "button": "Enviar Mensagem",
+      "alert": "Formulário enviado com sucesso!"
+    },
+    "info": {
+      "title": "Informações de Contacto",
+      "phone": "Telefone",
+      "email": "Email",
+      "location": "Localização",
+      "hours": "Horário de Funcionamento",
+      "weekdays": "Seg-Sex",
+      "saturday": "Sábado",
+      "sunday": "Domingo",
+      "closed": "Encerrado"
+    }
+  },
+  "gallery": {
+    "title": "Galeria de Veleiros",
+    "subtitle": "Confira alguns dos nossos projetos concluídos."
+  },
+  "refit": {
+    "title": "Refit & Reparos",
+    "subtitle": "Modernizamos e restauramos o seu veleiro com excelência.",
+    "desc": "Oferecemos serviços completos de refit: casco, rigging, pintura e interiores.",
+    "services": {
+      "structural": "Reparos Estruturais",
+      "hull": "Tratamento de Casco",
+      "rigging": "Rigging e Instalação",
+      "painting": "Pintura e Gelcoat",
+      "maintenance": "Manutenção Preventiva"
+    }
+  },
+  "rigging": {
+    "title": "Rigging Profissional",
+    "subtitle": "Instalação, inspeção e manutenção de todo tipo de rigging.",
+    "desc": "Garantimos segurança, desempenho e confiabilidade para seu veleiro.",
+    "services": {
+      "installation": "Instalação Completa",
+      "inspection": "Inspeção e Ajustes",
+      "maintenance": "Manutenção Preventiva",
+      "replacement": "Substituição de Componentes"
     }
   }
 }
