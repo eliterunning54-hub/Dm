@@ -1,290 +1,144 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { Anchor, Shield, Wrench, AlertTriangle, CheckCircle, ArrowRight, Settings } from 'lucide-react';
+import i18n from 'i18next';
+import { initReactI18next } from 'react-i18next';
+import LanguageDetector from 'i18next-browser-languagedetector';
 
-const Rigging = () => {
-  const riggingServices = [
-    {
-      icon: <Shield className="w-12 h-12" />,
-      title: 'Rigging Fixo',
-      description: 'Instalação e manutenção de estais e brandais',
-      items: [
-        'Inspeção completa de mastros',
-        'Substituição de cabos de aço inox',
-        'Instalação de novos estais',
-        'Substituição de terminais Sta-Lok/Norseman',
-        'Tensionamento e afinação do rig',
-        'Verificação de parafusos e fixações'
-      ]
+i18n
+  .use(LanguageDetector)
+  .use(initReactI18next)
+  .init({
+    resources: {
+      pt: {
+        translation: {
+          // Nav
+          "nav.home": "Home",
+          "nav.services": "Serviços",
+          "nav.refit": "Refit & Reparos",
+          "nav.rigging": "Rigging",
+          "nav.about": "Sobre Nós",
+          "nav.gallery": "Galeria",
+          "nav.contact": "Contato",
+          "cta.quote": "Orçamento",
+          
+          // ... (mantendo hero.title, stats, services, why, about, refit já configurados anteriormente) ...
+
+          // Rigging Page
+          "rigging.hero.title": "Rigging Profissional",
+          "rigging.hero.subtitle": "Instalação, manutenção e inspeção de rigging fixo e móvel com materiais certificados",
+          "rigging.hero.cta": "Solicitar Inspeção",
+          
+          "rigging.services.title": "Serviços de Rigging",
+          "rigging.services.subtitle": "Soluções completas para todos os sistemas de rigging",
+          
+          "rigging.services.standing.title": "Rigging Fixo",
+          "rigging.services.standing.desc": "Instalação e manutenção de estais e brandais",
+          "rigging.services.standing.items": ["Inspeção completa de mastros", "Substituição de cabos de aço inox", "Instalação de novos estais", "Substituição de terminais Sta-Lok/Norseman", "Tensionamento e afinação do rig", "Verificação de parafusos e fixações"],
+          
+          "rigging.services.running.title": "Rigging Móvel",
+          "rigging.services.running.desc": "Escotas, adriças e cabos de manobra",
+          "rigging.services.running.items": ["Substituição de adriças", "Instalação de escotas novas", "Cabos de alta performance (Dyneema)", "Sistemas de redução de fricção", "Roldanas e blocos de qualidade", "Passadores e terminais especializados"],
+          
+          "rigging.services.equip.title": "Instalação de Equipamentos",
+          "rigging.services.equip.desc": "Winches, blocos e ferragens",
+          "rigging.services.equip.items": ["Instalação de winches Harken/Lewmar", "Montagem de blocos e roldanas", "Furlers e enroladores", "Boom vangs e cunninghams", "Travellers e carros de escota", "Sistemas hidráulicos"],
+          
+          "rigging.services.inspection.title": "Inspeção e Manutenção",
+          "rigging.services.inspection.desc": "Prevenção e segurança",
+          "rigging.services.inspection.items": ["Inspeção anual completa", "Relatórios fotográficos detalhados", "Teste de carga em terminais", "Verificação de corrosão", "Lubrificação de equipamentos", "Plano de manutenção preventiva"],
+
+          "rigging.materials.title": "Materiais Premium",
+          "rigging.materials.subtitle": "Trabalhamos apenas com as melhores marcas do mercado",
+          "rigging.materials.m1.name": "Cabo de Aço Inox 316", "rigging.materials.m1.desc": "Alta resistência à corrosão marítima",
+          "rigging.materials.m2.name": "Dyneema / Spectra", "rigging.materials.m2.desc": "Cabos de alta performance e baixo peso",
+          "rigging.materials.m3.name": "Terminais Sta-Lok", "rigging.materials.m3.desc": "Terminais mecânicos de fácil instalação",
+          "rigging.materials.m4.name": "Terminais Norseman", "rigging.materials.m4.desc": "Máxima resistência e durabilidade",
+          "rigging.materials.m5.name": "Harken / Lewmar", "rigging.materials.m5.desc": "Blocos e equipamentos premium",
+          "rigging.materials.m6.name": "Spinlock", "rigging.materials.m6.desc": "Stoppers e clutches de qualidade",
+
+          "rigging.warnings.title": "Sinais de Alerta",
+          "rigging.warnings.subtitle": "Quando é hora de inspecionar ou substituir o rigging?",
+          "rigging.warnings.items": [
+            "Cabos de aço com fios partidos", "Corrosão visível nos terminais", "Mastro com movimento excessivo", "Terminais soltos ou com folga",
+            "Roldanas emperradas ou ruidosas", "Desgaste irregular nos cabos", "Mais de 10 anos sem substituição", "Escotas com desgaste visível"
+          ],
+          "rigging.warnings.alert": "⚠️ Se identificar qualquer um destes sinais, contacte-nos imediatamente para uma inspeção profissional.",
+
+          "rigging.advantages.title": "Vantagens do Rigging Profissional",
+          "rigging.advantages.adv1.title": "Segurança Máxima", "rigging.advantages.adv1.desc": "Rigging bem mantido é fundamental para a segurança da tripulação",
+          "rigging.advantages.adv2.title": "Performance", "rigging.advantages.adv2.desc": "Melhor controlo das velas e performance de navegação",
+          "rigging.advantages.adv3.title": "Durabilidade", "rigging.advantages.adv3.desc": "Materiais premium garantem anos de uso sem preocupações",
+
+          "rigging.cta.title": "Pronto para garantir a segurança do seu veleiro?",
+          "rigging.cta.subtitle": "Solicite uma inspeção completa do rigging ou um orçamento sem compromisso",
+          "rigging.cta.button": "Contactar Agora",
+
+          // ... (mantendo Gallery, Contact, Footer, Testimonials) ...
+        }
+      },
+      en: {
+        translation: {
+          "nav.home": "Home",
+          "nav.services": "Services",
+          "nav.refit": "Refit & Repairs",
+          "nav.rigging": "Rigging",
+          "nav.about": "About Us",
+          "nav.gallery": "Gallery",
+          "nav.contact": "Contact",
+          "cta.quote": "Get a Quote",
+
+          // Rigging Page (EN)
+          "rigging.hero.title": "Professional Rigging",
+          "rigging.hero.subtitle": "Installation, maintenance, and inspection of standing and running rigging with certified materials",
+          "rigging.hero.cta": "Request Inspection",
+          
+          "rigging.services.title": "Rigging Services",
+          "rigging.services.subtitle": "Complete solutions for all rigging systems",
+          
+          "rigging.services.standing.title": "Standing Rigging",
+          "rigging.services.standing.desc": "Installation and maintenance of stays and shrouds",
+          "rigging.services.standing.items": ["Full mast inspection", "Stainless steel wire rope replacement", "New stay installation", "Sta-Lok/Norseman terminal replacement", "Rig tensioning and tuning", "Check of bolts and fastenings"],
+          
+          "rigging.services.running.title": "Running Rigging",
+          "rigging.services.running.desc": "Sheets, halyards, and control lines",
+          "rigging.services.running.items": ["Halyard replacement", "New sheet installation", "High-performance lines (Dyneema)", "Friction reduction systems", "Quality sheaves and blocks", "Specialized fairleads and terminals"],
+          
+          "rigging.services.equip.title": "Equipment Installation",
+          "rigging.services.equip.desc": "Winches, blocks, and hardware",
+          "rigging.services.equip.items": ["Harken/Lewmar winch installation", "Block and sheave assembly", "Furlers and reefing systems", "Boom vangs and cunninghams", "Travellers and sheet cars", "Hydraulic systems"],
+          
+          "rigging.services.inspection.title": "Inspection & Maintenance",
+          "rigging.services.inspection.desc": "Prevention and safety",
+          "rigging.services.inspection.items": ["Full annual inspection", "Detailed photographic reports", "Terminal load testing", "Corrosion check", "Equipment lubrication", "Preventive maintenance plan"],
+
+          "rigging.materials.title": "Premium Materials",
+          "rigging.materials.subtitle": "We work only with the best brands on the market",
+          "rigging.materials.m1.name": "316 Stainless Steel Wire", "rigging.materials.m1.desc": "High resistance to marine corrosion",
+          "rigging.materials.m2.name": "Dyneema / Spectra", "rigging.materials.m2.desc": "High-performance, low-weight ropes",
+          "rigging.materials.m3.name": "Sta-Lok Terminals", "rigging.materials.m3.desc": "Mechanical terminals for easy installation",
+          "rigging.materials.m4.name": "Norseman Terminals", "rigging.materials.m4.desc": "Maximum strength and durability",
+          "rigging.materials.m5.name": "Harken / Lewmar", "rigging.materials.m5.desc": "Premium blocks and equipment",
+          "rigging.materials.m6.name": "Spinlock", "rigging.materials.m6.desc": "Quality stoppers and clutches",
+
+          "rigging.warnings.title": "Warning Signs",
+          "rigging.warnings.subtitle": "When is it time to inspect or replace your rigging?",
+          "rigging.warnings.items": [
+            "Broken wire strands (meat hooks)", "Visible corrosion on terminals", "Excessive mast movement", "Loose or slack terminals",
+            "Seized or noisy sheaves", "Irregular wear on cables", "Over 10 years without replacement", "Sheets with visible wear"
+          ],
+          "rigging.warnings.alert": "⚠️ If you identify any of these signs, contact us immediately for a professional inspection.",
+
+          "rigging.advantages.title": "Benefits of Professional Rigging",
+          "rigging.advantages.adv1.title": "Maximum Safety", "rigging.advantages.adv1.desc": "Well-maintained rigging is essential for crew safety",
+          "rigging.advantages.adv2.title": "Performance", "rigging.advantages.adv2.desc": "Better sail control and sailing performance",
+          "rigging.advantages.adv3.title": "Durability", "rigging.advantages.adv3.desc": "Premium materials ensure years of worry-free use",
+
+          "rigging.cta.title": "Ready to ensure your sailboat's safety?",
+          "rigging.cta.subtitle": "Request a full rigging inspection or a no-obligation quote",
+          "rigging.cta.button": "Contact Now"
+        }
+      }
     },
-    {
-      icon: <Wrench className="w-12 h-12" />,
-      title: 'Rigging Móvel',
-      description: 'Escotas, adriças e cabos de manobra',
-      items: [
-        'Substituição de adriças',
-        'Instalação de escotas novas',
-        'Cabos de alta performance (Dyneema)',
-        'Sistemas de redução de fricção',
-        'Roldanas e blocos de qualidade',
-        'Passadores e terminais especializados'
-      ]
-    },
-    {
-      icon: <Settings className="w-12 h-12" />,
-      title: 'Instalação de Equipamentos',
-      description: 'Winches, blocos e ferragens',
-      items: [
-        'Instalação de winches Harken/Lewmar',
-        'Montagem de blocos e roldanas',
-        'Furlers e enroladores',
-        'Boom vangs e cunninghams',
-        'Travellers e carros de escota',
-        'Sistemas hidráulicos'
-      ]
-    },
-    {
-      icon: <AlertTriangle className="w-12 h-12" />,
-      title: 'Inspeção e Manutenção',
-      description: 'Prevenção e segurança',
-      items: [
-        'Inspeção anual completa',
-        'Relatórios fotográficos detalhados',
-        'Teste de carga em terminais',
-        'Verificação de corrosão',
-        'Lubrificação de equipamentos',
-        'Plano de manutenção preventiva'
-      ]
-    }
-  ];
+    fallbackLng: 'pt',
+    interpolation: { escapeValue: false }
+  });
 
-  const materials = [
-    {
-      name: 'Cabo de Aço Inox 316',
-      description: 'Alta resistência à corrosão marítima'
-    },
-    {
-      name: 'Dyneema / Spectra',
-      description: 'Cabos de alta performance e baixo peso'
-    },
-    {
-      name: 'Terminais Sta-Lok',
-      description: 'Terminais mecânicos de fácil instalação'
-    },
-    {
-      name: 'Terminais Norseman',
-      description: 'Máxima resistência e durabilidade'
-    },
-    {
-      name: 'Harken / Lewmar',
-      description: 'Blocos e equipamentos premium'
-    },
-    {
-      name: 'Spinlock',
-      description: 'Stoppers e clutches de qualidade'
-    }
-  ];
-
-  const warningsSigns = [
-    'Cabos de aço com fios partidos',
-    'Corrosão visível nos terminais',
-    'Mastro com movimento excessivo',
-    'Terminais soltos ou com folga',
-    'Roldanas emperradas ou ruidosas',
-    'Desgaste irregular nos cabos',
-    'Mais de 10 anos sem substituição',
-    'Escotas com desgaste visível'
-  ];
-
-  const advantages = [
-    {
-      title: 'Segurança Máxima',
-      description: 'Rigging bem mantido é fundamental para a segurança da tripulação',
-      icon: <Shield className="w-8 h-8" />
-    },
-    {
-      title: 'Performance',
-      description: 'Melhor controlo das velas e performance de navegação',
-      icon: <Anchor className="w-8 h-8" />
-    },
-    {
-      title: 'Durabilidade',
-      description: 'Materiais premium garantem anos de uso sem preocupações',
-      icon: <CheckCircle className="w-8 h-8" />
-    }
-  ];
-
-  return (
-    <div className="rigging-page">
-      {/* Hero Section */}
-      <section className="relative py-32 bg-gradient-to-br from-navy-900 to-ocean-600 text-white overflow-hidden">
-        <div 
-          className="absolute inset-0 opacity-20"
-          style={{
-            backgroundImage: 'url(https://images.unsplash.com/photo-1559827260-dc66d52bef19?q=80&w=2000)',
-            backgroundSize: 'cover',
-            backgroundPosition: 'center'
-          }}
-        />
-        <div className="relative container mx-auto px-4 text-center">
-          <h1 className="text-5xl md:text-6xl font-bold mb-6">
-            Rigging Profissional
-          </h1>
-          <p className="text-xl md:text-2xl text-gray-200 max-w-3xl mx-auto mb-8">
-            Instalação, manutenção e inspeção de rigging fixo e móvel com materiais certificados
-          </p>
-          <Link 
-            to="/contato"
-            className="bg-ocean-500 hover:bg-ocean-600 text-white px-10 py-4 rounded-lg font-bold text-lg inline-flex items-center gap-2 transition-all transform hover:scale-105"
-          >
-            Solicitar Inspeção <ArrowRight className="w-5 h-5" />
-          </Link>
-        </div>
-      </section>
-
-      {/* Services Section */}
-      <section className="py-20 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-navy-900 mb-4">
-              Serviços de Rigging
-            </h2>
-            <p className="text-xl text-gray-600">
-              Soluções completas para todos os sistemas de rigging
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-            {riggingServices.map((service, index) => (
-              <div 
-                key={index}
-                className="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all"
-              >
-                <div className="flex items-start gap-6">
-                  <div className="text-ocean-500 flex-shrink-0">{service.icon}</div>
-                  <div className="flex-grow">
-                    <h3 className="text-2xl font-bold text-navy-900 mb-3">{service.title}</h3>
-                    <p className="text-gray-600 mb-6">{service.description}</p>
-                    <ul className="space-y-2">
-                      {service.items.map((item, idx) => (
-                        <li key={idx} className="flex items-start gap-2 text-gray-700">
-                          <CheckCircle className="w-5 h-5 text-ocean-500 flex-shrink-0 mt-0.5" />
-                          <span>{item}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Materials Section */}
-      <section className="py-20 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-navy-900 mb-4">
-              Materiais Premium
-            </h2>
-            <p className="text-xl text-gray-600">
-              Trabalhamos apenas com as melhores marcas do mercado
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-            {materials.map((material, index) => (
-              <div 
-                key={index}
-                className="bg-gray-50 p-6 rounded-lg text-center hover:shadow-lg transition-all"
-              >
-                <h3 className="text-xl font-bold text-navy-900 mb-2">{material.name}</h3>
-                <p className="text-gray-600">{material.description}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Warning Signs Section */}
-      <section className="py-20 bg-red-50">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <div className="text-center mb-12">
-              <AlertTriangle className="w-16 h-16 text-red-600 mx-auto mb-4" />
-              <h2 className="text-4xl font-bold text-navy-900 mb-4">
-                Sinais de Alerta
-              </h2>
-              <p className="text-xl text-gray-700">
-                Quando é hora de inspecionar ou substituir o rigging?
-              </p>
-            </div>
-
-            <div className="bg-white p-8 rounded-xl shadow-lg">
-              <ul className="grid md:grid-cols-2 gap-4">
-                {warningsSigns.map((sign, index) => (
-                  <li key={index} className="flex items-start gap-3">
-                    <AlertTriangle className="w-6 h-6 text-red-600 flex-shrink-0 mt-1" />
-                    <span className="text-gray-700">{sign}</span>
-                  </li>
-                ))}
-              </ul>
-              <div className="mt-8 p-6 bg-red-50 rounded-lg">
-                <p className="text-gray-700 font-semibold">
-                  ⚠️ Se identificar qualquer um destes sinais, contacte-nos imediatamente para uma inspeção profissional.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Advantages Section */}
-      <section className="py-20 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-navy-900 mb-4">
-              Vantagens do Rigging Profissional
-            </h2>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            {advantages.map((advantage, index) => (
-              <div 
-                key={index}
-                className="bg-white p-8 rounded-xl shadow-lg text-center hover:shadow-2xl transition-all"
-              >
-                <div className="text-ocean-500 mb-4 flex justify-center">
-                  {advantage.icon}
-                </div>
-                <h3 className="text-2xl font-bold text-navy-900 mb-3">{advantage.title}</h3>
-                <p className="text-gray-600">{advantage.description}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* CTA Section */}
-      <section className="py-20 bg-navy-900 text-white text-center">
-        <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold mb-6">
-            Pronto para garantir a segurança do seu veleiro?
-          </h2>
-          <p className="text-xl mb-8 text-gray-300 max-w-2xl mx-auto">
-            Solicite uma inspeção completa do rigging ou um orçamento sem compromisso
-          </p>
-          <Link 
-            to="/contact"
-            className="inline-block bg-ocean-500 hover:bg-ocean-600 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all transform hover:scale-105"
-          >
-            Contactar Agora
-          </Link>
-        </div>
-      </section>
-    </div>
-  );
-};
-
-export default Rigging;
+export default i18n;
