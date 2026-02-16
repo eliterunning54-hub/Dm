@@ -29,86 +29,49 @@
     "subtitle": "Specialists in structural repairs, rigging, antifouling, and full refit.",
     "whatsapp": "Chat on WhatsApp"
   },
-  "stats": {
-    "exp": "Years of Experience",
-    "projects": "Completed Projects",
-    "satisfaction": "% Satisfaction",
-    "support": "Support"
-  },
-  "services": {
-    "sectionTitle": "Technical Services for Maximum Performance",
-    "sectionSubtitle": "We offer complete solutions for your sailboat.",
-    "learnMore": "Learn More",
-    "hull": {
-      "title": "Hull Treatment & Antifouling",
-      "desc": "Professional hull protection for maximum performance."
-    },
-    "rigging": {
-      "title": "Professional Rigging",
-      "desc": "Installation and inspection of standing and running rigging."
-    },
-    "refit": {
-      "title": "Refit & Structural Repairs",
-      "desc": "We give your sailboat new life with technical modernization."
-    },
-    "painting": {
-      "title": "Painting & Gelcoat",
-      "desc": "Professional finishing that protects and enhances your sailboat."
-    },
-    "maintenance": {
-      "title": "Preventive Maintenance",
-      "desc": "Regular care to ensure performance and safety."
-    }
-  },
-  "why": {
-    "title": "Why Choose Our Team?",
-    "reasons": [
-      "Experienced professionals",
-      "High-quality materials",
-      "Personalized service",
-      "Speed and efficiency",
-      "Continuous support",
-      "Guaranteed satisfaction"
-    ]
-  },
-  "testimonials": {
-    "title": "What Our Clients Say",
-    "carlos": { "text": "Excellent service and attention to detail." },
-    "maria": { "text": "Competent professionals, my sailboat looks like new!" },
-    "joao": { "text": "Highly recommend, great experience." }
-  },
+  "stats": [
+    { "label": "Years of Experience", "value": 12 },
+    { "label": "Completed Projects", "value": 150 },
+    { "label": "% Satisfaction", "value": 98 },
+    { "label": "Support", "value": "24/7" }
+  ],
+  "services": [
+    { "title": "Hull Treatment & Antifouling", "desc": "Professional hull protection for maximum performance." },
+    { "title": "Professional Rigging", "desc": "Installation and inspection of standing and running rigging." },
+    { "title": "Refit & Structural Repairs", "desc": "We give your sailboat new life with technical modernization." },
+    { "title": "Painting & Gelcoat", "desc": "Professional finishing that protects and enhances your sailboat." },
+    { "title": "Preventive Maintenance", "desc": "Regular care to ensure performance and safety." }
+  ],
+  "why": [
+    "Experienced professionals",
+    "High-quality materials",
+    "Personalized service",
+    "Speed and efficiency",
+    "Continuous support",
+    "Guaranteed satisfaction"
+  ],
+  "testimonials": [
+    { "name": "Carlos", "text": "Excellent service and attention to detail." },
+    { "name": "Maria", "text": "Competent professionals, my sailboat looks like new!" },
+    { "name": "Joao", "text": "Highly recommend, great experience." }
+  ],
   "about": {
     "hero": {
       "title": "About DM Yacht Care",
       "subtitle": "Passion for the sea and commitment to nautical excellence."
     },
-    "story": {
-      "title": "Our Story",
-      "p1": "Founded in 2010, we are a reference in maintenance in the Algarve.",
-      "p2": "We offer complete services for sailboats of all sizes.",
-      "p3": "We prioritize quality, safety, and customer satisfaction.",
-      "p4": "Our goal is to extend the life of your sailboat with excellence."
-    },
-    "values": {
-      "title": "Our Values",
-      "subtitle": "What guides us every day",
-      "quality": {
-        "title": "Premium Quality",
-        "desc": "Certified materials and experienced technicians."
-      },
-      "team": {
-        "title": "Professional Team",
-        "desc": "Qualified professionals passionate about what they do."
-      },
-      "focus": {
-        "title": "Customer Focus",
-        "desc": "Each project is tailored to meet your needs."
-      },
-      "commitment": {
-        "title": "Commitment",
-        "desc": "Excellence guaranteed in every detail."
-      }
-    },
+    "story": [
+      "Founded in 2010, we are a reference in maintenance in the Algarve.",
+      "We offer complete services for sailboats of all sizes.",
+      "We prioritize quality, safety, and customer satisfaction.",
+      "Our goal is to extend the life of your sailboat with excellence."
+    ],
+    "values": [
+      { "title": "Premium Quality", "desc": "Certified materials and experienced technicians." },
+      { "title": "Professional Team", "desc": "Qualified professionals passionate about what they do." },
+      { "title": "Customer Focus", "desc": "Each project is tailored to meet your needs." },
+      { "title": "Commitment", "desc": "Excellence guaranteed in every detail." }
+    ],
     "cta": {
       "title": "Ready to get started?",
       "subtitle": "Contact us to learn how we can help your sailboat.",
@@ -121,32 +84,22 @@
       "subtitle": "Send us a message or request a quote"
     },
     "form": {
-      "title": "Contact Form",
       "name": "Name",
-      "namePlaceholder": "Your full name",
       "email": "Email",
-      "emailPlaceholder": "your@email.com",
       "phone": "Phone",
-      "phonePlaceholder": "+351 ...",
       "boatType": "Boat Type",
-      "boatTypePlaceholder": "Ex: Beneteau Oceanis 45",
       "service": "Desired Service",
-      "serviceSelect": "Select a service",
-      "services": {
-        "antifouling": "Antifouling",
-        "rigging": "Rigging",
-        "refit": "Full Refit",
-        "painting": "Painting/Gelcoat",
-        "maintenance": "Preventive Maintenance"
-      },
-      "serviceOther": "Other",
+      "services": [
+        "Antifouling",
+        "Rigging",
+        "Full Refit",
+        "Painting/Gelcoat",
+        "Preventive Maintenance"
+      ],
       "message": "Message",
-      "messagePlaceholder": "Write your message...",
-      "button": "Send Message",
-      "alert": "Form successfully sent!"
+      "button": "Send Message"
     },
     "info": {
-      "title": "Contact Information",
       "phone": "Phone",
       "email": "Email",
       "location": "Location",
@@ -158,63 +111,71 @@
     }
   },
   "gallery": {
-    "hero": {
-      "title": "Sailboat Gallery",
-      "subtitle": "Check out some of our completed projects."
-    }
+    "title": "Sailboat Gallery",
+    "subtitle": "Check out some of our completed projects."
   },
   "refit": {
-    "hero": {
-      "title": "Refit & Repairs",
-      "subtitle": "We modernize and restore your sailboat with excellence."
-    },
-    "services": {
-      "structural": "Structural Repairs",
-      "hull": "Hull Treatment",
-      "rigging": "Rigging & Installation",
-      "painting": "Painting & Gelcoat",
-      "maintenance": "Preventive Maintenance"
-    },
-    "process": {
-      "title": "Our Refit Process",
-      "subtitle": "Each step is designed for maximum quality",
-      "s1": { "title": "Initial Inspection", "desc": "Complete evaluation of your sailboat." },
-      "s2": { "title": "Planning", "desc": "Detailed definition of necessary interventions." },
-      "s3": { "title": "Execution", "desc": "Work carried out by experienced professionals." },
-      "s4": { "title": "Quality Control", "desc": "Verification of each completed step." },
-      "s5": { "title": "Delivery", "desc": "Sailboat delivered ready to sail." },
-      "s6": { "title": "Feedback", "desc": "Client review and final adjustments." }
-    },
-    "why": {
-      "title": "Why Choose Refit?",
-      "reasons": [
-        "Personalized service",
-        "Specialized team",
-        "High-quality materials",
-        "Speed and efficiency",
-        "Guaranteed safety",
-        "Client satisfaction"
-      ]
-    },
-    "examples": {
-      "title": "Project Examples",
-      "duration": "Duration",
-      "months": "months",
-      "p1": { "desc": "Complete replacement of electrical and hydraulic systems." },
-      "p2": { "desc": "Modernization of propulsion and navigation systems." },
-      "p3": { "desc": "Complete hull and interior renovation." }
-    },
-    "cta": {
-      "title": "Ready to modernize your sailboat?",
-      "subtitle": "Request a personalized quote.",
-      "button": "Request Quote"
-    }
+    "title": "Refit & Repairs",
+    "subtitle": "We modernize and restore your sailboat with excellence.",
+    "desc": "We provide complete refit services: hull, rigging, painting, and interiors.",
+    "services": [
+      "Structural Repairs",
+      "Hull Treatment",
+      "Rigging & Installation",
+      "Painting & Gelcoat",
+      "Preventive Maintenance"
+    ],
+    "process": [
+      { "step": "01", "title": "Initial Assessment", "desc": "Detailed inspection of the sailboat." },
+      { "step": "02", "title": "Planning", "desc": "Define schedule and materials." },
+      { "step": "03", "title": "Technical Execution", "desc": "Carry out works according to standards." },
+      { "step": "04", "title": "Quality Control", "desc": "Check each step carefully." },
+      { "step": "05", "title": "Testing & Adjustment", "desc": "System testing and final adjustments." },
+      { "step": "06", "title": "Delivery", "desc": "Sailboat ready for navigation." }
+    ],
+    "why": [
+      "Increases your sailboat value",
+      "Improves safety and performance",
+      "Modernizes systems and equipment",
+      "Work done by certified professionals",
+      "Guaranteed satisfaction"
+    ],
+    "examples": [
+      { "title": "Beneteau Oceanis 45", "desc": "Complete hull and interior refit", "duration": "4 months", "img": "https://images.unsplash.com/photo-1567899378494-47b22a2ae96a?w=600" },
+      { "title": "Contest 50", "desc": "Navigation systems and rigging upgrade", "duration": "6 months", "img": "https://images.unsplash.com/photo-1566870040567-56816b77da5b?w=600" },
+      { "title": "Bavaria 46 Cruiser", "desc": "Painting and preventive maintenance", "duration": "3 months", "img": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=600" }
+    ]
   },
   "rigging": {
-    "hero": {
-      "title": "Professional Rigging",
-      "subtitle": "Installation, inspection, and maintenance of all types of rigging.",
-      "cta": "Request Inspection"
-    }
+    "title": "Professional Rigging",
+    "services": [
+      { "title": "Standing Rigging", "desc": "Installation and maintenance of shrouds and stays", "items": ["Full mast inspection", "Replacement of stainless steel wires", "Installation of new stays", "Replacement of Sta-Lok/Norseman terminals", "Rig tensioning and tuning", "Checking bolts and fasteners"] },
+      { "title": "Running Rigging", "desc": "Sheets, halyards, and control lines", "items": ["Replacement of halyards", "Installation of new sheets", "High-performance lines (Dyneema)", "Low-friction systems", "Quality blocks and pulleys", "Specialized fairleads and terminals"] },
+      { "title": "Equipment Installation", "desc": "Winches, blocks, and fittings", "items": ["Installation of Harken/Lewmar winches", "Assembly of blocks and pulleys", "Furlers and reefers", "Boom vangs and cunninghams", "Travelers and sheet cars", "Hydraulic systems"] },
+      { "title": "Inspection & Maintenance", "desc": "Prevention and safety", "items": ["Full annual inspection", "Detailed photo reports", "Load testing of terminals", "Corrosion check", "Equipment lubrication", "Preventive maintenance plan"] }
+    ],
+    "materials": [
+      { "name": "316 Stainless Steel Wire", "desc": "High resistance to marine corrosion" },
+      { "name": "Dyneema / Spectra", "desc": "High-performance, lightweight lines" },
+      { "name": "Sta-Lok Terminals", "desc": "Mechanical terminals for easy installation" },
+      { "name": "Norseman Terminals", "desc": "Maximum strength and durability" },
+      { "name": "Harken / Lewmar", "desc": "Premium blocks and equipment" },
+      { "name": "Spinlock", "desc": "High-quality stoppers and clutches" }
+    ],
+    "warnings": [
+      "Frayed steel wires",
+      "Visible corrosion on terminals",
+      "Excessive mast movement",
+      "Loose or worn terminals",
+      "Stiff or noisy blocks",
+      "Uneven wear on lines",
+      "Over 10 years without replacement",
+      "Worn sheets"
+    ],
+    "advantages": [
+      { "title": "Maximum Safety", "desc": "Well-maintained rigging is essential for crew safety" },
+      { "title": "Performance", "desc": "Better sail control and sailing performance" },
+      { "title": "Durability", "desc": "Premium materials ensure years of worry-free use" }
+    ]
   }
 }
