@@ -73,19 +73,19 @@ const Gallery = () => {
   ];
 
   const categories = [
-    { id: 'Todos', label: t('gallery.categories.all') },
-    { id: 'Refit', label: t('gallery.categories.refit') },
-    { id: 'Rigging', label: t('gallery.categories.rigging') },
-    { id: 'Antifouling', label: t('gallery.categories.antifouling') },
-    { id: 'Pintura', label: t('gallery.categories.painting') },
-    { id: 'Manutenção', label: t('gallery.categories.maintenance') }
+    { id: 'all', label: t('gallery.categories.all') },
+    { id: 'refit', label: t('gallery.categories.refit') },
+    { id: 'rigging', label: t('gallery.categories.rigging') },
+    { id: 'antifouling', label: t('gallery.categories.antifouling') },
+    { id: 'painting', label: t('gallery.categories.painting') },
+    { id: 'maintenance', label: t('gallery.categories.maintenance') }
   ];
 
-  const [activeCategoryId, setActiveCategoryId] = useState('Todos');
+  const [activeCategory, setActiveCategory] = useState('all');
 
-  const filteredProjects = activeCategoryId === 'Todos' 
-    ? projects 
-    : projects.filter(p => p.category === t(`gallery.categories.${activeCategoryId === 'Pintura' ? 'painting' : activeCategoryId === 'Manutenção' ? 'maintenance' : activeCategoryId.toLowerCase()}`));
+  const filteredProjects = activeCategory === 'all'
+    ? projects
+    : projects.filter(p => p.category === t(`gallery.categories.${activeCategory}`));
 
   return (
     <div className="gallery-page">
@@ -108,9 +108,9 @@ const Gallery = () => {
             {categories.map((cat) => (
               <button
                 key={cat.id}
-                onClick={() => setActiveCategoryId(cat.id)}
+                onClick={() => setActiveCategory(cat.id)}
                 className={`px-6 py-3 rounded-lg font-semibold transition-all ${
-                  activeCategoryId === cat.id
+                  activeCategory === cat.id
                     ? 'bg-ocean-500 text-white shadow-lg'
                     : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
                 }`}
@@ -168,7 +168,7 @@ const Gallery = () => {
 
       {/* Modal */}
       {selectedImage && (
-        <div 
+        <div
           className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4"
           onClick={() => setSelectedImage(null)}
         >
@@ -178,7 +178,7 @@ const Gallery = () => {
           >
             <X className="w-10 h-10" />
           </button>
-          
+
           <div className="max-w-5xl w-full" onClick={(e) => e.stopPropagation()}>
             <img
               src={selectedImage.image}
