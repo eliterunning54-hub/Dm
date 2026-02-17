@@ -136,7 +136,7 @@ const Footer = () => {
                 <MapPin className="w-5 h-5 text-ocean-500 flex-shrink-0 mt-1" />
                 <div className="text-gray-400">
                   Estaleiros da Marina de Portimão<br />
-                  8125-409 Loja 5 , Parchal<br />
+                  8400-279 Loja 5 , Parchal<br />
                   Ferragudo, Portugal
                 </div>
               </div>
