@@ -37,7 +37,7 @@ const Chatbot = () => {
   };
 
   const handleWhatsApp = () => {
-    const phoneNumber = '351915730843';
+    const phoneNumber = '351913282888';
     const message = 'Olá! Vim através do chat do site.';
     window.open(`https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`, '_blank');
   };
