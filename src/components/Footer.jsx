@@ -14,9 +14,11 @@ const Footer = () => {
           {/* Company Info */}
           <div>
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-12 h-12 bg-ocean-500 rounded-full flex items-center justify-center">
-                <span className="text-white font-bold text-xl">DM</span>
-              </div>
+              <img 
+                src="https://hnaezacbzcpmyfoupdec.supabase.co/storage/v1/object/public/ANTARES%20ENERGIA/LOGO%20DM%20.png" 
+                alt="DM Yacht Care Logo" 
+                className="w-12 h-12 object-contain"
+              />
               <div>
                 <h3 className="text-xl font-bold">DM Yacht Care</h3>
                 <p className="text-sm text-gray-400">Yacht Services</p>
