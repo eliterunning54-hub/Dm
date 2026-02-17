@@ -92,7 +92,7 @@ const Home = () => {
               {t('cta.quote')} <ArrowRight className="w-5 h-5" />
             </Link>
             <a
-              href="https://wa.me/351915730843"
+              href="https://wa.me/351913282888"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-white hover:bg-gray-100 text-navy-900 px-8 py-4 rounded-lg font-semibold text-lg transition-all transform hover:scale-105 inline-flex items-center justify-center gap-2"
