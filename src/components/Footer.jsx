@@ -117,10 +117,10 @@ const Footer = () => {
                 <Phone className="w-5 h-5 text-ocean-500 flex-shrink-0 mt-1" />
                 <div>
                   <a href="tel:+351915730843" className="text-gray-400 hover:text-ocean-500 transition-colors block">
-                    (+351) 915 730 843
+                    (+351) 915 730 843 Denys Moraes
                   </a>
                   <a href="tel:+351913282888" className="text-gray-400 hover:text-ocean-500 transition-colors block">
-                    (+351) 913 282 888
+                    (+351) 913 282 888 Carla Pereira
                   </a>
                 </div>
               </div>
