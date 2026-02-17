@@ -63,7 +63,7 @@ const Header = () => {
             <img 
               src="https://hnaezacbzcpmyfoupdec.supabase.co/storage/v1/object/public/ANTARES%20ENERGIA/LOGO%20DM%20.png" 
               alt="DM Yacht Care Logo" 
-              className="h-20 w-auto scale-150 object-contain"
+              className="h-16 w-auto scale-125 sm:scale-150 lg:h-20 lg:scale-150 object-contain"
             />
             <div className="hidden sm:block">
               <h1 className="text-xl lg:text-2xl font-bold text-navy-900">DM Yacht Care</h1>
