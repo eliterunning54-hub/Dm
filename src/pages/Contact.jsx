@@ -91,8 +91,8 @@ const Contact = () => {
                     <div className="bg-ocean-500 p-3 rounded-lg text-white"><Phone className="w-6 h-6" /></div>
                     <div>
                       <h3 className="font-bold text-navy-900 mb-1">{t('contact.info.phone')}</h3>
-                      <a href="tel:+351915730843" className="text-ocean-600 hover:text-ocean-700">(+351) 915 730 843</a><br />
-                      <a href="tel:+351913282888" className="text-ocean-600 hover:text-ocean-700">(+351) 913 282 888</a>
+                      <a href="tel:+351915730843" className="text-ocean-600 hover:text-ocean-700">(+351) 915 730 843 Denys Moraes</a><br />
+                      <a href="tel:+351913282888" className="text-ocean-600 hover:text-ocean-700">(+351) 913 282 888 Carla Pereira</a>
                     </div>
                   </div>
                   {/* Email */}
@@ -108,7 +108,7 @@ const Contact = () => {
                     <div className="bg-ocean-500 p-3 rounded-lg text-white"><MapPin className="w-6 h-6" /></div>
                     <div>
                       <h3 className="font-bold text-navy-900 mb-1">{t('contact.info.location')}</h3>
-                      <p className="text-gray-700">Marina de Vilamoura<br />8125-409 Quarteira<br />Algarve, Portugal</p>
+                      <p className="text-gray-700">Estaleiros da Marina de Portimão<br />8400-279 Parchal<br />Algarve, Portugal</p>
                     </div>
                   </div>
                   {/* Hours */}
