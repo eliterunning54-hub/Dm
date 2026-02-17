@@ -17,7 +17,7 @@ const Footer = () => {
               <img 
                 src="https://hnaezacbzcpmyfoupdec.supabase.co/storage/v1/object/public/ANTARES%20ENERGIA/LOGO%20DM%20.png" 
                 alt="DM Yacht Care Logo" 
-                className="w-34 h-34 object-contain"
+                className="w-28 h-28 object-contain"
               />
               <div>
                 <h3 className="text-xl font-bold">DM Yacht Care</h3>
