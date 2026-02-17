@@ -11,13 +11,13 @@ import About from './pages/About';
 import Gallery from './pages/Gallery';
 import Contact from './pages/Contact';
 
-
 function App() {
   return (
     <Router>
       <div className="min-h-screen flex flex-col">
         <Header />
-        <main className="flex-grow">
+        {/* pt-24 compensa a altura do header fixed (py-6 = 24px top+bottom + logo) */}
+        <main className="flex-grow pt-24">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/servicos" element={<Services />} />
@@ -26,7 +26,6 @@ function App() {
             <Route path="/sobre" element={<About />} />
             <Route path="/galeria" element={<Gallery />} />
             <Route path="/contato" element={<Contact />} />
-            
           </Routes>
         </main>
         <Footer />
