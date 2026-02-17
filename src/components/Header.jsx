@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, Phone } from 'lucide-react';
-import { useTranslation } from 'react-i18next'; // Importante: certifique-se de ter instalado
+import { useTranslation } from 'react-i18next';
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -31,7 +31,6 @@ const Header = () => {
     { path: '/contato', label: t('nav.contact', 'Contato') }
   ];
 
-  // Componente Reutilizável das Bandeiras
   const LanguageSelector = () => (
     <div className="flex items-center gap-3 ml-4 border-l pl-4 border-gray-200">
       <button 
@@ -61,9 +60,11 @@ const Header = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3">
-            <div className="w-12 h-12 lg:w-16 lg:h-16 bg-ocean-500 rounded-full flex items-center justify-center">
-              <span className="text-white font-bold text-xl lg:text-2xl">DM</span>
-            </div>
+            <img 
+              src="https://hnaezacbzcpmyfoupdec.supabase.co/storage/v1/object/public/ANTARES%20ENERGIA/LOGO%20DM%20.png" 
+              alt="DM Yacht Care Logo" 
+              className="w-12 h-12 lg:w-16 lg:h-16 object-contain"
+            />
             <div className="hidden sm:block">
               <h1 className="text-xl lg:text-2xl font-bold text-navy-900">DM Yacht Care</h1>
               <p className="text-xs lg:text-sm text-gray-600">Yacht Services & Solutions</p>
@@ -114,7 +115,6 @@ const Header = () => {
         {isOpen && (
           <nav className="lg:hidden mt-6 pb-6 animate-in fade-in slide-in-from-top-4">
             <div className="flex flex-col gap-4">
-              {/* Idioma no Mobile */}
               <div className="flex justify-center py-2 bg-gray-50 rounded-lg">
                 <span className="text-sm text-gray-500 mr-4 self-center">Idioma:</span>
                 <LanguageSelector />
