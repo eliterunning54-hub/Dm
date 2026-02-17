@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { Anchor, Shield, Award, Users, ArrowRight, Phone, Mail } from 'lucide-react';
+import { Anchor, Shield, Award, ArrowRight, Phone } from 'lucide-react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useTranslation } from 'react-i18next';
@@ -11,49 +11,20 @@ const Home = () => {
   const { t } = useTranslation();
 
   useEffect(() => {
-    // Hero animation
-    gsap.from('.hero-title', {
-      opacity: 0,
-      y: 50,
-      duration: 1,
-      delay: 0.3
-    });
+    gsap.from('.hero-title', { opacity: 0, y: 50, duration: 1, delay: 0.3 });
+    gsap.from('.hero-subtitle', { opacity: 0, y: 30, duration: 1, delay: 0.6 });
+    gsap.from('.hero-buttons', { opacity: 0, y: 30, duration: 1, delay: 0.9 });
 
-    gsap.from('.hero-subtitle', {
-      opacity: 0,
-      y: 30,
-      duration: 1,
-      delay: 0.6
-    });
-
-    gsap.from('.hero-buttons', {
-      opacity: 0,
-      y: 30,
-      duration: 1,
-      delay: 0.9
-    });
-
-    // Services cards animation
     gsap.from('.service-card', {
-      scrollTrigger: {
-        trigger: '.services-section',
-        start: 'top 80%',
-      },
-      opacity: 0,
-      y: 50,
-      stagger: 0.2,
-      duration: 0.8
+      scrollTrigger: { trigger: '.services-section', start: 'top 80%' },
+      opacity: 0, y: 50, stagger: 0.2, duration: 0.8
     });
 
-    // Stats counter animation
     const stats = document.querySelectorAll('.stat-number');
     stats.forEach(stat => {
       const target = parseInt(stat.getAttribute('data-target'));
       gsap.to(stat, {
-        scrollTrigger: {
-          trigger: stat,
-          start: 'top 80%',
-        },
+        scrollTrigger: { trigger: stat, start: 'top 80%' },
         innerHTML: target,
         duration: 2,
         snap: { innerHTML: 1 },
@@ -62,7 +33,6 @@ const Home = () => {
         }
       });
     });
-
   }, []);
 
   const services = [
@@ -87,28 +57,19 @@ const Home = () => {
   ];
 
   const testimonials = [
-    {
-      name: 'Carlos Silva',
-      boat: 'Beneteau Oceanis 45',
-      text: t('testimonials.carlos.text')
-    },
-    {
-      name: 'Maria Santos',
-      boat: 'Jeanneau Sun Odyssey 42',
-      text: t('testimonials.maria.text')
-    },
-    {
-      name: 'João Rodrigues',
-      boat: 'Bavaria 46',
-      text: t('testimonials.joao.text')
-    }
+    { name: 'Carlos Silva',    boat: 'Beneteau Oceanis 45',       text: t('testimonials.carlos.text') },
+    { name: 'Maria Santos',    boat: 'Jeanneau Sun Odyssey 42',   text: t('testimonials.maria.text') },
+    { name: 'João Rodrigues',  boat: 'Bavaria 46',                text: t('testimonials.joao.text') }
   ];
+
+  // ✅ Corrigido: usa o array why.items com returnObjects: true
+  const whyItems = t('why.items', { returnObjects: true });
 
   return (
     <div className="home-page">
       {/* Hero Section */}
       <section className="relative h-screen flex items-center justify-center bg-gradient-to-br from-navy-900 to-ocean-600 overflow-hidden">
-        <div 
+        <div
           className="absolute inset-0 opacity-30"
           style={{
             backgroundImage: 'url(https://images.unsplash.com/photo-1569263979104-865ab7cd8d13?q=80&w=2000)',
@@ -116,7 +77,6 @@ const Home = () => {
             backgroundPosition: 'center'
           }}
         />
-        
         <div className="relative z-10 text-center text-white px-4 max-w-5xl mx-auto">
           <h1 className="hero-title text-5xl md:text-7xl font-bold mb-6">
             {t('hero.title')}
@@ -125,13 +85,13 @@ const Home = () => {
             {t('hero.subtitle')}
           </p>
           <div className="hero-buttons flex flex-col sm:flex-row gap-4 justify-center">
-            <Link 
+            <Link
               to="/contato"
               className="bg-ocean-500 hover:bg-ocean-600 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all transform hover:scale-105 inline-flex items-center justify-center gap-2"
             >
               {t('cta.quote')} <ArrowRight className="w-5 h-5" />
             </Link>
-            <a 
+            <a
               href="https://wa.me/351915730843"
               target="_blank"
               rel="noopener noreferrer"
@@ -154,7 +114,7 @@ const Home = () => {
             <div>
               <div className="stat-number text-5xl font-bold text-ocean-500 mb-2" data-target="500">0</div>
               <div className="text-gray-300">{t('stats.projects')}</div>
-            </div>
+        </div>
             <div>
               <div className="stat-number text-5xl font-bold text-ocean-500 mb-2" data-target="98">0</div>
               <div className="text-gray-300">{t('stats.satisfaction')}</div>
@@ -178,17 +138,16 @@ const Home = () => {
               {t('services.sectionSubtitle')}
             </p>
           </div>
-
           <div className="grid md:grid-cols-3 gap-8">
             {services.map((service, index) => (
-              <div 
+              <div
                 key={index}
                 className="service-card bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all transform hover:-translate-y-2"
               >
                 <div className="text-ocean-500 mb-4">{service.icon}</div>
                 <h3 className="text-2xl font-bold text-navy-900 mb-3">{service.title}</h3>
                 <p className="text-gray-600 mb-6">{service.description}</p>
-                <Link 
+                <Link
                   to={service.link}
                   className="text-ocean-500 font-semibold inline-flex items-center gap-2 hover:gap-3 transition-all"
                 >
@@ -207,14 +166,8 @@ const Home = () => {
             {t('why.title')}
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
-            {[
-              t('why.item1'),
-              t('why.item2'),
-              t('why.item3'),
-              t('why.item4'),
-              t('why.item5'),
-              t('why.item6')
-            ].map((item, index) => (
+            {/* ✅ Corrigido: itera sobre o array why.items */}
+            {Array.isArray(whyItems) && whyItems.map((item, index) => (
               <div key={index} className="flex items-start gap-3">
                 <div className="text-ocean-500 mt-1">✓</div>
                 <span className="text-gray-700 text-lg">{item}</span>
@@ -253,7 +206,7 @@ const Home = () => {
           <p className="text-xl mb-8 max-w-2xl mx-auto">
             {t('cta.finalSubtitle')}
           </p>
-          <Link 
+          <Link
             to="/contato"
             className="bg-white text-ocean-600 px-10 py-4 rounded-lg font-bold text-lg inline-flex items-center gap-2 hover:bg-gray-100 transition-all transform hover:scale-105"
           >
