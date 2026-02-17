@@ -135,9 +135,9 @@ const Footer = () => {
               <div className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-ocean-500 flex-shrink-0 mt-1" />
                 <div className="text-gray-400">
-                  Marina de Vilamoura<br />
-                  8125-409 Quarteira<br />
-                  Algarve, Portugal
+                  Estaleiros da Marina de Portimão<br />
+                  8125-409 Loja 5 , Parchal<br />
+                  Ferragudo, Portugal
                 </div>
               </div>
             </div>
