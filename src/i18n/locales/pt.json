@@ -158,6 +158,10 @@
     }
   },
   "gallery": {
+    "hero": {
+      "title": "Galeria de Veleiros",
+      "subtitle": "Confira alguns dos nossos projetos concluídos."
+    },
     "title": "Galeria de Veleiros",
     "subtitle": "Confira alguns dos nossos projetos concluídos.",
     "categories": {
@@ -189,13 +193,127 @@
       "cta": "Solicitar Orçamento"
     },
     "services": {
+      "sectionTitle": "Serviços de Refit",
+      "sectionSubtitle": "Soluções completas para o seu veleiro",
       "title": "Serviços de Refit",
       "subtitle": "Soluções completas para o seu veleiro",
       "structural": "Reparos Estruturais",
       "hull": "Tratamento de Casco",
       "rigging": "Rigging e Instalação",
       "painting": "Pintura e Gelcoat",
-      "maintenance": "Manutenção Preventiva"
+      "maintenance": "Manutenção Preventiva",
+      "electrical": {
+        "title": "Sistemas Elétricos",
+        "desc": "Instalação e manutenção de sistemas elétricos náuticos.",
+        "items": [
+          "Instalação de painéis elétricos",
+          "Sistemas de navegação",
+          "Iluminação LED náutica",
+          "Baterias e carregadores",
+          "Sistemas de energia solar",
+          "Instalação de VHF e instrumentos"
+        ]
+      },
+      "hydraulic": {
+        "title": "Sistemas Hidráulicos",
+        "desc": "Reparos e instalação de sistemas hidráulicos.",
+        "items": [
+          "Leme hidráulico",
+          "Sistemas de ancoragem",
+          "Guindastes e guinchos",
+          "Manutenção de bombas",
+          "Substituição de mangueiras",
+          "Teste de pressão"
+        ]
+      },
+      "aesthetic": {
+        "title": "Estética e Acabamentos",
+        "desc": "Renovação visual completa do seu veleiro.",
+        "items": [
+          "Pintura de casco e superestrutura",
+          "Aplicação de gelcoat",
+          "Polimento e enceramento",
+          "Renovação de interiores",
+          "Revestimentos e estofamentos",
+          "Verniz de madeiras"
+        ]
+      },
+      "navigation": {
+        "title": "Equipamentos de Navegação",
+        "desc": "Modernização dos sistemas de navegação.",
+        "items": [
+          "Instalação de plotters",
+          "Sistemas AIS",
+          "Radar e sonar",
+          "Autopiloto",
+          "Instrumentação de bordo",
+          "Sistemas de comunicação"
+        ]
+      },
+      "propulsion": {
+        "title": "Sistemas de Propulsão",
+        "desc": "Manutenção e upgrade de motores e propulsores.",
+        "items": [
+          "Revisão de motor diesel",
+          "Substituição de hélices",
+          "Eixo e chumaceiras",
+          "Sistemas de refrigeração",
+          "Escape marinho",
+          "Manutenção de saildrive"
+        ]
+      }
+    },
+    "process": {
+      "title": "Nosso Processo de Refit",
+      "subtitle": "Etapas claras para um resultado excelente",
+      "s1": {
+        "title": "Avaliação",
+        "desc": "Inspeção detalhada do estado atual do veleiro."
+      },
+      "s2": {
+        "title": "Orçamento",
+        "desc": "Proposta detalhada com prazos e custos."
+      },
+      "s3": {
+        "title": "Planeamento",
+        "desc": "Definição do plano de trabalhos e prioridades."
+      },
+      "s4": {
+        "title": "Execução",
+        "desc": "Trabalhos realizados por técnicos especializados."
+      },
+      "s5": {
+        "title": "Controlo de Qualidade",
+        "desc": "Verificação rigorosa de cada etapa concluída."
+      },
+      "s6": {
+        "title": "Entrega",
+        "desc": "Veleiro entregue com relatório completo dos trabalhos."
+      }
+    },
+    "why": {
+      "title": "Por Que Fazer Refit?",
+      "reasons": [
+        "Aumenta o valor de revenda",
+        "Melhora a segurança a bordo",
+        "Reduz custos de manutenção futura",
+        "Moderniza sistemas obsoletos",
+        "Melhora a performance e conforto",
+        "Prolonga a vida útil do veleiro"
+      ]
+    },
+    "examples": {
+      "title": "Projetos Realizados",
+      "duration": "Duração",
+      "months": "semanas",
+      "p1": { "desc": "Refit completo incluindo pintura, rigging e sistemas elétricos." },
+      "p2": { "desc": "Modernização completa com novos equipamentos de navegação." },
+      "p3": { "desc": "Refit parcial com foco em casco e acabamentos exteriores." }
+    },
+    "cta": {
+      "title": "Pronto para renovar o seu veleiro?",
+      "subtitle": "Contacte-nos para uma avaliação gratuita e orçamento personalizado.",
+      "button": "Solicitar Orçamento"
     }
   },
   "rigging": {
@@ -205,26 +323,98 @@
       "cta": "Solicitar Inspeção"
     },
     "services": {
+      "title": "Os Nossos Serviços de Rigging",
+      "subtitle": "Soluções completas para o aparelho do seu veleiro",
       "standing": {
         "title": "Rigging Fixo",
         "desc": "Instalação e manutenção de estais e brandais",
-        "items": ["Inspeção completa de mastros", "Substituição de cabos de aço inox", "Instalação de novos estais", "Substituição de terminais Sta-Lok/Norseman", "Tensionamento e afinação do rig", "Verificação de parafusos e fixações"]
+        "items": [
+          "Inspeção completa de mastros",
+          "Substituição de cabos de aço inox",
+          "Instalação de novos estais",
+          "Substituição de terminais Sta-Lok/Norseman",
+          "Tensionamento e afinação do rig",
+          "Verificação de parafusos e fixações"
+        ]
       },
       "running": {
         "title": "Rigging Móvel",
         "desc": "Escotas, adriças e cabos de manobra",
-        "items": ["Substituição de adriças", "Instalação de escotas novas", "Cabos de alta performance (Dyneema)", "Sistemas de redução de fricção", "Roldanas e blocos de qualidade", "Passadores e terminais especializados"]
+        "items": [
+          "Substituição de adriças",
+          "Instalação de escotas novas",
+          "Cabos de alta performance (Dyneema)",
+          "Sistemas de redução de fricção",
+          "Roldanas e blocos de qualidade",
+          "Passadores e terminais especializados"
+        ]
       },
       "equip": {
         "title": "Instalação de Equipamentos",
         "desc": "Winches, blocos e ferragens",
-        "items": ["Instalação de winches Harken/Lewmar", "Montagem de blocos e roldanas", "Furlers e enroladores", "Boom vangs e cunninghams", "Travellers e carros de escota", "Sistemas hidráulicos"]
+        "items": [
+          "Instalação de winches Harken/Lewmar",
+          "Montagem de blocos e roldanas",
+          "Furlers e enroladores",
+          "Boom vangs e cunninghams",
+          "Travellers e carros de escota",
+          "Sistemas hidráulicos"
+        ]
       },
       "inspection": {
         "title": "Inspeção e Manutenção",
         "desc": "Prevenção e segurança",
-        "items": ["Inspeção anual completa", "Relatórios fotográficos detalhados", "Teste de carga em terminais", "Verificação de corrosão", "Lubrificação de equipamentos", "Plano de manutenção preventiva"]
+        "items": [
+          "Inspeção anual completa",
+          "Relatórios fotográficos detalhados",
+          "Teste de carga em terminais",
+          "Verificação de corrosão",
+          "Lubrificação de equipamentos",
+          "Plano de manutenção preventiva"
+        ]
       }
+    },
+    "materials": {
+      "title": "Materiais que Utilizamos",
+      "subtitle": "Apenas materiais certificados e de alta qualidade",
+      "m1": { "name": "Cabo Dyneema", "desc": "Alta resistência e baixo peso para rigging de performance." },
+      "m2": { "name": "Aço Inox 316L", "desc": "Máxima resistência à corrosão em ambiente marinho." },
+      "m3": { "name": "Terminais Sta-Lok", "desc": "Terminais de precisão desmontáveis em campo." },
+      "m4": { "name": "Winches Harken", "desc": "Equipamentos de alta performance e durabilidade." },
+      "m5": { "name": "Blocos Lewmar", "desc": "Blocos de baixa fricção para manobras suaves." },
+      "m6": { "name": "Cabo Dyform", "desc": "Cabo de aço compactado para menor stretch." }
+    },
+    "warnings": {
+      "title": "Sinais de Alerta no Rigging",
+      "subtitle": "Não ignore estes sinais — podem comprometer a segurança",
+      "items": [
+        "Fios soltos ou quebrados nos cabos de aço",
+        "Corrosão visível em terminais ou estais",
+        "Mastro desalinhado ou com vibrações anormais",
+        "Terminais com folga ou deformados",
+        "Cabos de manobra com fios cortados",
+        "Blocos ou winches com dificuldade de movimento"
+      ],
+      "alert": "Em caso de dúvida, contacte-nos imediatamente para uma inspeção."
+    },
+    "advantages": {
+      "adv1": {
+        "title": "Experiência Comprovada",
+        "desc": "Mais de 15 anos a trabalhar com rigging de veleiros no Algarve."
+      },
+      "adv2": {
+        "title": "Materiais Certificados",
+        "desc": "Utilizamos apenas materiais de marcas reconhecidas e certificadas."
+      },
+      "adv3": {
+        "title": "Garantia de Trabalho",
+        "desc": "Todos os nossos trabalhos têm garantia e relatório fotográfico."
+      }
+    },
+    "cta": {
+      "title": "Precisa de inspeção ou manutenção?",
+      "subtitle": "Entre em contato para agendar uma visita ao seu veleiro.",
+      "button": "Solicitar Orçamento"
     }
   }
 }
