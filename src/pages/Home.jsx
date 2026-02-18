@@ -172,7 +172,7 @@ const Home = () => {
       </section>
 
       {/* WHY */}
-      <section className="py-20 bg-white">
+     <section className="pt-0 pb-20 bg-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-4xl md:text-5xl font-bold text-navy-900 mb-12">
             {t('why.title')}
