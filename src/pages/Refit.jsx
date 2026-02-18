@@ -52,7 +52,7 @@ const Refit = () => {
 
   const examples = [
     {
-      img: 'https://images.unsplash.com/photo-1567899378494-47b22a2ae96a?w=600',
+      img: 'https://hnaezacbzcpmyfoupdec.supabase.co/storage/v1/object/public/ANTARES%20ENERGIA/DM%20BENETEAU%2045%20600X400.jpeg',
       title: 'Beneteau Oceanis 45',
       desc: t('refit.examples.p1.desc'),
       duration: '4'
@@ -64,7 +64,7 @@ const Refit = () => {
       duration: '6'
     },
     {
-      img: 'https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=600',
+      img: 'https://hnaezacbzcpmyfoupdec.supabase.co/storage/v1/object/public/ANTARES%20ENERGIA/DM%20BAVARIA%2046%20600X400.jpeg',
       title: 'Bavaria 46 Cruiser',
       desc: t('refit.examples.p3.desc'),
       duration: '3'
