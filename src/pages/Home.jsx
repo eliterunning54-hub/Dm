@@ -57,12 +57,11 @@ const Home = () => {
   ];
 
   const testimonials = [
-    { name: 'Carlos Silva',    boat: 'Beneteau Oceanis 45',       text: t('testimonials.carlos.text') },
+    { name: 'Carlos Silva',    boat: 'Beneteau Oceanis 45',        text: t('testimonials.carlos.text') },
     { name: 'Maria Santos',    boat: 'Jeanneau Sun Odyssey 42',   text: t('testimonials.maria.text') },
-    { name: 'João Rodrigues',  boat: 'Bavaria 46',                text: t('testimonials.joao.text') }
+    { name: 'João Rodrigues',  boat: 'Bavaria 46',                 text: t('testimonials.joao.text') }
   ];
 
-  // ✅ Corrigido: usa o array why.items com returnObjects: true
   const whyItems = t('why.items', { returnObjects: true });
 
   return (
@@ -114,7 +113,7 @@ const Home = () => {
             <div>
               <div className="stat-number text-5xl font-bold text-ocean-500 mb-2" data-target="500">0</div>
               <div className="text-gray-300">{t('stats.projects')}</div>
-        </div>
+            </div>
             <div>
               <div className="stat-number text-5xl font-bold text-ocean-500 mb-2" data-target="98">0</div>
               <div className="text-gray-300">{t('stats.satisfaction')}</div>
@@ -134,10 +133,21 @@ const Home = () => {
             <h2 className="text-4xl md:text-5xl font-bold text-navy-900 mb-4">
               {t('services.sectionTitle')}
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-10">
               {t('services.sectionSubtitle')}
             </p>
+
+            {/* SEGUNDA FOTO ADICIONADA AQUI */}
+            <div className="max-w-5xl mx-auto mb-16">
+              <img 
+                src="https://hnaezacbzcpmyfoupdec.supabase.co/storage/v1/object/public/ANTARES%20ENERGIA/DM%20BANNER%20VELEIRO.webp" 
+                alt="Banner Veleiro" 
+                className="w-full h-auto rounded-2xl shadow-xl object-cover"
+                style={{ maxHeight: '600px' }}
+              />
+            </div>
           </div>
+
           <div className="grid md:grid-cols-3 gap-8">
             {services.map((service, index) => (
               <div
@@ -166,7 +176,6 @@ const Home = () => {
             {t('why.title')}
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
-            {/* ✅ Corrigido: itera sobre o array why.items */}
             {Array.isArray(whyItems) && whyItems.map((item, index) => (
               <div key={index} className="flex items-start gap-3">
                 <div className="text-ocean-500 mt-1">✓</div>
