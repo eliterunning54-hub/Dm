@@ -136,18 +136,25 @@ const Home = () => {
             <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-10">
               {t('services.sectionSubtitle')}
             </p>
-
-            {/* SEGUNDA FOTO ADICIONADA AQUI */}
-            <div className="max-w-5xl mx-auto mb-16">
-              <img 
-                src="https://hnaezacbzcpmyfoupdec.supabase.co/storage/v1/object/public/ANTARES%20ENERGIA/DM%20BANNER%20VELEIRO.webp" 
-                alt="Banner Veleiro" 
-                className="w-full h-auto rounded-2xl shadow-xl object-cover"
-                style={{ maxHeight: '600px' }}
-              />
-            </div>
           </div>
+        </div>
 
+        {/* ✅ NOVO BANNER LARGURA TOTAL (Igual ao Hero) */}
+        <div 
+          className="relative w-full mb-20 overflow-hidden"
+          style={{ 
+            height: '500px', 
+            backgroundImage: 'url(https://hnaezacbzcpmyfoupdec.supabase.co/storage/v1/object/public/ANTARES%20ENERGIA/DM%20BANNER%20VELEIRO.webp)',
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            backgroundAttachment: 'fixed' // Adiciona um leve efeito de profundidade ao scroll
+          }}
+        >
+          {/* Overlay opcional para manter o padrão do site */}
+          <div className="absolute inset-0 bg-navy-900/10"></div>
+        </div>
+
+        <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-3 gap-8">
             {services.map((service, index) => (
               <div
