@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { Shield, Award, ArrowRight, Phone } from 'lucide-react';
+import { Anchor, Shield, Award, ArrowRight, Phone } from 'lucide-react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useTranslation } from 'react-i18next';
@@ -16,11 +16,8 @@ const Home = () => {
     gsap.from('.hero-buttons', { opacity: 0, y: 30, duration: 1, delay: 0.9 });
 
     gsap.from('.service-card', {
-      scrollTrigger: { trigger: '.services-cards', start: 'top 80%' },
-      opacity: 0,
-      y: 50,
-      stagger: 0.2,
-      duration: 0.8
+      scrollTrigger: { trigger: '.services-section', start: 'top 80%' },
+      opacity: 0, y: 50, stagger: 0.2, duration: 0.8
     });
 
     const stats = document.querySelectorAll('.stat-number');
@@ -31,7 +28,7 @@ const Home = () => {
         innerHTML: target,
         duration: 2,
         snap: { innerHTML: 1 },
-        onUpdate: function () {
+        onUpdate: function() {
           stat.innerHTML = Math.ceil(stat.innerHTML);
         }
       });
@@ -40,33 +37,33 @@ const Home = () => {
 
   const services = [
     {
+      icon: <Anchor className="w-12 h-12" />,
+      title: t('services.hull.title'),
+      description: t('services.hull.desc'),
+      link: '/servicos'
+    },
+    {
       icon: <Shield className="w-12 h-12" />,
-      title: "Rigging Profissional",
-      description: "Instalação e inspeção de rigging fixo e móvel.",
-      link: "/rigging"
+      title: t('services.rigging.title'),
+      description: t('services.rigging.desc'),
+      link: '/rigging'
     },
     {
       icon: <Award className="w-12 h-12" />,
-      title: "Refit & Reparos Estruturais",
-      description: "Damos nova vida ao seu veleiro com modernização técnica.",
-      link: "/refit"
+      title: t('services.refit.title'),
+      description: t('services.refit.desc'),
+      link: '/refit'
     }
   ];
 
   const testimonials = [
-    { name: 'Carlos Silva', boat: 'Beneteau Oceanis 45', text: t('testimonials.carlos.text') },
-    { name: 'Maria Santos', boat: 'Jeanneau Sun Odyssey 42', text: t('testimonials.maria.text') },
-    { name: 'João Rodrigues', boat: 'Bavaria 46', text: t('testimonials.joao.text') }
+    { name: 'Carlos Silva',    boat: 'Beneteau Oceanis 45',       text: t('testimonials.carlos.text') },
+    { name: 'Maria Santos',    boat: 'Jeanneau Sun Odyssey 42',   text: t('testimonials.maria.text') },
+    { name: 'João Rodrigues',  boat: 'Bavaria 46',                text: t('testimonials.joao.text') }
   ];
 
-  const whyItems = [
-    "Profissionais experientes",
-    "Materiais de alta qualidade",
-    "Serviço personalizado",
-    "Rapidez e eficiência",
-    "Suporte contínuo",
-    "Satisfação garantida"
-  ];
+  // ✅ Corrigido: usa o array why.items com returnObjects: true
+  const whyItems = t('why.items', { returnObjects: true });
 
   return (
     <div className="home-page">
@@ -75,8 +72,7 @@ const Home = () => {
         <div
           className="absolute inset-0 opacity-30"
           style={{
-            backgroundImage:
-              'url(https://images.unsplash.com/photo-1569263979104-865ab7cd8d13?q=80&w=2000)',
+            backgroundImage: 'url(https://images.unsplash.com/photo-1569263979104-865ab7cd8d13?q=80&w=2000)',
             backgroundSize: 'cover',
             backgroundPosition: 'center'
           }}
@@ -112,74 +108,37 @@ const Home = () => {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div>
-              <div
-                className="stat-number text-5xl font-bold text-ocean-500 mb-2"
-                data-target="15"
-              >
-                0
-              </div>
+              <div className="stat-number text-5xl font-bold text-ocean-500 mb-2" data-target="15">0</div>
               <div className="text-gray-300">{t('stats.exp')}</div>
             </div>
             <div>
-              <div
-                className="stat-number text-5xl font-bold text-ocean-500 mb-2"
-                data-target="500"
-              >
-                0
-              </div>
+              <div className="stat-number text-5xl font-bold text-ocean-500 mb-2" data-target="500">0</div>
               <div className="text-gray-300">{t('stats.projects')}</div>
-            </div>
+        </div>
             <div>
-              <div
-                className="stat-number text-5xl font-bold text-ocean-500 mb-2"
-                data-target="98"
-              >
-                0
-              </div>
+              <div className="stat-number text-5xl font-bold text-ocean-500 mb-2" data-target="98">0</div>
               <div className="text-gray-300">{t('stats.satisfaction')}</div>
             </div>
             <div>
-              <div
-                className="stat-number text-5xl font-bold text-ocean-500 mb-2"
-                data-target="24"
-              >
-                0
-              </div>
+              <div className="stat-number text-5xl font-bold text-ocean-500 mb-2" data-target="24">0</div>
               <div className="text-gray-300">{t('stats.support')}</div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Services Intro */}
-      <section className="pt-20 bg-gray-50">
-        <div className="container mx-auto px-4 text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-navy-900 mb-4">
-            Technical Services for Maximum Performance
-          </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-10">
-            We offer complete solutions for your sailboat.
-          </p>
-        </div>
-      </section>
-
-      {/* Banner igual ao Hero */}
-      <section
-        className="relative w-full h-screen overflow-hidden"
-        style={{
-          backgroundImage:
-            'url(https://hnaezacbzcpmyfoupdec.supabase.co/storage/v1/object/public/ANTARES%20ENERGIA/DM%20BANNER%20VELEIRO.webp)',
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-        }}
-      >
-        <div className="absolute inset-0 bg-navy-900/10"></div>
-      </section>
-
-      {/* Services Cards */}
-      <section className="services-cards py-20 bg-gray-50">
+      {/* Services Section */}
+      <section className="services-section py-20 bg-gray-50">
         <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-navy-900 mb-4">
+              {t('services.sectionTitle')}
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              {t('services.sectionSubtitle')}
+            </p>
+          </div>
+          <div className="grid md:grid-cols-3 gap-8">
             {services.map((service, index) => (
               <div
                 key={index}
@@ -192,7 +151,7 @@ const Home = () => {
                   to={service.link}
                   className="text-ocean-500 font-semibold inline-flex items-center gap-2 hover:gap-3 transition-all"
                 >
-                  Saiba Mais <ArrowRight className="w-4 h-4" />
+                  {t('services.learnMore')} <ArrowRight className="w-4 h-4" />
                 </Link>
               </div>
             ))}
@@ -201,18 +160,17 @@ const Home = () => {
       </section>
 
       {/* Why Choose Us */}
-      <section className="pt-10 pb-20 bg-white text-center">
-        <div className="container mx-auto px-4 max-w-5xl">
-          <h2 className="text-4xl md:text-5xl font-bold text-navy-900 mb-12">
-            Por Que Escolher a Nossa Equipa?
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-navy-900 mb-12 text-center">
+            {t('why.title')}
           </h2>
-          <div className="grid md:grid-cols-3 gap-6 text-left">
-            {whyItems.map((item, i) => (
-              <div
-                key={i}
-                className="flex items-start gap-3 text-gray-700 text-lg"
-              >
-                <span className="text-ocean-500 mt-1">✓</span> {item}
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
+            {/* ✅ Corrigido: itera sobre o array why.items */}
+            {Array.isArray(whyItems) && whyItems.map((item, index) => (
+              <div key={index} className="flex items-start gap-3">
+                <div className="text-ocean-500 mt-1">✓</div>
+                <span className="text-gray-700 text-lg">{item}</span>
               </div>
             ))}
           </div>
@@ -227,10 +185,7 @@ const Home = () => {
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
             {testimonials.map((testimonial, index) => (
-              <div
-                key={index}
-                className="bg-navy-800 p-8 rounded-xl"
-              >
+              <div key={index} className="bg-navy-800 p-8 rounded-xl">
                 <p className="text-gray-300 mb-6 italic">"{testimonial.text}"</p>
                 <div>
                   <div className="font-bold text-ocean-500">{testimonial.name}</div>
