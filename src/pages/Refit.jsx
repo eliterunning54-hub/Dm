@@ -78,7 +78,7 @@ const Refit = () => {
         <div 
           className="absolute inset-0 opacity-20"
           style={{
-            backgroundImage: 'url(https://images.unsplash.com/photo-1567899378494-47b22a2ae96a?q=80&w=2000)',
+            backgroundImage: 'url()',
             backgroundSize: 'cover',
             backgroundPosition: 'center'
           }}
