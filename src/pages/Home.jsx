@@ -16,7 +16,7 @@ const Home = () => {
     gsap.from('.hero-buttons', { opacity: 0, y: 30, duration: 1, delay: 0.9 });
 
     gsap.from('.service-card', {
-      scrollTrigger: { trigger: '.services-section', start: 'top 80%' },
+      scrollTrigger: { trigger: '.services-cards', start: 'top 80%' },
       opacity: 0,
       y: 50,
       stagger: 0.2,
@@ -70,7 +70,7 @@ const Home = () => {
   return (
     <div className="home-page">
 
-      {/* Hero Section */}
+      {/* HERO */}
       <section className="relative h-screen flex items-center justify-center bg-gradient-to-br from-navy-900 to-ocean-600 overflow-hidden">
         <div
           className="absolute inset-0 opacity-30"
@@ -106,57 +106,49 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Stats Section */}
+      {/* STATS */}
       <section className="py-16 bg-navy-900 text-white">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-            <div>
-              <div className="stat-number text-5xl font-bold text-ocean-500 mb-2" data-target="15">0</div>
-              <div className="text-gray-300">{t('stats.exp')}</div>
-            </div>
-            <div>
-              <div className="stat-number text-5xl font-bold text-ocean-500 mb-2" data-target="500">0</div>
-              <div className="text-gray-300">{t('stats.projects')}</div>
-            </div>
-            <div>
-              <div className="stat-number text-5xl font-bold text-ocean-500 mb-2" data-target="98">0</div>
-              <div className="text-gray-300">{t('stats.satisfaction')}</div>
-            </div>
-            <div>
-              <div className="stat-number text-5xl font-bold text-ocean-500 mb-2" data-target="24">0</div>
-              <div className="text-gray-300">{t('stats.support')}</div>
-            </div>
+            {[15, 500, 98, 24].map((num, i) => (
+              <div key={i}>
+                <div className="stat-number text-5xl font-bold text-ocean-500 mb-2" data-target={num}>0</div>
+                <div className="text-gray-300">
+                  {t(['stats.exp','stats.projects','stats.satisfaction','stats.support'][i])}
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* Services Section */}
-      <section className="services-section py-20 bg-gray-50">
-
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-navy-900 mb-4">
-              {t('services.sectionTitle')}
-            </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-10">
-              {t('services.sectionSubtitle')}
-            </p>
-          </div>
+      {/* SERVICES INTRO */}
+      <section className="pt-20 bg-gray-50">
+        <div className="container mx-auto px-4 text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold text-navy-900 mb-4">
+            {t('services.sectionTitle')}
+          </h2>
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-10">
+            {t('services.sectionSubtitle')}
+          </p>
         </div>
+      </section>
 
-        {/* 🔥 BANNER IGUAL AO HERO */}
-        <section className="relative h-screen flex items-center justify-center bg-gradient-to-br from-navy-900 to-ocean-600 overflow-hidden mb-20">
-          <div
-            className="absolute inset-0 opacity-30"
-            style={{
-              backgroundImage: 'url(https://hnaezacbzcpmyfoupdec.supabase.co/storage/v1/object/public/ANTARES%20ENERGIA/DM%20BANNER%20VELEIRO.webp)',
-              backgroundSize: 'cover',
-              backgroundPosition: 'center'
-            }}
-          />
-          <div className="absolute inset-0 bg-navy-900/10"></div>
-        </section>
+      {/* BANNER IGUAL AO HERO */}
+      <section className="relative h-screen flex items-center justify-center bg-gradient-to-br from-navy-900 to-ocean-600 overflow-hidden">
+        <div
+          className="absolute inset-0 opacity-30"
+          style={{
+            backgroundImage: 'url(https://hnaezacbzcpmyfoupdec.supabase.co/storage/v1/object/public/ANTARES%20ENERGIA/DM%20BANNER%20VELEIRO.webp)',
+            backgroundSize: 'cover',
+            backgroundPosition: 'center'
+          }}
+        />
+        <div className="absolute inset-0 bg-navy-900/10"></div>
+      </section>
 
+      {/* SERVICES CARDS */}
+      <section className="services-cards pb-20 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-3 gap-8">
             {services.map((service, index) => (
@@ -177,16 +169,15 @@ const Home = () => {
             ))}
           </div>
         </div>
-
       </section>
 
-      {/* Why Choose Us */}
+      {/* WHY */}
       <section className="py-20 bg-white">
-        <div className="container mx-auto px-4">
-          <h2 className="text-4xl md:text-5xl font-bold text-navy-900 mb-12 text-center">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-4xl md:text-5xl font-bold text-navy-900 mb-12">
             {t('why.title')}
           </h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto text-left">
             {Array.isArray(whyItems) && whyItems.map((item, index) => (
               <div key={index} className="flex items-start gap-3">
                 <div className="text-ocean-500 mt-1">✓</div>
@@ -197,10 +188,10 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Testimonials */}
+      {/* TESTIMONIALS */}
       <section className="py-20 bg-navy-900 text-white">
-        <div className="container mx-auto px-4">
-          <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-4xl md:text-5xl font-bold mb-12">
             {t('testimonials.title')}
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
@@ -217,7 +208,7 @@ const Home = () => {
         </div>
       </section>
 
-      {/* CTA Final */}
+      {/* CTA FINAL */}
       <section className="py-20 bg-ocean-500 text-white text-center">
         <div className="container mx-auto px-4">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
