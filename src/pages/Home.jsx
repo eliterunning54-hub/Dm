@@ -163,6 +163,20 @@ const Home = () => {
         </div>
       </section>
 
+      {/* Banner igual ao Hero */}
+      <section
+        className="relative w-full h-[500px] overflow-hidden"
+        style={{
+          backgroundImage:
+            'url(https://hnaezacbzcpmyfoupdec.supabase.co/storage/v1/object/public/ANTARES%20ENERGIA/DM%20BANNER%20VELEIRO.webp)',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundAttachment: 'fixed'
+        }}
+      >
+        <div className="absolute inset-0 bg-navy-900/10"></div>
+      </section>
+
       {/* Services Cards */}
       <section className="services-cards py-20 bg-gray-50">
         <div className="container mx-auto px-4">
