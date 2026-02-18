@@ -61,7 +61,7 @@ const Header = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3">
             <img 
-              src="https://hnaezacbzcpmyfoupdec.supabase.co/storage/v1/object/public/ANTARES%20ENERGIA/LOGO%20DM%20.png" 
+              src="https://hnaezacbzcpmyfoupdec.supabase.co/storage/v1/object/public/ANTARES%20ENERGIA/LOGO%20MAIOR%20.png" 
               alt="DM Yacht Care Logo" 
               className="h-16 w-auto scale-125 sm:scale-125 lg:h-20 lg:scale-150 object-contain"
             />
