@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { Anchor, Shield, Award, ArrowRight, Phone } from 'lucide-react';
+import { Shield, Award, ArrowRight, Phone } from 'lucide-react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useTranslation } from 'react-i18next';
@@ -40,22 +40,16 @@ const Home = () => {
 
   const services = [
     {
-      icon: <Anchor className="w-12 h-12" />,
-      title: t('services.hull.title'),
-      description: t('services.hull.desc'),
-      link: '/servicos'
-    },
-    {
       icon: <Shield className="w-12 h-12" />,
-      title: t('services.rigging.title'),
-      description: t('services.rigging.desc'),
-      link: '/rigging'
+      title: "Rigging Profissional",
+      description: "Instalação e inspeção de rigging fixo e móvel.",
+      link: "/rigging"
     },
     {
       icon: <Award className="w-12 h-12" />,
-      title: t('services.refit.title'),
-      description: t('services.refit.desc'),
-      link: '/refit'
+      title: "Refit & Reparos Estruturais",
+      description: "Damos nova vida ao seu veleiro com modernização técnica.",
+      link: "/refit"
     }
   ];
 
@@ -65,17 +59,24 @@ const Home = () => {
     { name: 'João Rodrigues', boat: 'Bavaria 46', text: t('testimonials.joao.text') }
   ];
 
-  const whyItems = t('why.items', { returnObjects: true });
+  const whyItems = [
+    "Profissionais experientes",
+    "Materiais de alta qualidade",
+    "Serviço personalizado",
+    "Rapidez e eficiência",
+    "Suporte contínuo",
+    "Satisfação garantida"
+  ];
 
   return (
     <div className="home-page">
-
-      {/* HERO */}
+      {/* Hero Section */}
       <section className="relative h-screen flex items-center justify-center bg-gradient-to-br from-navy-900 to-ocean-600 overflow-hidden">
         <div
           className="absolute inset-0 opacity-30"
           style={{
-            backgroundImage: 'url(https://images.unsplash.com/photo-1569263979104-865ab7cd8d13?q=80&w=2000)',
+            backgroundImage:
+              'url(https://images.unsplash.com/photo-1569263979104-865ab7cd8d13?q=80&w=2000)',
             backgroundSize: 'cover',
             backgroundPosition: 'center'
           }}
@@ -106,51 +107,66 @@ const Home = () => {
         </div>
       </section>
 
-      {/* STATS */}
+      {/* Stats Section */}
       <section className="py-16 bg-navy-900 text-white">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-            {[15, 500, 98, 24].map((num, i) => (
-              <div key={i}>
-                <div className="stat-number text-5xl font-bold text-ocean-500 mb-2" data-target={num}>0</div>
-                <div className="text-gray-300">
-                  {t(['stats.exp','stats.projects','stats.satisfaction','stats.support'][i])}
-                </div>
+            <div>
+              <div
+                className="stat-number text-5xl font-bold text-ocean-500 mb-2"
+                data-target="15"
+              >
+                0
               </div>
-            ))}
+              <div className="text-gray-300">{t('stats.exp')}</div>
+            </div>
+            <div>
+              <div
+                className="stat-number text-5xl font-bold text-ocean-500 mb-2"
+                data-target="500"
+              >
+                0
+              </div>
+              <div className="text-gray-300">{t('stats.projects')}</div>
+            </div>
+            <div>
+              <div
+                className="stat-number text-5xl font-bold text-ocean-500 mb-2"
+                data-target="98"
+              >
+                0
+              </div>
+              <div className="text-gray-300">{t('stats.satisfaction')}</div>
+            </div>
+            <div>
+              <div
+                className="stat-number text-5xl font-bold text-ocean-500 mb-2"
+                data-target="24"
+              >
+                0
+              </div>
+              <div className="text-gray-300">{t('stats.support')}</div>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* SERVICES INTRO */}
+      {/* Services Intro */}
       <section className="pt-20 bg-gray-50">
         <div className="container mx-auto px-4 text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-navy-900 mb-4">
-            {t('services.sectionTitle')}
+            Technical Services for Maximum Performance
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-10">
-            {t('services.sectionSubtitle')}
+            We offer complete solutions for your sailboat.
           </p>
         </div>
       </section>
 
-      {/* BANNER IGUAL AO HERO */}
-      <section className="relative h-screen flex items-center justify-center bg-gradient-to-br from-navy-900 to-ocean-600 overflow-hidden">
-        <div
-          className="absolute inset-0 opacity-30"
-          style={{
-            backgroundImage: 'url(https://hnaezacbzcpmyfoupdec.supabase.co/storage/v1/object/public/ANTARES%20ENERGIA/DM%20BANNER%20VELEIRO.webp)',
-            backgroundSize: 'cover',
-            backgroundPosition: 'center'
-          }}
-        />
-        <div className="absolute inset-0 bg-navy-900/10"></div>
-      </section>
-
-      {/* SERVICES CARDS */}
-     <section className="services-cards">
+      {/* Services Cards */}
+      <section className="services-cards py-20 bg-gray-50">
         <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 gap-8">
             {services.map((service, index) => (
               <div
                 key={index}
@@ -163,7 +179,7 @@ const Home = () => {
                   to={service.link}
                   className="text-ocean-500 font-semibold inline-flex items-center gap-2 hover:gap-3 transition-all"
                 >
-                  {t('services.learnMore')} <ArrowRight className="w-4 h-4" />
+                  Saiba Mais <ArrowRight className="w-4 h-4" />
                 </Link>
               </div>
             ))}
@@ -171,32 +187,37 @@ const Home = () => {
         </div>
       </section>
 
-      {/* WHY */}
-     <section className="pt-0 pb-20 bg-white">
-        <div className="container mx-auto px-4 text-center">
+      {/* Why Choose Us */}
+      <section className="pt-10 pb-20 bg-white text-center">
+        <div className="container mx-auto px-4 max-w-5xl">
           <h2 className="text-4xl md:text-5xl font-bold text-navy-900 mb-12">
-            {t('why.title')}
+            Por Que Escolher a Nossa Equipa?
           </h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto text-left">
-            {Array.isArray(whyItems) && whyItems.map((item, index) => (
-              <div key={index} className="flex items-start gap-3">
-                <div className="text-ocean-500 mt-1">✓</div>
-                <span className="text-gray-700 text-lg">{item}</span>
+          <div className="grid md:grid-cols-3 gap-6 text-left">
+            {whyItems.map((item, i) => (
+              <div
+                key={i}
+                className="flex items-start gap-3 text-gray-700 text-lg"
+              >
+                <span className="text-ocean-500 mt-1">✓</span> {item}
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* TESTIMONIALS */}
+      {/* Testimonials */}
       <section className="py-20 bg-navy-900 text-white">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-4xl md:text-5xl font-bold mb-12">
+        <div className="container mx-auto px-4">
+          <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center">
             {t('testimonials.title')}
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
             {testimonials.map((testimonial, index) => (
-              <div key={index} className="bg-navy-800 p-8 rounded-xl">
+              <div
+                key={index}
+                className="bg-navy-800 p-8 rounded-xl"
+              >
                 <p className="text-gray-300 mb-6 italic">"{testimonial.text}"</p>
                 <div>
                   <div className="font-bold text-ocean-500">{testimonial.name}</div>
@@ -208,7 +229,7 @@ const Home = () => {
         </div>
       </section>
 
-      {/* CTA FINAL */}
+      {/* CTA Final */}
       <section className="py-20 bg-ocean-500 text-white text-center">
         <div className="container mx-auto px-4">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
@@ -225,7 +246,6 @@ const Home = () => {
           </Link>
         </div>
       </section>
-
     </div>
   );
 };
