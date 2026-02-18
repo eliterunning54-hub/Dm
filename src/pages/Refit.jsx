@@ -58,7 +58,7 @@ const Refit = () => {
       duration: '4'
     },
     {
-      img: 'https://images.unsplash.com/photo-1566870040567-56816b77da5b?w=600',
+      img: 'https://hnaezacbzcpmyfoupdec.supabase.co/storage/v1/object/public/ANTARES%20ENERGIA/DM%20VELEIRO%20CONVERT%2050%20600X400.jpeg',
       title: 'Contest 50',
       desc: t('refit.examples.p2.desc'),
       duration: '6'
