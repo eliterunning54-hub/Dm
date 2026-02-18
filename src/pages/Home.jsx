@@ -148,7 +148,7 @@ const Home = () => {
       </section>
 
       {/* SERVICES CARDS */}
-      <section className="services-cards pb-20 bg-gray-50">
+     <section className="services-cards">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-3 gap-8">
             {services.map((service, index) => (
