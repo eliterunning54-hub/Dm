@@ -17,7 +17,10 @@ const Home = () => {
 
     gsap.from('.service-card', {
       scrollTrigger: { trigger: '.services-section', start: 'top 80%' },
-      opacity: 0, y: 50, stagger: 0.2, duration: 0.8
+      opacity: 0,
+      y: 50,
+      stagger: 0.2,
+      duration: 0.8
     });
 
     const stats = document.querySelectorAll('.stat-number');
@@ -28,7 +31,7 @@ const Home = () => {
         innerHTML: target,
         duration: 2,
         snap: { innerHTML: 1 },
-        onUpdate: function() {
+        onUpdate: function () {
           stat.innerHTML = Math.ceil(stat.innerHTML);
         }
       });
@@ -57,15 +60,16 @@ const Home = () => {
   ];
 
   const testimonials = [
-    { name: 'Carlos Silva',    boat: 'Beneteau Oceanis 45',        text: t('testimonials.carlos.text') },
-    { name: 'Maria Santos',    boat: 'Jeanneau Sun Odyssey 42',   text: t('testimonials.maria.text') },
-    { name: 'João Rodrigues',  boat: 'Bavaria 46',                 text: t('testimonials.joao.text') }
+    { name: 'Carlos Silva', boat: 'Beneteau Oceanis 45', text: t('testimonials.carlos.text') },
+    { name: 'Maria Santos', boat: 'Jeanneau Sun Odyssey 42', text: t('testimonials.maria.text') },
+    { name: 'João Rodrigues', boat: 'Bavaria 46', text: t('testimonials.joao.text') }
   ];
 
   const whyItems = t('why.items', { returnObjects: true });
 
   return (
     <div className="home-page">
+
       {/* Hero Section */}
       <section className="relative h-screen flex items-center justify-center bg-gradient-to-br from-navy-900 to-ocean-600 overflow-hidden">
         <div
@@ -128,6 +132,7 @@ const Home = () => {
 
       {/* Services Section */}
       <section className="services-section py-20 bg-gray-50">
+
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-navy-900 mb-4">
@@ -139,20 +144,18 @@ const Home = () => {
           </div>
         </div>
 
-        {/* ✅ NOVO BANNER LARGURA TOTAL (Igual ao Hero) */}
-        <div 
-          className="relative w-full mb-20 overflow-hidden"
-          style={{ 
-            height: '500px', 
-            backgroundImage: 'url(https://hnaezacbzcpmyfoupdec.supabase.co/storage/v1/object/public/ANTARES%20ENERGIA/DM%20BANNER%20VELEIRO.webp)',
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-            backgroundAttachment: 'fixed' // Adiciona um leve efeito de profundidade ao scroll
-          }}
-        >
-          {/* Overlay opcional para manter o padrão do site */}
+        {/* 🔥 BANNER IGUAL AO HERO */}
+        <section className="relative h-screen flex items-center justify-center bg-gradient-to-br from-navy-900 to-ocean-600 overflow-hidden mb-20">
+          <div
+            className="absolute inset-0 opacity-30"
+            style={{
+              backgroundImage: 'url(https://hnaezacbzcpmyfoupdec.supabase.co/storage/v1/object/public/ANTARES%20ENERGIA/DM%20BANNER%20VELEIRO.webp)',
+              backgroundSize: 'cover',
+              backgroundPosition: 'center'
+            }}
+          />
           <div className="absolute inset-0 bg-navy-900/10"></div>
-        </div>
+        </section>
 
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-3 gap-8">
@@ -174,6 +177,7 @@ const Home = () => {
             ))}
           </div>
         </div>
+
       </section>
 
       {/* Why Choose Us */}
@@ -230,6 +234,7 @@ const Home = () => {
           </Link>
         </div>
       </section>
+
     </div>
   );
 };
