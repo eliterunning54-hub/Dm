@@ -1,33 +1,33 @@
 {
   "nav": {
-    "home": "Home",
+    "home": "Início",
     "services": "Serviços",
-    "refit": "Refit & Reparos",
+    "refit": "Refit & Reparações",
     "rigging": "Rigging",
     "about": "Sobre Nós",
     "gallery": "Galeria",
-    "contact": "Contato"
+    "contact": "Contacto"
   },
   "cta": {
     "quote": "Orçamento",
-    "finalTitle": "Pronto para melhorar seu veleiro?",
-    "finalSubtitle": "Entre em contato conosco para um orçamento personalizado.",
+    "finalTitle": "Pronto para melhorar o seu veleiro?",
+    "finalSubtitle": "Entre em contacto connosco para um orçamento personalizado.",
     "finalBtn": "Solicitar Orçamento"
   },
   "footer": {
-    "description": "Especialistas em manutenção e conserto de veleiros no Algarve desde 2010.",
+    "description": "Especialistas em manutenção e reparação de veleiros no Algarve desde 2010.",
     "rights": "Todos os direitos reservados.",
     "quickLinks": "Links Rápidos",
     "servicesTitle": "Serviços",
     "refit": "Refit",
     "painting": "Pintura",
     "maintenance": "Manutenção",
-    "contactTitle": "Contato"
+    "contactTitle": "Contacto"
   },
   "hero": {
-    "title": "Conserto e Manutenção Profissional de Veleiros no Algarve",
-    "subtitle": "Especialistas em reparos estruturais, rigging, antifouling e refit completo.",
-    "whatsapp": "Falar no WhatsApp"
+    "title": "Reparação e Manutenção Profissional de Veleiros no Algarve",
+    "subtitle": "Especialistas em reparações estruturais, rigging, antifouling e refit completo.",
+    "whatsapp": "Falar por WhatsApp"
   },
   "stats": {
     "exp": "Anos de Experiência",
@@ -48,7 +48,7 @@
       "desc": "Instalação e inspeção de rigging fixo e móvel."
     },
     "refit": {
-      "title": "Refit & Reparos Estruturais",
+      "title": "Refit & Reparações Estruturais",
       "desc": "Damos nova vida ao seu veleiro com modernização técnica."
     },
     "painting": {
@@ -61,7 +61,7 @@
     }
   },
   "why": {
-    "title": "Por Que Escolher a Nossa Equipa?",
+    "title": "Porquê Escolher a Nossa Equipa?",
     "items": [
       "Profissionais experientes",
       "Materiais de alta qualidade",
@@ -74,7 +74,7 @@
   "testimonials": {
     "title": "O Que Dizem os Nossos Clientes",
     "carlos": { "text": "Serviço excelente e atenção aos detalhes." },
-    "maria": { "text": "Profissionais competentes, meu veleiro ficou como novo!" },
+    "maria": { "text": "Profissionais competentes, o meu veleiro ficou como novo!" },
     "joao": { "text": "Recomendo sem hesitar, ótima experiência." }
   },
   "about": {
@@ -83,26 +83,26 @@
       "subtitle": "Paixão pelo mar e compromisso com a excelência náutica."
     },
     "story": {
-      "title": "Nossa História",
+      "title": "A Nossa História",
       "p1": "Fundada em 2010, somos referência em manutenção no Algarve.",
       "p2": "Oferecemos serviços completos para veleiros de todas as dimensões.",
-      "p3": "Priorizamos qualidade, segurança e satisfação do cliente.",
-      "p4": "Nosso objetivo é prolongar a vida útil do seu veleiro com excelência."
+      "p3": "Priorizamos a qualidade, segurança e satisfação do cliente.",
+      "p4": "O nosso objetivo é prolongar a vida útil do seu veleiro com excelência."
     },
     "values": {
-      "title": "Nossos Valores",
+      "title": "Os Nossos Valores",
       "subtitle": "O que nos guia todos os dias",
       "quality": {
         "title": "Qualidade Premium",
         "desc": "Materiais certificados e técnicos experientes."
       },
       "team": {
-        "title": "Equipe Profissional",
+        "title": "Equipa Profissional",
         "desc": "Profissionais qualificados e apaixonados pelo que fazem."
       },
       "focus": {
         "title": "Foco no Cliente",
-        "desc": "Cada projeto é personalizado para atender suas necessidades."
+        "desc": "Cada projeto é personalizado para atender às suas necessidades."
       },
       "commitment": {
         "title": "Compromisso",
@@ -111,20 +111,20 @@
     },
     "cta": {
       "title": "Pronto para começar?",
-      "subtitle": "Entre em contato e saiba como podemos ajudar seu veleiro.",
-      "button": "Solicitar Contato"
+      "subtitle": "Entre em contacto e saiba como podemos ajudar o seu veleiro.",
+      "button": "Solicitar Contacto"
     }
   },
   "contact": {
     "hero": {
-      "title": "Entre em Contato",
-      "subtitle": "Envie-nos uma mensagem ou solicite orçamento"
+      "title": "Entre em Contacto",
+      "subtitle": "Envie-nos uma mensagem ou solicite um orçamento"
     },
     "form": {
-      "title": "Formulário de Contato",
+      "title": "Formulário de Contacto",
       "name": "Nome",
-      "namePlaceholder": "Seu nome completo",
-      "email": "Email",
+      "namePlaceholder": "O seu nome completo",
+      "email": "E-mail",
       "emailPlaceholder": "seu@email.com",
       "phone": "Telefone",
       "phonePlaceholder": "+351 ...",
@@ -146,9 +146,9 @@
       "alert": "Formulário enviado com sucesso!"
     },
     "info": {
-      "title": "Informações de Contato",
+      "title": "Informações de Contacto",
       "phone": "Telefone",
-      "email": "Email",
+      "email": "E-mail",
       "location": "Localização",
       "hours": "Horário de Funcionamento",
       "weekdays": "Seg-Sex",
@@ -187,7 +187,7 @@
   },
   "refit": {
     "hero": {
-      "title": "Refit & Reparos",
+      "title": "Refit & Reparações",
       "subtitle": "Modernizamos e restauramos o seu veleiro com excelência.",
       "desc": "Oferecemos serviços completos de refit: casco, rigging, pintura e interiores.",
       "cta": "Solicitar Orçamento"
@@ -197,7 +197,7 @@
       "sectionSubtitle": "Soluções completas para o seu veleiro",
       "title": "Serviços de Refit",
       "subtitle": "Soluções completas para o seu veleiro",
-      "structural": "Reparos Estruturais",
+      "structural": "Reparações Estruturais",
       "hull": "Tratamento de Casco",
       "rigging": "Rigging e Instalação",
       "painting": "Pintura e Gelcoat",
@@ -216,7 +216,7 @@
       },
       "hydraulic": {
         "title": "Sistemas Hidráulicos",
-        "desc": "Reparos e instalação de sistemas hidráulicos.",
+        "desc": "Reparações e instalação de sistemas hidráulicos.",
         "items": [
           "Leme hidráulico",
           "Sistemas de ancoragem",
@@ -235,7 +235,7 @@
           "Polimento e enceramento",
           "Renovação de interiores",
           "Revestimentos e estofamentos",
-          "Verniz de madeiras"
+          "Envernizamento de madeiras"
         ]
       },
       "navigation": {
@@ -245,14 +245,14 @@
           "Instalação de plotters",
           "Sistemas AIS",
           "Radar e sonar",
-          "Autopiloto",
+          "Piloto Automático",
           "Instrumentação de bordo",
           "Sistemas de comunicação"
         ]
       },
       "propulsion": {
         "title": "Sistemas de Propulsão",
-        "desc": "Manutenção e upgrade de motores e propulsores.",
+        "desc": "Manutenção e atualização de motores e propulsores.",
         "items": [
           "Revisão de motor diesel",
           "Substituição de hélices",
@@ -264,7 +264,7 @@
       }
     },
     "process": {
-      "title": "Nosso Processo de Refit",
+      "title": "O Nosso Processo de Refit",
       "subtitle": "Etapas claras para um resultado excelente",
       "s1": {
         "title": "Avaliação",
@@ -292,13 +292,13 @@
       }
     },
     "why": {
-      "title": "Por Que Fazer Refit?",
+      "title": "Porquê Fazer um Refit?",
       "reasons": [
         "Aumenta o valor de revenda",
         "Melhora a segurança a bordo",
         "Reduz custos de manutenção futura",
         "Moderniza sistemas obsoletos",
-        "Melhora a performance e conforto",
+        "Melhora a performance e o conforto",
         "Prolonga a vida útil do veleiro"
       ]
     },
@@ -308,7 +308,7 @@
       "months": "semanas",
       "p1": { "desc": "Refit completo incluindo pintura, rigging e sistemas elétricos." },
       "p2": { "desc": "Modernização completa com novos equipamentos de navegação." },
-      "p3": { "desc": "Refit parcial com foco em casco e acabamentos exteriores." }
+      "p3": { "desc": "Refit parcial com foco no casco e acabamentos exteriores." }
     },
     "cta": {
       "title": "Pronto para renovar o seu veleiro?",
@@ -319,7 +319,7 @@
   "rigging": {
     "hero": {
       "title": "Rigging Profissional",
-      "subtitle": "Instalação, inspeção e manutenção de todo tipo de rigging.",
+      "subtitle": "Instalação, inspeção e manutenção de todo o tipo de rigging.",
       "cta": "Solicitar Inspeção"
     },
     "services": {
@@ -358,8 +358,6 @@
           "Enroladores",
           "Carros de escota",
           "Sistemas hidráulicos"
-        
-          
         ]
       },
       "inspection": {
@@ -380,10 +378,10 @@
       "subtitle": "Apenas materiais certificados e de alta qualidade",
       "m1": { "name": "Cabo Dyneema", "desc": "Alta resistência e baixo peso para rigging de performance." },
       "m2": { "name": "Aço Inox 316L", "desc": "Máxima resistência à corrosão em ambiente marinho." },
-      "m3": { "name": "Terminais Sta-Lok", "desc": "Terminais de precisão desmontáveis em campo." },
+      "m3": { "name": "Terminais Sta-Lok", "desc": "Terminais de precisão desmontáveis no local." },
       "m4": { "name": "Winches Harken", "desc": "Equipamentos de alta performance e durabilidade." },
       "m5": { "name": "Blocos Lewmar", "desc": "Blocos de baixa fricção para manobras suaves." },
-      "m6": { "name": "Cabo Dyform", "desc": "Cabo de aço compactado para menor stretch." }
+      "m6": { "name": "Cabo Dyform", "desc": "Cabo de aço compactado para menor alongamento." }
     },
     "warnings": {
       "title": "Sinais de Alerta no Rigging",
@@ -414,7 +412,7 @@
     },
     "cta": {
       "title": "Precisa de inspeção ou manutenção?",
-      "subtitle": "Entre em contato para agendar uma visita ao seu veleiro.",
+      "subtitle": "Entre em contacto para agendar uma visita ao seu veleiro.",
       "button": "Solicitar Orçamento"
     }
   }
