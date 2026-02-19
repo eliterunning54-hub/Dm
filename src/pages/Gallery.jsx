@@ -11,7 +11,7 @@ const Gallery = () => {
       id: 1,
       title: t('gallery.projects.p1.title'),
       category: t('gallery.categories.refit'),
-      image: 'https://images.unsplash.com/photo-1567899378494-47b22a2ae96a?w=800',
+      image: 'https://hnaezacbzcpmyfoupdec.supabase.co/storage/v1/object/public/ANTARES%20ENERGIA/DM%20VERNIZ%20PINTURA.png',
       description: t('gallery.projects.p1.desc')
     },
     {
