@@ -15,7 +15,7 @@ const Home = () => {
     gsap.from('.hero-subtitle', { opacity: 0, y: 30, duration: 1, delay: 0.6 });
     gsap.from('.hero-buttons', { opacity: 0, y: 30, duration: 1, delay: 0.9 });
 
-    gsap.from('.service-card', {
+    gsap.from('.boat-card', {
       scrollTrigger: { trigger: '.services-section', start: 'top 80%' },
       opacity: 0, y: 50, stagger: 0.2, duration: 0.8
     });
@@ -169,7 +169,7 @@ const Home = () => {
           <div className="grid md:grid-cols-3 gap-8">
 
             {/* Card 1 — Barcos a Motor */}
-            <div className="service-card bg-white p-8 rounded-2xl shadow-md hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 group">
+            <div className="boat-card bg-white p-8 rounded-2xl shadow-md hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 group">
               <div className="w-14 h-14 bg-ocean-50 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-ocean-500 transition-colors duration-300">
                 <Zap className="w-7 h-7 text-ocean-500 group-hover:text-white transition-colors duration-300" />
               </div>
@@ -205,7 +205,7 @@ const Home = () => {
             </div>
 
             {/* Card 2 — Veleiros */}
-            <div className="service-card bg-white p-8 rounded-2xl shadow-md hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 group">
+            <div className="boat-card bg-white p-8 rounded-2xl shadow-md hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 group">
               <div className="w-14 h-14 bg-ocean-50 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-ocean-500 transition-colors duration-300">
                 <Wind className="w-7 h-7 text-ocean-500 group-hover:text-white transition-colors duration-300" />
               </div>
@@ -241,7 +241,7 @@ const Home = () => {
             </div>
 
             {/* Card 3 — Catamarãs */}
-            <div className="service-card bg-white p-8 rounded-2xl shadow-md hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 group">
+            <div className="boat-card bg-white p-8 rounded-2xl shadow-md hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 group">
               <div className="w-14 h-14 bg-ocean-50 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-ocean-500 transition-colors duration-300">
                 <Anchor className="w-7 h-7 text-ocean-500 group-hover:text-white transition-colors duration-300" />
               </div>
