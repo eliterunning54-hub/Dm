@@ -53,7 +53,7 @@ const Gallery = () => {
       id: 7,
       title: t('gallery.projects.p7.title'),
       category: t('gallery.categories.rigging'),
-      image: 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800',
+      image: 'https://hnaezacbzcpmyfoupdec.supabase.co/storage/v1/object/public/ANTARES%20ENERGIA/DM1%20WEBP.png',
       description: t('gallery.projects.p7.desc')
     },
     {
