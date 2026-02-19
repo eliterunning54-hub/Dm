@@ -15,10 +15,7 @@ const Home = () => {
     gsap.from('.hero-subtitle', { opacity: 0, y: 30, duration: 1, delay: 0.6 });
     gsap.from('.hero-buttons', { opacity: 0, y: 30, duration: 1, delay: 0.9 });
 
-    gsap.from('.boat-card', {
-      scrollTrigger: { trigger: '.services-section', start: 'top 80%' },
-      opacity: 0, y: 50, stagger: 0.2, duration: 0.8
-    });
+    // Cards com efeito apenas no hover via CSS (ver className nos cards)
 
     // Animação da secção veleiro
     gsap.from('.veleiro-content', {
@@ -79,6 +76,48 @@ const Home = () => {
     'Rigging & Manutenção de Mastros',
     'Refit Completo & Modernização',
     'Pintura, Gelcoat & Acabamentos',
+  ];
+
+  const boatTypes = [
+    {
+      icon: Zap,
+      title: 'Barcos a Motor',
+      description: 'Manutenção especializada e soluções técnicas para embarcações a motor de todas as dimensões.',
+      items: [
+        'Revisão e manutenção de motores',
+        'Sistemas de combustível e arrefecimento',
+        'Cascos e antifouling',
+        'Sistemas elétricos e eletrónicos',
+        'Transmissão e hélices',
+        'Pintura e acabamentos',
+      ]
+    },
+    {
+      icon: Wind,
+      title: 'Veleiros',
+      description: 'Cuidados especializados para o seu veleiro, desde o casco ao topo do mastro.',
+      items: [
+        'Antifouling & tratamento de casco',
+        'Rigging fixo e móvel',
+        'Manutenção de velas e mastros',
+        'Refit completo e modernização',
+        'Pintura, gelcoat e acabamentos',
+        'Sistemas de navegação',
+      ]
+    },
+    {
+      icon: Anchor,
+      title: 'Catamarãs',
+      description: 'Experiência comprovada na manutenção e refit de catamarãs de vela e a motor.',
+      items: [
+        'Manutenção dos dois cascos',
+        'Antifouling em duplo casco',
+        'Sistemas de leme e governo',
+        'Refit de interiores e cockpit',
+        'Sistemas elétricos e solares',
+        'Estofamentos e toldos',
+      ]
+    }
   ];
 
   return (
@@ -167,115 +206,54 @@ const Home = () => {
 
           {/* Cards */}
           <div className="grid md:grid-cols-3 gap-8">
+            {boatTypes.map((boat, index) => {
+              const Icon = boat.icon;
+              return (
+                <div
+                  key={index}
+                  className="boat-card group bg-white p-8 rounded-2xl border border-gray-100 flex flex-col cursor-pointer
+                    shadow-md
+                    transition-all duration-500 ease-out
+                    hover:shadow-2xl hover:shadow-ocean-500/10
+                    hover:-translate-y-3
+                    hover:border-ocean-200
+                    hover:bg-gradient-to-b hover:from-white hover:to-blue-50/40"
+                >
+                  {/* Ícone */}
+                  <div className="w-14 h-14 bg-blue-50 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-blue-600 transition-colors duration-300">
+                    <Icon className="w-7 h-7 text-blue-600 group-hover:text-white transition-colors duration-300" />
+                  </div>
 
-            {/* Card 1 — Barcos a Motor */}
-            <div className="boat-card bg-white p-8 rounded-2xl shadow-md hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 group">
-              <div className="w-14 h-14 bg-ocean-50 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-ocean-500 transition-colors duration-300">
-                <Zap className="w-7 h-7 text-ocean-500 group-hover:text-white transition-colors duration-300" />
-              </div>
-              <h3 className="text-2xl font-bold text-navy-900 mb-3">Barcos a Motor</h3>
-              <p className="text-gray-500 mb-6 text-sm leading-relaxed">
-                Manutenção especializada e soluções técnicas para embarcações a motor de todas as dimensões.
-              </p>
-              <ul className="space-y-3 mb-8">
-                {[
-                  'Revisão e manutenção de motores',
-                  'Sistemas de combustível e arrefecimento',
-                  'Cascos e antifouling',
-                  'Sistemas elétricos e eletrónicos',
-                  'Transmissão e hélices',
-                  'Pintura e acabamentos',
-                ].map((item, i) => (
-                  <li key={i} className="flex items-center gap-3 text-sm text-gray-600">
-                    <div className="flex-shrink-0 w-5 h-5 rounded-full bg-ocean-50 border border-ocean-200 flex items-center justify-center">
-                      <svg className="w-2.5 h-2.5 text-ocean-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
-                      </svg>
-                    </div>
-                    {item}
-                  </li>
-                ))}
-              </ul>
-              <Link
-                to="/servicos"
-                className="inline-flex items-center gap-2 text-ocean-500 font-semibold text-sm hover:gap-3 transition-all group-hover:text-ocean-600"
-              >
-                Saber Mais <ArrowRight className="w-4 h-4" />
-              </Link>
-            </div>
+                  {/* Título */}
+                  <h3 className="text-2xl font-bold text-navy-900 mb-3">{boat.title}</h3>
 
-            {/* Card 2 — Veleiros */}
-            <div className="boat-card bg-white p-8 rounded-2xl shadow-md hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 group">
-              <div className="w-14 h-14 bg-ocean-50 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-ocean-500 transition-colors duration-300">
-                <Wind className="w-7 h-7 text-ocean-500 group-hover:text-white transition-colors duration-300" />
-              </div>
-              <h3 className="text-2xl font-bold text-navy-900 mb-3">Veleiros</h3>
-              <p className="text-gray-500 mb-6 text-sm leading-relaxed">
-                Cuidados especializados para o seu veleiro, desde o casco ao topo do mastro.
-              </p>
-              <ul className="space-y-3 mb-8">
-                {[
-                  'Antifouling & tratamento de casco',
-                  'Rigging fixo e móvel',
-                  'Manutenção de velas e mastros',
-                  'Refit completo e modernização',
-                  'Pintura, gelcoat e acabamentos',
-                  'Sistemas de navegação',
-                ].map((item, i) => (
-                  <li key={i} className="flex items-center gap-3 text-sm text-gray-600">
-                    <div className="flex-shrink-0 w-5 h-5 rounded-full bg-ocean-50 border border-ocean-200 flex items-center justify-center">
-                      <svg className="w-2.5 h-2.5 text-ocean-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
-                      </svg>
-                    </div>
-                    {item}
-                  </li>
-                ))}
-              </ul>
-              <Link
-                to="/servicos"
-                className="inline-flex items-center gap-2 text-ocean-500 font-semibold text-sm hover:gap-3 transition-all group-hover:text-ocean-600"
-              >
-                Saber Mais <ArrowRight className="w-4 h-4" />
-              </Link>
-            </div>
+                  {/* Descrição */}
+                  <p className="text-gray-500 mb-6 text-sm leading-relaxed">{boat.description}</p>
 
-            {/* Card 3 — Catamarãs */}
-            <div className="boat-card bg-white p-8 rounded-2xl shadow-md hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 group">
-              <div className="w-14 h-14 bg-ocean-50 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-ocean-500 transition-colors duration-300">
-                <Anchor className="w-7 h-7 text-ocean-500 group-hover:text-white transition-colors duration-300" />
-              </div>
-              <h3 className="text-2xl font-bold text-navy-900 mb-3">Catamarãs</h3>
-              <p className="text-gray-500 mb-6 text-sm leading-relaxed">
-                Experiência comprovada na manutenção e refit de catamarãs de vela e a motor.
-              </p>
-              <ul className="space-y-3 mb-8">
-                {[
-                  'Manutenção dos dois cascos',
-                  'Antifouling em duplo casco',
-                  'Sistemas de leme e orçamento',
-                  'Refit de interiores e cockpit',
-                  'Sistemas elétricos e solares',
-                  'Estofamentos e toldos',
-                ].map((item, i) => (
-                  <li key={i} className="flex items-center gap-3 text-sm text-gray-600">
-                    <div className="flex-shrink-0 w-5 h-5 rounded-full bg-ocean-50 border border-ocean-200 flex items-center justify-center">
-                      <svg className="w-2.5 h-2.5 text-ocean-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
-                      </svg>
-                    </div>
-                    {item}
-                  </li>
-                ))}
-              </ul>
-              <Link
-                to="/servicos"
-                className="inline-flex items-center gap-2 text-ocean-500 font-semibold text-sm hover:gap-3 transition-all group-hover:text-ocean-600"
-              >
-                Saber Mais <ArrowRight className="w-4 h-4" />
-              </Link>
-            </div>
+                  {/* Lista */}
+                  <ul className="space-y-3 mb-8 flex-grow">
+                    {boat.items.map((item, i) => (
+                      <li key={i} className="flex items-center gap-3 text-sm text-gray-600">
+                        <div className="flex-shrink-0 w-5 h-5 rounded-full bg-blue-50 border border-blue-200 flex items-center justify-center">
+                          <svg className="w-2.5 h-2.5 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                          </svg>
+                        </div>
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
 
+                  {/* Link */}
+                  <Link
+                    to="/servicos"
+                    className="inline-flex items-center gap-2 text-blue-600 font-semibold text-sm hover:gap-3 transition-all"
+                  >
+                    Saber Mais <ArrowRight className="w-4 h-4" />
+                  </Link>
+                </div>
+              );
+            })}
           </div>
         </div>
       </section>
