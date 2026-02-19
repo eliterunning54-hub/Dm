@@ -32,7 +32,7 @@ const Gallery = () => {
       id: 4,
       title: t('gallery.projects.p4.title'),
       category: t('gallery.categories.painting'),
-      image: 'https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=800',
+      image: 'https://hnaezacbzcpmyfoupdec.supabase.co/storage/v1/object/public/ANTARES%20ENERGIA/DM%20CAPOTA%207.webp',
       description: t('gallery.projects.p4.desc')
     },
     {
