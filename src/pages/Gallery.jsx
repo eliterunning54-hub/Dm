@@ -46,7 +46,7 @@ const Gallery = () => {
       id: 6,
       title: t('gallery.projects.p6.title'),
       category: t('gallery.categories.refit'),
-      image: 'https://images.unsplash.com/photo-1566870040567-56816b77da5b?w=800',
+      image: 'https://hnaezacbzcpmyfoupdec.supabase.co/storage/v1/object/public/ANTARES%20ENERGIA/DM%20SERV%204.webp',
       description: t('gallery.projects.p6.desc')
     },
     {
