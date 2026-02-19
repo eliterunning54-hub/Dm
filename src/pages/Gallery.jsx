@@ -39,7 +39,7 @@ const Gallery = () => {
       id: 5,
       title: t('gallery.projects.p5.title'),
       category: t('gallery.categories.maintenance'),
-      image: 'https://images.unsplash.com/photo-1570993492903-ba4c3088f100?w=800',
+      image: 'https://hnaezacbzcpmyfoupdec.supabase.co/storage/v1/object/public/ANTARES%20ENERGIA/DM%20OSMOSE.webp',
       description: t('gallery.projects.p5.desc')
     },
     {
