@@ -17,7 +17,7 @@ const Gallery = () => {
     {
       id: 2,
       title: t('gallery.projects.p2.title'),
-      category: t('gallery.categories.antifouling'),
+      category: t('Antifouling'),
       image: 'https://hnaezacbzcpmyfoupdec.supabase.co/storage/v1/object/public/ANTARES%20ENERGIA/500X500%20DM%20SERV.webp',
       description: t('gallery.projects.p2.desc')
     },
@@ -31,7 +31,7 @@ const Gallery = () => {
     {
       id: 4,
       title: t('gallery.projects.p4.title'),
-      category: t('gallery.categories.painting'),
+      category: t('Pintura'),
       image: 'https://hnaezacbzcpmyfoupdec.supabase.co/storage/v1/object/public/ANTARES%20ENERGIA/DM%20PINTURA%20VELEIRO.webp',
       description: t('gallery.projects.p4.desc')
     },
