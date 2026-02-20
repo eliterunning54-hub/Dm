@@ -5,87 +5,88 @@ import { useTranslation } from 'react-i18next';
 const Gallery = () => {
   const { t } = useTranslation();
   const [selectedImage, setSelectedImage] = useState(null);
+  const [activeCategory, setActiveCategory] = useState('all');
 
   const projects = [
     {
       id: 1,
       title: t('gallery.projects.p1.title'),
-      category: t('Teka'),
+      category: 'Teka',
       image: 'https://hnaezacbzcpmyfoupdec.supabase.co/storage/v1/object/public/ANTARES%20ENERGIA/5%20REPARO%20TEKA.webp',
       description: t('gallery.projects.p1.desc')
     },
     {
       id: 2,
       title: t('gallery.projects.p2.title'),
-      category: t('Antifouling'),
+      category: 'Antifouling',
       image: 'https://hnaezacbzcpmyfoupdec.supabase.co/storage/v1/object/public/ANTARES%20ENERGIA/500X500%20DM%20SERV.webp',
       description: t('gallery.projects.p2.desc')
     },
     {
       id: 3,
       title: t('gallery.projects.p3.title'),
-      category: t('Limpeza'),
+      category: 'Limpeza',
       image: 'https://hnaezacbzcpmyfoupdec.supabase.co/storage/v1/object/public/ANTARES%20ENERGIA/6%20LIMPEZA%20E%20MANUTENCAO.webp',
       description: t('gallery.projects.p3.desc')
     },
     {
       id: 4,
       title: t('gallery.projects.p4.title'),
-      category: t('Pintura'),
+      category: 'Pintura',
       image: 'https://hnaezacbzcpmyfoupdec.supabase.co/storage/v1/object/public/ANTARES%20ENERGIA/DM%20PINTURA%20VELEIRO.webp',
       description: t('gallery.projects.p4.desc')
     },
     {
       id: 5,
       title: t('gallery.projects.p5.title'),
-      category: t('Verniz'),
+      category: 'Verniz',
       image: 'https://hnaezacbzcpmyfoupdec.supabase.co/storage/v1/object/public/ANTARES%20ENERGIA/2%20VERNIZ%20DM.png',
       description: t('gallery.projects.p5.desc')
     },
     {
       id: 6,
       title: t('gallery.projects.p6.title'),
-      category: t('Fibra'),
+      category: 'Fibra',
       image: 'https://hnaezacbzcpmyfoupdec.supabase.co/storage/v1/object/public/ANTARES%20ENERGIA/3%20FIBRA%20DE%20VIDRO.jpeg',
       description: t('gallery.projects.p6.desc')
     },
     {
       id: 7,
       title: t('gallery.projects.p7.title'),
-      category: t('Rigging'),
+      category: 'Rigging',
       image: 'https://hnaezacbzcpmyfoupdec.supabase.co/storage/v1/object/public/ANTARES%20ENERGIA/DM1%20WEBP.png',
       description: t('gallery.projects.p7.desc')
     },
     {
       id: 8,
       title: t('gallery.projects.p8.title'),
-      category: t('Bimini'),
+      category: 'Bimini',
       image: 'https://hnaezacbzcpmyfoupdec.supabase.co/storage/v1/object/public/ANTARES%20ENERGIA/4%20BENINI%20CAPOTA.jpeg',
       description: t('gallery.projects.p8.desc')
     },
     {
       id: 9,
       title: t('gallery.projects.p9.title'),
-      category: t('Antifouling'),
+      category: 'Antifouling',
       image: 'https://hnaezacbzcpmyfoupdec.supabase.co/storage/v1/object/public/ANTARES%20ENERGIA/DM4%20500X500%20.webp',
       description: t('gallery.projects.p9.desc')
     }
   ];
 
   const categories = [
-    { id: 'Fibra', label: t('Fibra') },
-    { id: 'Teka', label: t('Teka') },
-    { id: 'Rigging', label: t('Rigging') },
-    { id: 'Antifouling', label: t('Antifouling') },
-    { id: 'PIntura', label: t('Pintura') },
-    { id: 'Verniz', label: t('Verniz') }
+    { id: 'all', label: t('gallery.categories.all') },
+    { id: 'Fibra', label: t('gallery.categories.Fibra') },
+    { id: 'Teka', label: t('gallery.categories.Teka') },
+    { id: 'Rigging', label: t('gallery.categories.Rigging') },
+    { id: 'Antifouling', label: t('gallery.categories.Antifouling') },
+    { id: 'Pintura', label: t('gallery.categories.Pintura') },
+    { id: 'Verniz', label: t('gallery.categories.Verniz') }
   ];
 
-  const [activeCategory, setActiveCategory] = useState('all');
-
-  const filteredProjects = activeCategory === 'all'
-    ? projects
-    : projects.filter(p => p.category === t(`gallery.categories.${activeCategory}`));
+  const filteredProjects =
+    activeCategory === 'all'
+      ? projects
+      : projects.filter((p) => p.category === activeCategory);
 
   return (
     <div className="gallery-page">
@@ -138,20 +139,14 @@ const Gallery = () => {
                     alt={project.title}
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end">
-                    <div className="p-6 text-white">
-                      <div className="flex items-center gap-2 mb-2">
-                        <ZoomIn className="w-5 h-5" />
-                        <span className="text-sm font-semibold">{t('gallery.viewDetails')}</span>
-                      </div>
-                    </div>
-                  </div>
+
                   <div className="absolute top-4 right-4">
                     <span className="bg-ocean-500 text-white px-4 py-2 rounded-full text-sm font-semibold">
-                      {project.category}
+                      {t(`gallery.categories.${project.category}`)}
                     </span>
                   </div>
                 </div>
+
                 <div className="p-6">
                   <h3 className="text-xl font-bold text-navy-900 mb-2">
                     {project.title}
@@ -179,7 +174,10 @@ const Gallery = () => {
             <X className="w-10 h-10" />
           </button>
 
-          <div className="max-w-5xl w-full" onClick={(e) => e.stopPropagation()}>
+          <div
+            className="max-w-5xl w-full"
+            onClick={(e) => e.stopPropagation()}
+          >
             <img
               src={selectedImage.image}
               alt={selectedImage.title}
@@ -187,7 +185,7 @@ const Gallery = () => {
             />
             <div className="bg-white p-6 rounded-lg">
               <span className="inline-block bg-ocean-500 text-white px-4 py-1 rounded-full text-sm font-semibold mb-3">
-                {selectedImage.category}
+                {t(`gallery.categories.${selectedImage.category}`)}
               </span>
               <h2 className="text-3xl font-bold text-navy-900 mb-3">
                 {selectedImage.title}
