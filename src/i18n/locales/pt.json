@@ -176,14 +176,14 @@
       "Bimini": "Bimini"
     },
     "projects": {
-      "p1": { "title": "Serviço em Teka", "desc": "Refit completo do casco e interiores" },
+      "p1": { "title": "Serviço em Teka", "desc": "Reparo completo de Teka" },
       "p2": { "title": "Serviço de Antifouling", "desc": "Serviço de antifouling e manutenção" },
-      "p3": { "title": "Serviço de Limpeza", "desc": "Substituição completa de rigging" },
+      "p3": { "title": "Serviço de Limpeza", "desc": "Serviço de Limpeza e Polimento" },
       "p4": { "title": "Serviço de Pintura", "desc": "Pintura e gelcoat profissional" },
-      "p5": { "title": "Serviço de Verniz", "desc": "Manutenção preventiva completa" },
-      "p6": { "title": "Serviço de Fibra de Vidro", "desc": "Refit parcial do casco e interiores" },
+      "p5": { "title": "Serviço de Verniz", "desc": "Serviços de Vernoiz e Acabamentos" },
+      "p6": { "title": "Serviço de Fibra de Vidro", "desc": "Serviços de Reparo em Fibra de Vidro" },
       "p7": { "title": "Serviço de Rigging", "desc": "Inspeção e ajuste de rigging" },
-      "p8": { "title": "Serviço de Capotaria", "desc": "Pintura e acabamento gelcoat" },
+      "p8": { "title": "Serviço de Capotaria", "desc": "Serviços em Capotaria Náutica" },
       "p9": { "title": "Tratamento de Casco", "desc": "Aplicação de antifouling profissional" }
     },
     "viewDetails": "Ver Detalhes"
