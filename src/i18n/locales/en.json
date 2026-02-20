@@ -125,7 +125,7 @@
       "name": "Name",
       "namePlaceholder": "Your full name",
       "email": "Email",
-      "emailPlaceholder": "your@email.com",
+      "emailPlaceholder": "your email",
       "phone": "Phone",
       "phonePlaceholder": "+351 ...",
       "boatType": "Boat Type",
@@ -166,11 +166,14 @@
     "subtitle": "Check out some of our completed projects.",
     "categories": {
       "all": "All",
-      "refit": "Refit",
+      "fibra": "Fiberglass",
+      "teka": "Teak",
       "rigging": "Rigging",
       "antifouling": "Antifouling",
       "painting": "Painting",
-      "maintenance": "Maintenance"
+      "varnish": "Varnish",
+      "cleaning": "Cleaning",
+      "bimini": "Bimini"
     },
     "projects": {
       "p1": { "title": "Beneteau Oceanis 45", "desc": "Complete refit of hull and interiors" },
@@ -266,30 +269,12 @@
     "process": {
       "title": "Our Refit Process",
       "subtitle": "Clear steps for an excellent result",
-      "s1": {
-        "title": "Assessment",
-        "desc": "Detailed inspection of the sailboat's current condition."
-      },
-      "s2": {
-        "title": "Quote",
-        "desc": "Detailed proposal with timelines and costs."
-      },
-      "s3": {
-        "title": "Planning",
-        "desc": "Defining the work plan and priorities."
-      },
-      "s4": {
-        "title": "Execution",
-        "desc": "Work carried out by specialized technicians."
-      },
-      "s5": {
-        "title": "Quality Control",
-        "desc": "Rigorous verification of each completed stage."
-      },
-      "s6": {
-        "title": "Delivery",
-        "desc": "Sailboat delivered with a full work report."
-      }
+      "s1": { "title": "Assessment", "desc": "Detailed inspection of the sailboat's current condition." },
+      "s2": { "title": "Quote", "desc": "Detailed proposal with timelines and costs." },
+      "s3": { "title": "Planning", "desc": "Defining the work plan and priorities." },
+      "s4": { "title": "Execution", "desc": "Work carried out by specialized technicians." },
+      "s5": { "title": "Quality Control", "desc": "Rigorous verification of each completed stage." },
+      "s6": { "title": "Delivery", "desc": "Sailboat delivered with a full work report." }
     },
     "why": {
       "title": "Why Refit?",
@@ -358,8 +343,6 @@
           "Reefers",
           "Sheet cars",
           "Hydraulic systems"
-       
-        
         ]
       },
       "inspection": {
@@ -399,23 +382,10 @@
       "alert": "If in doubt, contact us immediately for an inspection."
     },
     "advantages": {
-      "adv1": {
-        "title": "Proven Experience",
-        "desc": "Over 15 years working with sailboat rigging in the Algarve."
-      },
-      "adv2": {
-        "title": "Certified Materials",
-        "desc": "We use only materials from recognized and certified brands."
-      },
-      "adv3": {
-        "title": "Work Guarantee",
-        "desc": "All our work comes with a guarantee and photo report."
-      }
+      "adv1": { "title": "Proven Experience", "desc": "Over 15 years working with sailboat rigging in the Algarve." },
+      "adv2": { "title": "Certified Materials", "desc": "We use only materials from recognized and certified brands." },
+      "adv3": { "title": "Work Guarantee", "desc": "All our work comes with a guarantee and photo report." }
     },
-    "cta": {
-      "title": "Need an inspection or maintenance?",
-      "subtitle": "Contact us to schedule a visit to your sailboat.",
-      "button": "Request Quote"
-    }
+    "cta": { "title": "Need an inspection or maintenance?", "subtitle": "Contact us to schedule a visit to your sailboat.", "button": "Request Quote" }
   }
 }
