@@ -39,7 +39,7 @@ const Gallery = () => {
       id: 5,
       title: t('gallery.projects.p5.title'),
       category: t('gallery.categories.maintenance'),
-      image: 'https://hnaezacbzcpmyfoupdec.supabase.co/storage/v1/object/public/ANTARES%20ENERGIA/DM%20OSMOSE.webp',
+      image: 'https://hnaezacbzcpmyfoupdec.supabase.co/storage/v1/object/public/ANTARES%20ENERGIA/2%20VERNIZ%20DM.png',
       description: t('gallery.projects.p5.desc')
     },
     {
