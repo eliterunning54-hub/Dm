@@ -92,22 +92,10 @@
     "values": {
       "title": "Our Values",
       "subtitle": "What guides us every day",
-      "quality": {
-        "title": "Premium Quality",
-        "desc": "Certified materials and experienced technicians."
-      },
-      "team": {
-        "title": "Professional Team",
-        "desc": "Qualified professionals passionate about what they do."
-      },
-      "focus": {
-        "title": "Customer Focus",
-        "desc": "Each project is tailored to meet your needs."
-      },
-      "commitment": {
-        "title": "Commitment",
-        "desc": "Excellence guaranteed in every detail."
-      }
+      "quality": { "title": "Premium Quality", "desc": "Certified materials and experienced technicians." },
+      "team": { "title": "Professional Team", "desc": "Qualified professionals passionate about what they do." },
+      "focus": { "title": "Customer Focus", "desc": "Each project is tailored to meet your needs." },
+      "commitment": { "title": "Commitment", "desc": "Excellence guaranteed in every detail." }
     },
     "cta": {
       "title": "Ready to get started?",
@@ -116,16 +104,13 @@
     }
   },
   "contact": {
-    "hero": {
-      "title": "Get in Touch",
-      "subtitle": "Send us a message or request a quote"
-    },
+    "hero": { "title": "Get in Touch", "subtitle": "Send us a message or request a quote" },
     "form": {
       "title": "Contact Form",
       "name": "Name",
       "namePlaceholder": "Your full name",
       "email": "Email",
-      "emailPlaceholder": "your email",
+      "emailPlaceholder": "your@email.com",
       "phone": "Phone",
       "phonePlaceholder": "+351 ...",
       "boatType": "Boat Type",
@@ -158,234 +143,31 @@
     }
   },
   "gallery": {
-    "hero": {
-      "title": "Sailboat Gallery",
-      "subtitle": "Check out some of our completed projects."
-    },
+    "hero": { "title": "Sailboat Gallery", "subtitle": "Check out some of our completed projects." },
     "title": "Sailboat Gallery",
     "subtitle": "Check out some of our completed projects.",
     "categories": {
       "all": "All",
-      "fibra": "Fiberglass",
-      "teka": "Teak",
-      "rigging": "Rigging",
-      "antifouling": "Antifouling",
-      "painting": "Painting",
-      "varnish": "Varnish",
-      "cleaning": "Cleaning",
-      "bimini": "Bimini"
+      "Fibra": "Fiberglass",
+      "Teka": "Teak",
+      "Rigging": "Rigging",
+      "Antifouling": "Antifouling",
+      "Pintura": "Painting",
+      "Verniz": "Varnish",
+      "Limpeza": "Cleaning",
+      "Bimini": "Bimini"
     },
     "projects": {
-      "p1": { "title": "Beneteau Oceanis 45", "desc": "Complete refit of hull and interiors" },
-      "p2": { "title": "Beneteau Oceanis 38", "desc": "Antifouling and maintenance service" },
-      "p3": { "title": "Rigging Bavaria 46", "desc": "Complete rigging replacement" },
-      "p4": { "title": "Painting Lagoon 40", "desc": "Professional painting and gelcoat" },
-      "p5": { "title": "Maintenance Jeanneau 42", "desc": "Full preventive maintenance" },
-      "p6": { "title": "Beneteau Oceanis 50", "desc": "Partial refit of hull and interiors" },
-      "p7": { "title": "Rigging Hanse 445", "desc": "Rigging inspection and adjustment" },
-      "p8": { "title": "Painting Bavaria 46", "desc": "Painting and gelcoat finishing" },
-      "p9": { "title": "Antifouling Dufour 412", "desc": "Professional antifouling application" }
+      "p1": { "title": "Teak Service", "desc": "Complete teak repair" },
+      "p2": { "title": "Antifouling Service", "desc": "Antifouling and maintenance service" },
+      "p3": { "title": "Cleaning Service", "desc": "Cleaning and polishing service" },
+      "p4": { "title": "Painting Service", "desc": "Professional painting and gelcoat" },
+      "p5": { "title": "Varnish Service", "desc": "Varnish and finishing services" },
+      "p6": { "title": "Fiberglass Service", "desc": "Fiberglass repair service" },
+      "p7": { "title": "Rigging Service", "desc": "Rigging inspection and adjustment" },
+      "p8": { "title": "Canvas & Bimini Service", "desc": "Nautical canvas work" },
+      "p9": { "title": "Hull Treatment", "desc": "Professional antifouling application" }
     },
     "viewDetails": "View Details"
-  },
-  "refit": {
-    "hero": {
-      "title": "Refit & Repairs",
-      "subtitle": "We modernize and restore your sailboat with excellence.",
-      "desc": "We provide complete refit services: hull, rigging, painting, and interiors.",
-      "cta": "Request Quote"
-    },
-    "services": {
-      "sectionTitle": "Refit Services",
-      "sectionSubtitle": "Complete solutions for your sailboat",
-      "title": "Refit Services",
-      "subtitle": "Complete solutions for your sailboat",
-      "structural": "Structural Repairs",
-      "hull": "Hull Treatment",
-      "rigging": "Rigging & Installation",
-      "painting": "Painting & Gelcoat",
-      "maintenance": "Preventive Maintenance",
-      "electrical": {
-        "title": "Electrical Systems",
-        "desc": "Installation and maintenance of nautical electrical systems.",
-        "items": [
-          "Electrical panel installation",
-          "Navigation systems",
-          "Nautical LED lighting",
-          "Batteries and chargers",
-          "Solar energy systems",
-          "VHF and instrument installation"
-        ]
-      },
-      "hydraulic": {
-        "title": "Hydraulic Systems",
-        "desc": "Repair and installation of hydraulic systems.",
-        "items": [
-          "Hydraulic steering",
-          "Anchoring systems",
-          "Cranes and winches",
-          "Pump maintenance",
-          "Hose replacement",
-          "Pressure testing"
-        ]
-      },
-      "aesthetic": {
-        "title": "Aesthetics & Finishing",
-        "desc": "Complete visual renovation of your sailboat.",
-        "items": [
-          "Hull and superstructure painting",
-          "Gelcoat application",
-          "Polishing and waxing",
-          "Interior renovation",
-          "Upholstery and coverings",
-          "Teak varnishing"
-        ]
-      },
-      "navigation": {
-        "title": "Navigation Equipment",
-        "desc": "Modernization of navigation systems.",
-        "items": [
-          "Chartplotter installation",
-          "AIS systems",
-          "Radar and sonar",
-          "Autopilot",
-          "On-board instrumentation",
-          "Communication systems"
-        ]
-      },
-      "propulsion": {
-        "title": "Propulsion Systems",
-        "desc": "Engine and propulsion maintenance and upgrades.",
-        "items": [
-          "Diesel engine service",
-          "Propeller replacement",
-          "Shaft and bearings",
-          "Cooling systems",
-          "Marine exhaust",
-          "Saildrive maintenance"
-        ]
-      }
-    },
-    "process": {
-      "title": "Our Refit Process",
-      "subtitle": "Clear steps for an excellent result",
-      "s1": { "title": "Assessment", "desc": "Detailed inspection of the sailboat's current condition." },
-      "s2": { "title": "Quote", "desc": "Detailed proposal with timelines and costs." },
-      "s3": { "title": "Planning", "desc": "Defining the work plan and priorities." },
-      "s4": { "title": "Execution", "desc": "Work carried out by specialized technicians." },
-      "s5": { "title": "Quality Control", "desc": "Rigorous verification of each completed stage." },
-      "s6": { "title": "Delivery", "desc": "Sailboat delivered with a full work report." }
-    },
-    "why": {
-      "title": "Why Refit?",
-      "reasons": [
-        "Increases resale value",
-        "Improves on-board safety",
-        "Reduces future maintenance costs",
-        "Modernizes outdated systems",
-        "Improves performance and comfort",
-        "Extends the sailboat's lifespan"
-      ]
-    },
-    "examples": {
-      "title": "Completed Projects",
-      "duration": "Duration",
-      "months": "weeks",
-      "p1": { "desc": "Full refit including painting, rigging, and electrical systems." },
-      "p2": { "desc": "Complete modernization with new navigation equipment." },
-      "p3": { "desc": "Partial refit focused on hull and exterior finishing." }
-    },
-    "cta": {
-      "title": "Ready to renew your sailboat?",
-      "subtitle": "Contact us for a free assessment and personalized quote.",
-      "button": "Request Quote"
-    }
-  },
-  "rigging": {
-    "hero": {
-      "title": "Professional Rigging",
-      "subtitle": "Installation, inspection, and maintenance of all types of rigging.",
-      "cta": "Request Inspection"
-    },
-    "services": {
-      "title": "Our Rigging Services",
-      "subtitle": "Complete solutions for your sailboat's rig",
-      "standing": {
-        "title": "Standing Rigging",
-        "desc": "Installation and maintenance of shrouds and stays",
-        "items": [
-          "Full mast inspection",
-          "Replacement of stainless steel wires",
-          "Installation of new stays",
-          "Replacement of Sta-Lok/Norseman terminals",
-          "Rig tensioning and tuning",
-          "Checking bolts and fasteners"
-        ]
-      },
-      "running": {
-        "title": "Running Rigging",
-        "desc": "Sheets, halyards, and control lines",
-        "items": [
-          "Replacement of halyards",
-          "Installation of new sheets",
-          "High-performance lines (Dyneema)",
-          "Low-friction systems",
-          "Quality blocks and pulleys",
-          "Specialized fairleads and terminals"
-        ]
-      },
-      "equip": {
-        "title": "Equipment Installation",
-        "desc": "Winches, blocks, and fittings",
-        "items": [
-          "Installation of Harken/Lewmar winches",
-          "Assembly of blocks and pulleys",
-          "Reefers",
-          "Sheet cars",
-          "Hydraulic systems"
-        ]
-      },
-      "inspection": {
-        "title": "Inspection & Maintenance",
-        "desc": "Prevention and safety",
-        "items": [
-          "Full annual inspection",
-          "Detailed photo reports",
-          "Load testing of terminals",
-          "Corrosion check",
-          "Equipment lubrication",
-          "Preventive maintenance plan"
-        ]
-      }
-    },
-    "materials": {
-      "title": "Materials We Use",
-      "subtitle": "Only certified, high-quality materials",
-      "m1": { "name": "Dyneema Line", "desc": "High strength and low weight for performance rigging." },
-      "m2": { "name": "316L Stainless Steel", "desc": "Maximum corrosion resistance in marine environments." },
-      "m3": { "name": "Sta-Lok Terminals", "desc": "Precision field-serviceable terminals." },
-      "m4": { "name": "Harken Winches", "desc": "High-performance and durable hardware." },
-      "m5": { "name": "Lewmar Blocks", "desc": "Low-friction blocks for smooth sailing." },
-      "m6": { "name": "Dyform Wire", "desc": "Compacted steel wire for reduced stretch." }
-    },
-    "warnings": {
-      "title": "Rigging Warning Signs",
-      "subtitle": "Don't ignore these signs — they can compromise safety",
-      "items": [
-        "Loose or broken wires in steel cables",
-        "Visible corrosion on terminals or stays",
-        "Misaligned mast or abnormal vibrations",
-        "Loose or deformed terminals",
-        "Running rigging with cut strands",
-        "Blocks or winches with stiff movement"
-      ],
-      "alert": "If in doubt, contact us immediately for an inspection."
-    },
-    "advantages": {
-      "adv1": { "title": "Proven Experience", "desc": "Over 15 years working with sailboat rigging in the Algarve." },
-      "adv2": { "title": "Certified Materials", "desc": "We use only materials from recognized and certified brands." },
-      "adv3": { "title": "Work Guarantee", "desc": "All our work comes with a guarantee and photo report." }
-    },
-    "cta": { "title": "Need an inspection or maintenance?", "subtitle": "Contact us to schedule a visit to your sailboat.", "button": "Request Quote" }
   }
 }
