@@ -166,11 +166,11 @@
     "subtitle": "Confira alguns dos nossos projetos concluídos.",
     "categories": {
       "all": "Todos",
-      "refit": "Refit",
-      "rigging": "Rigging",
-      "antifouling": "Antifouling",
-      "painting": "Pintura",
-      "maintenance": "Manutenção"
+      "Fibra": "Fibra",
+      "Teka": "Teka",
+      "Rigging": "Rigging",
+      "Pintura": "Pintura",
+      "Verniz": "Verniz",
     },
     "projects": {
       "p1": { "title": "Beneteau Oceanis 45", "desc": "Refit completo do casco e interiores" },
