@@ -73,12 +73,12 @@ const Gallery = () => {
   ];
 
   const categories = [
-    { id: 'all', label: t('Fibra') },
-    { id: 'refit', label: t('Teka') },
-    { id: 'rigging', label: t('rigging') },
-    { id: 'antifouling', label: t('antifouling') },
-    { id: 'painting', label: t('painting') },
-    { id: 'maintenance', label: t('Verniz') }
+    { id: 'Fibra', label: t('Fibra') },
+    { id: 'Teka', label: t('Teka') },
+    { id: 'Rigging', label: t('Rigging') },
+    { id: 'Antifouling', label: t('Antifouling') },
+    { id: 'PIntura', label: t('Pintura') },
+    { id: 'Verniz', label: t('Verniz') }
   ];
 
   const [activeCategory, setActiveCategory] = useState('all');
