@@ -165,12 +165,16 @@
     "title": "Galeria de Veleiros",
     "subtitle": "Confira alguns dos nossos projetos concluídos.",
     "categories": {
-      "all": "Todos",
-      "Fibra": "Fibra",
-      "Teka": "Teka",
-      "Rigging": "Rigging",
-      "Pintura": "Pintura",
-      "Verniz": "Verniz",
+    "all": "Todos",
+    "Fibra": "Fibra",
+    "Teka": "Teka",
+    "Rigging": "Rigging",
+    "Antifouling": "Antifouling",
+    "Pintura": "Pintura",
+    "Verniz": "Verniz",
+    "Limpeza": "Limpeza",
+    "Bimini": "Bimini"
+    }
     },
     "projects": {
       "p1": { "title": "Beneteau Oceanis 45", "desc": "Refit completo do casco e interiores" },
