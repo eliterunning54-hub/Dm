@@ -25,7 +25,7 @@ const Gallery = () => {
       id: 3,
       title: t('gallery.projects.p3.title'),
       category: t('gallery.categories.rigging'),
-      image: 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800',
+      image: 'https://hnaezacbzcpmyfoupdec.supabase.co/storage/v1/object/public/ANTARES%20ENERGIA/6%20LIMPEZA%20E%20MANUTENCAO.webp',
       description: t('gallery.projects.p3.desc')
     },
     {
