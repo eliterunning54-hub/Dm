@@ -176,15 +176,15 @@
       "Bimini": "Bimini"
     },
     "projects": {
-      "p1": { "title": "Beneteau Oceanis 45", "desc": "Refit completo do casco e interiores" },
-      "p2": { "title": "Beneteau Oceanis 38", "desc": "Serviço de antifouling e manutenção" },
-      "p3": { "title": "Rigging Bavaria 46", "desc": "Substituição completa de rigging" },
-      "p4": { "title": "Pintura Lagoon 40", "desc": "Pintura e gelcoat profissional" },
-      "p5": { "title": "Manutenção Jeanneau 42", "desc": "Manutenção preventiva completa" },
-      "p6": { "title": "Beneteau Oceanis 50", "desc": "Refit parcial do casco e interiores" },
-      "p7": { "title": "Rigging Hanse 445", "desc": "Inspeção e ajuste de rigging" },
-      "p8": { "title": "Pintura Bavaria 46", "desc": "Pintura e acabamento gelcoat" },
-      "p9": { "title": "Antifouling Dufour 412", "desc": "Aplicação de antifouling profissional" }
+      "p1": { "title": "Serviço em Teka", "desc": "Refit completo do casco e interiores" },
+      "p2": { "title": "Serviço de Antifouling", "desc": "Serviço de antifouling e manutenção" },
+      "p3": { "title": "Serviço de Limpeza", "desc": "Substituição completa de rigging" },
+      "p4": { "title": "Serviço de Pintura", "desc": "Pintura e gelcoat profissional" },
+      "p5": { "title": "Serviço de Verniz", "desc": "Manutenção preventiva completa" },
+      "p6": { "title": "Serviço de Fibra de Vidro", "desc": "Refit parcial do casco e interiores" },
+      "p7": { "title": "Serviço de Rigging", "desc": "Inspeção e ajuste de rigging" },
+      "p8": { "title": "Serviço de Capotaria", "desc": "Pintura e acabamento gelcoat" },
+      "p9": { "title": "Tratamento de Casco", "desc": "Aplicação de antifouling profissional" }
     },
     "viewDetails": "Ver Detalhes"
   },
