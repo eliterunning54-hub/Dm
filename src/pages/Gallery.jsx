@@ -52,7 +52,7 @@ const Gallery = () => {
     {
       id: 7,
       title: t('gallery.projects.p7.title'),
-      category: t('gallery.categories.rigging'),
+      category: t('Rigging'),
       image: 'https://hnaezacbzcpmyfoupdec.supabase.co/storage/v1/object/public/ANTARES%20ENERGIA/DM1%20WEBP.png',
       description: t('gallery.projects.p7.desc')
     },
@@ -66,19 +66,19 @@ const Gallery = () => {
     {
       id: 9,
       title: t('gallery.projects.p9.title'),
-      category: t('gallery.categories.antifouling'),
+      category: t('Antifouling'),
       image: 'https://hnaezacbzcpmyfoupdec.supabase.co/storage/v1/object/public/ANTARES%20ENERGIA/DM4%20500X500%20.webp',
       description: t('gallery.projects.p9.desc')
     }
   ];
 
   const categories = [
-    { id: 'all', label: t('gallery.categories.all') },
+    { id: 'all', label: t('Fibra') },
     { id: 'refit', label: t('Teka') },
     { id: 'rigging', label: t('rigging') },
     { id: 'antifouling', label: t('antifouling') },
     { id: 'painting', label: t('painting') },
-    { id: 'maintenance', label: t('maintenance') }
+    { id: 'maintenance', label: t('Verniz') }
   ];
 
   const [activeCategory, setActiveCategory] = useState('all');
