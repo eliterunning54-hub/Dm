@@ -32,7 +32,7 @@ const Gallery = () => {
       id: 4,
       title: t('gallery.projects.p4.title'),
       category: t('gallery.categories.painting'),
-      image: 'https://hnaezacbzcpmyfoupdec.supabase.co/storage/v1/object/public/ANTARES%20ENERGIA/DM%20CAPOTA%207.webp',
+      image: 'https://hnaezacbzcpmyfoupdec.supabase.co/storage/v1/object/public/ANTARES%20ENERGIA/DM%20PINTURA%20VELEIRO.webp',
       description: t('gallery.projects.p4.desc')
     },
     {
