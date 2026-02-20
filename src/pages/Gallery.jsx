@@ -46,7 +46,7 @@ const Gallery = () => {
       id: 6,
       title: t('gallery.projects.p6.title'),
       category: t('gallery.categories.refit'),
-      image: 'https://hnaezacbzcpmyfoupdec.supabase.co/storage/v1/object/public/ANTARES%20ENERGIA/DM%20SERV%204.webp',
+      image: 'https://hnaezacbzcpmyfoupdec.supabase.co/storage/v1/object/public/ANTARES%20ENERGIA/3%20FIBRA%20DE%20VIDRO.jpeg',
       description: t('gallery.projects.p6.desc')
     },
     {
