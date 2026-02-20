@@ -60,7 +60,7 @@ const Gallery = () => {
       id: 8,
       title: t('gallery.projects.p8.title'),
       category: t('gallery.categories.painting'),
-      image: 'https://hnaezacbzcpmyfoupdec.supabase.co/storage/v1/object/public/ANTARES%20ENERGIA/DM%20PINTURA%20VELEIRO.webp',
+      image: 'https://hnaezacbzcpmyfoupdec.supabase.co/storage/v1/object/public/ANTARES%20ENERGIA/4%20BENINI%20CAPOTA.jpeg',
       description: t('gallery.projects.p8.desc')
     },
     {
