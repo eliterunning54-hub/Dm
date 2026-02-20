@@ -18,7 +18,7 @@ const Gallery = () => {
       id: 2,
       title: t('gallery.projects.p2.title'),
       category: t('gallery.categories.antifouling'),
-      image: 'https://images.unsplash.com/photo-1572542920843-5dera6f6f4b7?w=800',
+      image: 'https://hnaezacbzcpmyfoupdec.supabase.co/storage/v1/object/public/ANTARES%20ENERGIA/500X500%20DM%20SERV.webp',
       description: t('gallery.projects.p2.desc')
     },
     {
