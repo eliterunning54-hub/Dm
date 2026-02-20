@@ -74,11 +74,11 @@ const Gallery = () => {
 
   const categories = [
     { id: 'all', label: t('gallery.categories.all') },
-    { id: 'refit', label: t('gallery.categories.refit') },
-    { id: 'rigging', label: t('gallery.categories.rigging') },
-    { id: 'antifouling', label: t('gallery.categories.antifouling') },
-    { id: 'painting', label: t('gallery.categories.painting') },
-    { id: 'maintenance', label: t('gallery.categories.maintenance') }
+    { id: 'refit', label: t('Teka') },
+    { id: 'rigging', label: t('rigging') },
+    { id: 'antifouling', label: t('antifouling') },
+    { id: 'painting', label: t('painting') },
+    { id: 'maintenance', label: t('maintenance') }
   ];
 
   const [activeCategory, setActiveCategory] = useState('all');
