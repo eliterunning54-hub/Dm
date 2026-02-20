@@ -21,16 +21,6 @@ const Header = () => {
     setIsOpen(false);
   }, [location]);
 
-  const navLinks = [
-    { path: '/', label: t('nav.home', 'Home') },
-    { path: '/servicos', label: t('nav.services', 'Serviços') },
-    { path: '/refit', label: t('nav.refit', 'Refit & Reparos') },
-    { path: '/rigging', label: t('nav.rigging', 'Rigging') },
-    { path: '/sobre', label: t('nav.about', 'Sobre Nós') },
-    { path: '/galeria', label: t('nav.gallery', 'Galeria') },
-    { path: '/contato', label: t('nav.contact', 'Contato') }
-  ];
-
   const LanguageSelector = () => (
     <div className="flex items-center gap-3 ml-4 border-l pl-4 border-gray-200">
       <button 
@@ -47,6 +37,16 @@ const Header = () => {
       </button>
     </div>
   );
+
+  const navItems = [
+    { path: '/', key: 'home' },
+    { path: '/servicos', key: 'services' },
+    { path: '/refit', key: 'refit' },
+    { path: '/rigging', key: 'rigging' },
+    { path: '/sobre', key: 'about' },
+    { path: '/galeria', key: 'gallery' },
+    { path: '/contato', key: 'contact' }
+  ];
 
   return (
     <header 
@@ -73,7 +73,7 @@ const Header = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center gap-6">
-            {navLinks.map((link) => (
+            {navItems.map((link) => (
               <Link
                 key={link.path}
                 to={link.path}
@@ -83,7 +83,7 @@ const Header = () => {
                     : 'text-gray-700 hover:text-ocean-500'
                 }`}
               >
-                {link.label}
+                {t(`nav.${link.key}`)}
               </Link>
             ))}
           </nav>
@@ -95,7 +95,7 @@ const Header = () => {
               className="flex items-center gap-2 bg-ocean-500 hover:bg-ocean-600 text-white px-5 py-2.5 rounded-lg font-semibold transition-all transform hover:scale-105"
             >
               <Phone className="w-4 h-4" />
-              {t('cta.quote', 'Solicitar Orçamento')}
+              {t('cta.quote')}
             </Link>
             <LanguageSelector />
           </div>
@@ -120,7 +120,7 @@ const Header = () => {
                 <LanguageSelector />
               </div>
 
-              {navLinks.map((link) => (
+              {navItems.map((link) => (
                 <Link
                   key={link.path}
                   to={link.path}
@@ -130,15 +130,16 @@ const Header = () => {
                       : 'text-gray-700 hover:bg-gray-100'
                   }`}
                 >
-                  {link.label}
+                  {t(`nav.${link.key}`)}
                 </Link>
               ))}
+
               <Link
                 to="/contato"
                 className="bg-ocean-500 hover:bg-ocean-600 text-white px-6 py-4 rounded-lg font-semibold text-center transition-all flex items-center justify-center gap-2"
               >
                 <Phone className="w-5 h-5" />
-                {t('cta.quote', 'Solicitar Orçamento')}
+                {t('cta.quote')}
               </Link>
             </div>
           </nav>
