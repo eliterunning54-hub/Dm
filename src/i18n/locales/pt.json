@@ -165,16 +165,15 @@
     "title": "Galeria de Veleiros",
     "subtitle": "Confira alguns dos nossos projetos concluídos.",
     "categories": {
-    "all": "Todos",
-    "Fibra": "Fibra",
-    "Teka": "Teka",
-    "Rigging": "Rigging",
-    "Antifouling": "Antifouling",
-    "Pintura": "Pintura",
-    "Verniz": "Verniz",
-    "Limpeza": "Limpeza",
-    "Bimini": "Bimini"
-    }
+      "all": "Todos",
+      "Fibra": "Fibra",
+      "Teka": "Teka",
+      "Rigging": "Rigging",
+      "Antifouling": "Antifouling",
+      "Pintura": "Pintura",
+      "Verniz": "Verniz",
+      "Limpeza": "Limpeza",
+      "Bimini": "Bimini"
     },
     "projects": {
       "p1": { "title": "Beneteau Oceanis 45", "desc": "Refit completo do casco e interiores" },
@@ -270,30 +269,12 @@
     "process": {
       "title": "O Nosso Processo de Refit",
       "subtitle": "Etapas claras para um resultado excelente",
-      "s1": {
-        "title": "Avaliação",
-        "desc": "Inspeção detalhada do estado atual do veleiro."
-      },
-      "s2": {
-        "title": "Orçamento",
-        "desc": "Proposta detalhada com prazos e custos."
-      },
-      "s3": {
-        "title": "Planeamento",
-        "desc": "Definição do plano de trabalhos e prioridades."
-      },
-      "s4": {
-        "title": "Execução",
-        "desc": "Trabalhos realizados por técnicos especializados."
-      },
-      "s5": {
-        "title": "Controlo de Qualidade",
-        "desc": "Verificação rigorosa de cada etapa concluída."
-      },
-      "s6": {
-        "title": "Entrega",
-        "desc": "Veleiro entregue com relatório completo dos trabalhos."
-      }
+      "s1": { "title": "Avaliação", "desc": "Inspeção detalhada do estado atual do veleiro." },
+      "s2": { "title": "Orçamento", "desc": "Proposta detalhada com prazos e custos." },
+      "s3": { "title": "Planeamento", "desc": "Definição do plano de trabalhos e prioridades." },
+      "s4": { "title": "Execução", "desc": "Trabalhos realizados por técnicos especializados." },
+      "s5": { "title": "Controlo de Qualidade", "desc": "Verificação rigorosa de cada etapa concluída." },
+      "s6": { "title": "Entrega", "desc": "Veleiro entregue com relatório completo dos trabalhos." }
     },
     "why": {
       "title": "Porquê Fazer um Refit?",
@@ -401,23 +382,10 @@
       "alert": "Em caso de dúvida, contacte-nos imediatamente para uma inspeção."
     },
     "advantages": {
-      "adv1": {
-        "title": "Experiência Comprovada",
-        "desc": "Mais de 15 anos a trabalhar com rigging de veleiros no Algarve."
-      },
-      "adv2": {
-        "title": "Materiais Certificados",
-        "desc": "Utilizamos apenas materiais de marcas reconhecidas e certificadas."
-      },
-      "adv3": {
-        "title": "Garantia de Trabalho",
-        "desc": "Todos os nossos trabalhos têm garantia e relatório fotográfico."
-      }
+      "adv1": { "title": "Experiência Comprovada", "desc": "Mais de 15 anos a trabalhar com rigging de veleiros no Algarve." },
+      "adv2": { "title": "Materiais Certificados", "desc": "Utilizamos apenas materiais de marcas reconhecidas e certificadas." },
+      "adv3": { "title": "Garantia de Trabalho", "desc": "Todos os nossos trabalhos têm garantia e relatório fotográfico." }
     },
-    "cta": {
-      "title": "Precisa de inspeção ou manutenção?",
-      "subtitle": "Entre em contacto para agendar uma visita ao seu veleiro.",
-      "button": "Solicitar Orçamento"
-    }
+    "cta": { "title": "Precisa de inspeção ou manutenção?", "subtitle": "Entre em contacto para agendar uma visita ao seu veleiro.", "button": "Solicitar Orçamento" }
   }
 }
