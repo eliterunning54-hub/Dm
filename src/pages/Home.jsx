@@ -71,52 +71,30 @@ const Home = () => {
 
   const whyItems = t('why.items', { returnObjects: true });
 
-  const veleiroFeatures = [
-    'Antifouling & Tratamento de Casco',
-    'Rigging & Manutenção de Mastros',
-    'Refit Completo & Modernização',
-    'Pintura, Gelcoat & Acabamentos',
-  ];
+  const veleiroFeatures = t('veleiroSection.features', { returnObjects: true });
+
+  const motorItems = t('boatTypes.motor.items', { returnObjects: true });
+  const sailboatItems = t('boatTypes.sailboat.items', { returnObjects: true });
+  const catamaranItems = t('boatTypes.catamaran.items', { returnObjects: true });
 
   const boatTypes = [
     {
       icon: Zap,
-      title: 'Barcos a Motor',
-      description: 'Manutenção especializada e soluções técnicas para embarcações a motor de todas as dimensões.',
-      items: [
-        'Revisão e manutenção de motores',
-        'Sistemas de combustível e arrefecimento',
-        'Cascos e antifouling',
-        'Sistemas elétricos e eletrónicos',
-        'Transmissão e hélices',
-        'Pintura e acabamentos',
-      ]
+      title: t('boatTypes.motor.title'),
+      description: t('boatTypes.motor.description'),
+      items: Array.isArray(motorItems) ? motorItems : []
     },
     {
       icon: Wind,
-      title: 'Veleiros',
-      description: 'Cuidados especializados para o seu veleiro, desde o casco ao topo do mastro.',
-      items: [
-        'Antifouling & tratamento de casco',
-        'Rigging fixo e móvel',
-        'Manutenção de velas e mastros',
-        'Refit completo e modernização',
-        'Pintura, gelcoat e acabamentos',
-        'Sistemas de navegação',
-      ]
+      title: t('boatTypes.sailboat.title'),
+      description: t('boatTypes.sailboat.description'),
+      items: Array.isArray(sailboatItems) ? sailboatItems : []
     },
     {
       icon: Anchor,
-      title: 'Catamarãs',
-      description: 'Experiência comprovada na manutenção e refit de catamarãs de vela e a motor.',
-      items: [
-        'Manutenção dos dois cascos',
-        'Antifouling em duplo casco',
-        'Sistemas de leme e governo',
-        'Refit de interiores e cockpit',
-        'Sistemas elétricos e solares',
-        'Estofamentos e toldos',
-      ]
+      title: t('boatTypes.catamaran.title'),
+      description: t('boatTypes.catamaran.description'),
+      items: Array.isArray(catamaranItems) ? catamaranItems : []
     }
   ];
 
@@ -192,15 +170,15 @@ const Home = () => {
             <div className="flex items-center justify-center gap-3 mb-4">
               <div className="h-px w-12 bg-ocean-500" />
               <span className="text-ocean-500 text-xs font-bold uppercase tracking-[0.2em]">
-                As Nossas Especialidades
+                {t('boatTypes.sectionLabel')}
               </span>
               <div className="h-px w-12 bg-ocean-500" />
             </div>
             <h2 className="text-4xl md:text-5xl font-bold text-navy-900 mb-4">
-              Serviços Técnicos para Máxima Performance
+              {t('services.sectionTitle')}
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Oferecemos soluções completas para todo o tipo de embarcação — com a precisão e o cuidado que o seu barco merece.
+              {t('services.sectionSubtitle')}
             </p>
           </div>
 
@@ -249,7 +227,7 @@ const Home = () => {
                     to="/servicos"
                     className="inline-flex items-center gap-2 text-blue-600 font-semibold text-sm hover:gap-3 transition-all"
                   >
-                    Saber Mais <ArrowRight className="w-4 h-4" />
+                    {t('services.learnMore')} <ArrowRight className="w-4 h-4" />
                   </Link>
                 </div>
               );
@@ -286,7 +264,7 @@ const Home = () => {
             <div className="absolute bottom-8 left-8 flex items-center gap-3 bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl px-5 py-3 shadow-xl">
               <div className="w-2 h-2 rounded-full bg-ocean-400 animate-pulse" />
               <span className="text-white text-sm font-semibold tracking-wide uppercase">
-                Especialistas em Veleiros
+                {t('veleiroSection.badge')}
               </span>
             </div>
           </div>
@@ -298,25 +276,24 @@ const Home = () => {
             <div className="flex items-center gap-3 mb-6">
               <div className="h-px w-10 bg-ocean-500" />
               <span className="text-ocean-400 text-xs font-bold uppercase tracking-[0.2em]">
-                A Nossa Especialidade
+                {t('veleiroSection.label')}
               </span>
             </div>
 
             {/* Título */}
             <h2 className="text-4xl md:text-5xl font-bold text-white leading-tight mb-6">
-              Serviços Técnicos para{' '}
-              <span className="text-ocean-400">Máxima Performance</span>
+              {t('veleiroSection.title')}{' '}
+              <span className="text-ocean-400">{t('veleiroSection.highlight')}</span>
             </h2>
 
             {/* Subtítulo */}
             <p className="text-gray-300 text-lg leading-relaxed mb-10 max-w-lg">
-              Oferecemos soluções completas para o seu veleiro — desde a manutenção preventiva
-              ao refit total, com a precisão e o cuidado que a sua embarcação merece.
+              {t('veleiroSection.subtitle')}
             </p>
 
             {/* Lista de features */}
             <div className="space-y-4 mb-10">
-              {veleiroFeatures.map((item, i) => (
+              {Array.isArray(veleiroFeatures) && veleiroFeatures.map((item, i) => (
                 <div key={i} className="flex items-center gap-4">
                   <div className="flex-shrink-0 w-6 h-6 rounded-full bg-ocean-500/20 border border-ocean-500/50 flex items-center justify-center">
                     <svg
@@ -340,7 +317,7 @@ const Home = () => {
                 to="/servicos"
                 className="inline-flex items-center justify-center gap-2 bg-ocean-500 hover:bg-ocean-400 text-white px-7 py-4 rounded-xl font-semibold text-base transition-all transform hover:scale-105 shadow-lg shadow-ocean-500/30"
               >
-                Ver Todos os Serviços
+                {t('veleiroSection.ctaServices')}
                 <ArrowRight className="w-4 h-4" />
               </Link>
               <a
@@ -349,7 +326,7 @@ const Home = () => {
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 border border-white/20 hover:border-white/50 bg-white/5 hover:bg-white/10 text-white px-7 py-4 rounded-xl font-semibold text-base transition-all"
               >
-                Pedir Orçamento
+                {t('veleiroSection.ctaQuote')}
               </a>
             </div>
           </div>
