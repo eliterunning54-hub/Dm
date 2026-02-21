@@ -60,6 +60,60 @@
       "desc": "Regular care to ensure performance and safety."
     }
   },
+  "boatTypes": {
+    "sectionLabel": "Our Specialties",
+    "motor": {
+      "title": "Motor Boats",
+      "description": "Specialized maintenance and technical solutions for motor boats of all sizes.",
+      "items": [
+        "Engine revision and maintenance",
+        "Fuel and cooling systems",
+        "Hulls and antifouling",
+        "Electrical and electronic systems",
+        "Transmission and propellers",
+        "Painting and finishes"
+      ]
+    },
+    "sailboat": {
+      "title": "Sailboats",
+      "description": "Specialized care for your sailboat, from hull to masthead.",
+      "items": [
+        "Antifouling & hull treatment",
+        "Standing and running rigging",
+        "Sail and mast maintenance",
+        "Full refit and modernization",
+        "Painting, gelcoat and finishes",
+        "Navigation systems"
+      ]
+    },
+    "catamaran": {
+      "title": "Catamarans",
+      "description": "Proven experience in catamaran maintenance and refit, sail and motor.",
+      "items": [
+        "Dual hull maintenance",
+        "Dual hull antifouling",
+        "Steering and rudder systems",
+        "Interior and cockpit refit",
+        "Electrical and solar systems",
+        "Upholstery and canopies"
+      ]
+    }
+  },
+  "veleiroSection": {
+    "label": "Our Specialty",
+    "title": "Technical Services for",
+    "highlight": "Maximum Performance",
+    "subtitle": "We offer complete solutions for your sailboat — from preventive maintenance to full refit, with the precision and care your vessel deserves.",
+    "badge": "Sailboat Specialists",
+    "ctaServices": "View All Services",
+    "ctaQuote": "Request Quote",
+    "features": [
+      "Antifouling & Hull Treatment",
+      "Rigging & Mast Maintenance",
+      "Full Refit & Modernization",
+      "Painting, Gelcoat & Finishes"
+    ]
+  },
   "why": {
     "title": "Why Choose Our Team?",
     "items": [
