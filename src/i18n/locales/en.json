@@ -25,8 +25,8 @@
     "contactTitle": "Contact"
   },
   "hero": {
-    "title": "Professional Sailboat Repair & Maintenance in the Algarve",
-    "subtitle": "Specialists in structural repairs, rigging, antifouling, and full refit.",
+    "title": "Professional Sailboat Repair and Maintenance in the Algarve",
+    "subtitle": "Specialists in structural repairs, rigging, antifouling and full refits.",
     "whatsapp": "Chat on WhatsApp"
   },
   "stats": {
@@ -74,8 +74,8 @@
   "testimonials": {
     "title": "What Our Clients Say",
     "carlos": { "text": "Excellent service and attention to detail." },
-    "maria": { "text": "Competent professionals, my sailboat looks like new!" },
-    "joao": { "text": "Highly recommend, great experience." }
+    "maria": { "text": "Highly skilled professionals, my sailboat looks like new!" },
+    "joao": { "text": "I highly recommend them, great experience." }
   },
   "about": {
     "hero": {
@@ -84,27 +84,42 @@
     },
     "story": {
       "title": "Our Story",
-      "p1": "Founded in 2010, we are a reference in maintenance in the Algarve.",
+      "p1": "Founded in 2010, we are a leading maintenance company in the Algarve.",
       "p2": "We offer complete services for sailboats of all sizes.",
-      "p3": "We prioritize quality, safety, and customer satisfaction.",
+      "p3": "We prioritize quality, safety and customer satisfaction.",
       "p4": "Our goal is to extend the life of your sailboat with excellence."
     },
     "values": {
       "title": "Our Values",
       "subtitle": "What guides us every day",
-      "quality": { "title": "Premium Quality", "desc": "Certified materials and experienced technicians." },
-      "team": { "title": "Professional Team", "desc": "Qualified professionals passionate about what they do." },
-      "focus": { "title": "Customer Focus", "desc": "Each project is tailored to meet your needs." },
-      "commitment": { "title": "Commitment", "desc": "Excellence guaranteed in every detail." }
+      "quality": {
+        "title": "Premium Quality",
+        "desc": "Certified materials and experienced technicians."
+      },
+      "team": {
+        "title": "Professional Team",
+        "desc": "Qualified professionals passionate about what they do."
+      },
+      "focus": {
+        "title": "Customer Focus",
+        "desc": "Each project is tailored to your needs."
+      },
+      "commitment": {
+        "title": "Commitment",
+        "desc": "Excellence guaranteed in every detail."
+      }
     },
     "cta": {
       "title": "Ready to get started?",
-      "subtitle": "Contact us to learn how we can help your sailboat.",
+      "subtitle": "Contact us to find out how we can help your sailboat.",
       "button": "Request Contact"
     }
   },
   "contact": {
-    "hero": { "title": "Get in Touch", "subtitle": "Send us a message or request a quote" },
+    "hero": {
+      "title": "Get in Touch",
+      "subtitle": "Send us a message or request a quote"
+    },
     "form": {
       "title": "Contact Form",
       "name": "Name",
@@ -121,7 +136,7 @@
         "antifouling": "Antifouling",
         "rigging": "Rigging",
         "refit": "Full Refit",
-        "painting": "Painting/Gelcoat",
+        "painting": "Painting / Gelcoat",
         "maintenance": "Preventive Maintenance"
       },
       "serviceOther": "Other",
@@ -143,9 +158,12 @@
     }
   },
   "gallery": {
-    "hero": { "title": "Sailboat Gallery", "subtitle": "Check out some of our completed projects." },
+    "hero": {
+      "title": "Sailboat Gallery",
+      "subtitle": "Take a look at some of our completed projects."
+    },
     "title": "Sailboat Gallery",
-    "subtitle": "Check out some of our completed projects.",
+    "subtitle": "Take a look at some of our completed projects.",
     "categories": {
       "all": "All",
       "Fibra": "Fiberglass",
@@ -163,9 +181,9 @@
       "p3": { "title": "Cleaning Service", "desc": "Cleaning and polishing service" },
       "p4": { "title": "Painting Service", "desc": "Professional painting and gelcoat" },
       "p5": { "title": "Varnish Service", "desc": "Varnish and finishing services" },
-      "p6": { "title": "Fiberglass Service", "desc": "Fiberglass repair service" },
+      "p6": { "title": "Fiberglass Service", "desc": "Fiberglass repair services" },
       "p7": { "title": "Rigging Service", "desc": "Rigging inspection and adjustment" },
-      "p8": { "title": "Canvas & Bimini Service", "desc": "Nautical canvas work" },
+      "p8": { "title": "Canvas & Bimini Service", "desc": "Marine canvas services" },
       "p9": { "title": "Hull Treatment", "desc": "Professional antifouling application" }
     },
     "viewDetails": "View Details"
