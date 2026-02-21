@@ -25,7 +25,7 @@
     "contactTitle": "Contact"
   },
   "hero": {
-    "title": "Professional Sailboat Repair and Maintenance in the Algarve",
+    "title": "Professional Sailboat Repair & Maintenance in the Algarve",
     "subtitle": "Specialists in structural repairs, rigging, antifouling and full refits.",
     "whatsapp": "Chat on WhatsApp"
   },
@@ -187,5 +187,205 @@
       "p9": { "title": "Hull Treatment", "desc": "Professional antifouling application" }
     },
     "viewDetails": "View Details"
+  },
+  "refit": {
+    "hero": {
+      "title": "Refit & Repairs",
+      "subtitle": "We modernize and restore your sailboat with excellence.",
+      "desc": "We offer complete refit services: hull, rigging, painting and interiors.",
+      "cta": "Request Quote"
+    },
+    "services": {
+      "sectionTitle": "Refit Services",
+      "sectionSubtitle": "Complete solutions for your sailboat",
+      "title": "Refit Services",
+      "subtitle": "Complete solutions for your sailboat",
+      "structural": "Structural Repairs",
+      "hull": "Hull Treatment",
+      "rigging": "Rigging & Installation",
+      "painting": "Painting & Gelcoat",
+      "maintenance": "Preventive Maintenance",
+      "electrical": {
+        "title": "Electrical Systems",
+        "desc": "Installation and maintenance of nautical electrical systems.",
+        "items": [
+          "Installation of electrical panels",
+          "Navigation systems",
+          "Nautical LED lighting",
+          "Batteries and chargers",
+          "Solar energy systems",
+          "VHF and instruments installation"
+        ]
+      },
+      "hydraulic": {
+        "title": "Hydraulic Systems",
+        "desc": "Repair and installation of hydraulic systems.",
+        "items": [
+          "Hydraulic steering",
+          "Anchoring systems",
+          "Cranes and winches",
+          "Pump maintenance",
+          "Hose replacement",
+          "Pressure testing"
+        ]
+      },
+      "aesthetic": {
+        "title": "Aesthetics & Finishes",
+        "desc": "Complete visual renovation of your sailboat.",
+        "items": [
+          "Hull and superstructure painting",
+          "Gelcoat application",
+          "Polishing and waxing",
+          "Interior renovation",
+          "Upholstery and coverings",
+          "Wood varnishing"
+        ]
+      },
+      "navigation": {
+        "title": "Navigation Equipment",
+        "desc": "Modernization of navigation systems.",
+        "items": [
+          "Plotter installation",
+          "AIS systems",
+          "Radar and sonar",
+          "Autopilot",
+          "Onboard instrumentation",
+          "Communication systems"
+        ]
+      },
+      "propulsion": {
+        "title": "Propulsion Systems",
+        "desc": "Maintenance and upgrade of engines and thrusters.",
+        "items": [
+          "Diesel engine overhaul",
+          "Propeller replacement",
+          "Shaft and bearings",
+          "Cooling systems",
+          "Marine exhaust",
+          "Saildrive maintenance"
+        ]
+      }
+    },
+    "process": {
+      "title": "Our Refit Process",
+      "subtitle": "Clear steps for an excellent result",
+      "s1": { "title": "Evaluation", "desc": "Detailed inspection of the current state of the sailboat." },
+      "s2": { "title": "Quotation", "desc": "Detailed proposal with timelines and costs." },
+      "s3": { "title": "Planning", "desc": "Definition of work plan and priorities." },
+      "s4": { "title": "Execution", "desc": "Work performed by specialized technicians." },
+      "s5": { "title": "Quality Control", "desc": "Rigorous verification of each completed step." },
+      "s6": { "title": "Delivery", "desc": "Sailboat delivered with a complete work report." }
+    },
+    "why": {
+      "title": "Why Do a Refit?",
+      "reasons": [
+        "Increases resale value",
+        "Improves onboard safety",
+        "Reduces future maintenance costs",
+        "Modernizes obsolete systems",
+        "Improves performance and comfort",
+        "Extends the life of the sailboat"
+      ]
+    },
+    "examples": {
+      "title": "Completed Projects",
+      "duration": "Duration",
+      "months": "weeks",
+      "p1": { "desc": "Complete refit including painting, rigging, and electrical systems." },
+      "p2": { "desc": "Full modernization with new navigation equipment." },
+      "p3": { "desc": "Partial refit focusing on hull and exterior finishes." }
+    },
+    "cta": {
+      "title": "Ready to renew your sailboat?",
+      "subtitle": "Contact us for a free evaluation and personalized quote.",
+      "button": "Request Quote"
+    }
+  },
+  "rigging": {
+    "hero": {
+      "title": "Professional Rigging",
+      "subtitle": "Installation, inspection and maintenance of all types of rigging.",
+      "cta": "Request Inspection"
+    },
+    "services": {
+      "title": "Our Rigging Services",
+      "subtitle": "Complete solutions for your sailboat rigging",
+      "standing": {
+        "title": "Standing Rigging",
+        "desc": "Installation and maintenance of stays and shrouds",
+        "items": [
+          "Complete mast inspection",
+          "Stainless steel cable replacement",
+          "New stays installation",
+          "Sta-Lok/Norseman terminal replacement",
+          "Rig tensioning and tuning",
+          "Bolt and fastener verification"
+        ]
+      },
+      "running": {
+        "title": "Running Rigging",
+        "desc": "Sheets, halyards and control lines",
+        "items": [
+          "Halyard replacement",
+          "New sheets installation",
+          "High-performance ropes (Dyneema)",
+          "Friction reduction systems",
+          "Quality blocks and pulleys",
+          "Specialized eyes and terminals"
+        ]
+      },
+      "equip": {
+        "title": "Equipment Installation",
+        "desc": "Winches, blocks and fittings",
+        "items": [
+          "Harken/Lewmar winches installation",
+          "Blocks and pulleys assembly",
+          "Reefing systems",
+          "Sheet cars",
+          "Hydraulic systems"
+        ]
+      },
+      "inspection": {
+        "title": "Inspection & Maintenance",
+        "desc": "Prevention and safety",
+        "items": [
+          "Complete annual inspection",
+          "Detailed photographic reports",
+          "Load testing on terminals",
+          "Corrosion checks",
+          "Equipment lubrication",
+          "Preventive maintenance plan"
+        ]
+      }
+    },
+    "materials": {
+      "title": "Materials We Use",
+      "subtitle": "Only certified, high-quality materials",
+      "m1": { "name": "Dyneema Rope", "desc": "High strength and low weight for performance rigging." },
+      "m2": { "name": "316L Stainless Steel", "desc": "Maximum corrosion resistance in marine environments." },
+      "m3": { "name": "Sta-Lok Terminals", "desc": "Precision terminals removable on site." },
+      "m4": { "name": "Harken Winches", "desc": "High-performance and durable equipment." },
+      "m5": { "name": "Lewmar Blocks", "desc": "Low-friction blocks for smooth handling." },
+      "m6": { "name": "Dyform Cable", "desc": "Compact steel cable for minimal stretch." }
+    },
+    "warnings": {
+      "title": "Rigging Warning Signs",
+      "subtitle": "Do not ignore these — they may compromise safety",
+      "items": [
+        "Loose or broken wires in steel cables",
+        "Visible corrosion on terminals or stays",
+        "Misaligned mast or abnormal vibrations",
+        "Loose or deformed terminals",
+        "Frayed control lines",
+        "Blocks or winches with difficulty moving"
+      ],
+      "alert": "If in doubt, contact us immediately for an inspection."
+    },
+    "advantages": {
+      "adv1": { "title": "Proven Experience", "desc": "Over 15 years working with sailboat rigging in the Algarve." },
+      "adv2": { "title": "Certified Materials", "desc": "We use only recognized and certified brands." },
+      "adv3": { "title": "Work Guarantee", "desc": "All our work comes with a guarantee and photographic report." }
+    },
+    "cta": { "title": "Need inspection or maintenance?", "subtitle": "Contact us to schedule a visit to your sailboat.", "button": "Request Quote" }
   }
 }
