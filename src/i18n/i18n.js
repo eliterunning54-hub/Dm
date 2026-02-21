@@ -11,9 +11,12 @@ i18n
       pt: { translation: pt },
       en: { translation: en },
     },
-    lng: 'pt',            // idioma inicial
-    fallbackLng: 'pt',    // se não encontrar tradução
-    interpolation: { escapeValue: false },
+    lng: 'pt',
+    fallbackLng: 'pt',
+    interpolation: {
+      escapeValue: false
+    },
+    returnObjects: true // 👈 ADICIONE ISTO
   });
 
 export default i18n;
