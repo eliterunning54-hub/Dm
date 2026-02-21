@@ -60,6 +60,60 @@
       "desc": "Cuidados regulares para garantir desempenho e segurança."
     }
   },
+  "boatTypes": {
+    "sectionLabel": "As Nossas Especialidades",
+    "motor": {
+      "title": "Barcos a Motor",
+      "description": "Manutenção especializada e soluções técnicas para embarcações a motor de todas as dimensões.",
+      "items": [
+        "Revisão e manutenção de motores",
+        "Sistemas de combustível e arrefecimento",
+        "Cascos e antifouling",
+        "Sistemas elétricos e eletrónicos",
+        "Transmissão e hélices",
+        "Pintura e acabamentos"
+      ]
+    },
+    "sailboat": {
+      "title": "Veleiros",
+      "description": "Cuidados especializados para o seu veleiro, desde o casco ao topo do mastro.",
+      "items": [
+        "Antifouling & tratamento de casco",
+        "Rigging fixo e móvel",
+        "Manutenção de velas e mastros",
+        "Refit completo e modernização",
+        "Pintura, gelcoat e acabamentos",
+        "Sistemas de navegação"
+      ]
+    },
+    "catamaran": {
+      "title": "Catamarãs",
+      "description": "Experiência comprovada na manutenção e refit de catamarãs de vela e a motor.",
+      "items": [
+        "Manutenção dos dois cascos",
+        "Antifouling em duplo casco",
+        "Sistemas de leme e governo",
+        "Refit de interiores e cockpit",
+        "Sistemas elétricos e solares",
+        "Estofamentos e toldos"
+      ]
+    }
+  },
+  "veleiroSection": {
+    "label": "A Nossa Especialidade",
+    "title": "Serviços Técnicos para",
+    "highlight": "Máxima Performance",
+    "subtitle": "Oferecemos soluções completas para o seu veleiro — desde a manutenção preventiva ao refit total, com a precisão e o cuidado que a sua embarcação merece.",
+    "badge": "Especialistas em Veleiros",
+    "ctaServices": "Ver Todos os Serviços",
+    "ctaQuote": "Pedir Orçamento",
+    "features": [
+      "Antifouling & Tratamento de Casco",
+      "Rigging & Manutenção de Mastros",
+      "Refit Completo & Modernização",
+      "Pintura, Gelcoat & Acabamentos"
+    ]
+  },
   "why": {
     "title": "Porquê Escolher a Nossa Equipa?",
     "items": [
