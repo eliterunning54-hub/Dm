@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { Anchor, Wrench, Paintbrush, Ship, Shield, CheckCircle, ArrowRight } from 'lucide-react';
+import { Anchor, Wrench, Paintbrush, Ship, Shield, CheckCircle, ArrowRight, Layers, Navigation } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -52,6 +52,18 @@ const Services = () => {
       icon: <Wrench className="w-16 h-16" />,
       title: t('services.maintenance.title'),
       description: t('services.maintenance.desc'),
+      link: '/contact'
+    },
+    {
+      icon: <Layers className="w-16 h-16" />,
+      title: t('services.inox.title'),
+      description: t('services.inox.desc'),
+      link: '/contact'
+    },
+    {
+      icon: <Navigation className="w-16 h-16" />,
+      title: t('services.skipper.title'),
+      description: t('services.skipper.desc'),
       link: '/contact'
     }
   ];
