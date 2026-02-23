@@ -47,7 +47,6 @@ const Header = () => {
     { path: '/contato', key: 'contact' }
   ];
 
-
   return (
     <header 
       className={`fixed w-full top-0 z-50 transition-all duration-300 ${
@@ -58,16 +57,26 @@ const Header = () => {
     >
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between">
+
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-3">
-            <img 
-              src="https://hnaezacbzcpmyfoupdec.supabase.co/storage/v1/object/public/ANTARES%20ENERGIA/9%20LOGO%20SEM%20ESCRITA%20E%20SEM%20FUNDO.png" 
-              alt="DM Yacht Care Logo" 
-              className="h-16 w-auto scale-125 sm:scale-125 lg:h-20 lg:scale-150 object-contain"
-            />
-            <div className="hidden sm:block">
-              <h1 className="text-xl lg:text-2xl font-bold text-navy-900">DM Yacht Care</h1>
-              <p className="text-xs lg:text-sm text-gray-600">Yacht Services & Solutions</p>
+          <Link to="/" className="flex items-center gap-2">
+            <div className="flex items-center justify-center" style={{ width: '72px', height: '72px' }}>
+              <img 
+                src="https://hnaezacbzcpmyfoupdec.supabase.co/storage/v1/object/public/ANTARES%20ENERGIA/9%20LOGO%20SEM%20ESCRITA%20E%20SEM%20FUNDO.png" 
+                alt="DM Yacht Care Logo" 
+                className="lg:hidden object-contain"
+                style={{ width: '64px', height: '64px' }}
+              />
+              <img 
+                src="https://hnaezacbzcpmyfoupdec.supabase.co/storage/v1/object/public/ANTARES%20ENERGIA/9%20LOGO%20SEM%20ESCRITA%20E%20SEM%20FUNDO.png" 
+                alt="DM Yacht Care Logo" 
+                className="hidden lg:block object-contain"
+                style={{ width: '72px', height: '72px' }}
+              />
+            </div>
+            <div className="hidden sm:flex flex-col justify-center">
+              <h1 className="text-xl lg:text-2xl font-bold text-navy-900 leading-tight">DM Yacht Care</h1>
+              <p className="text-xs lg:text-sm text-gray-600 leading-tight">Yacht Services & Solutions</p>
             </div>
           </Link>
 
