@@ -15,14 +15,12 @@ function App() {
     <Router>
       <div className="min-h-screen flex flex-col">
         <Header />
-        {/* pt-24 compensa a altura do header fixed (py-6 = 24px top+bottom + logo) */}
         <main className="flex-grow pt-24">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/servicos" element={<Services />} />
             <Route path="/refit" element={<Refit />} />
             <Route path="/rigging" element={<Rigging />} />
-            <Route path="/sobre" element={<About />} />
             <Route path="/galeria" element={<Gallery />} />
             <Route path="/contato" element={<Contact />} />
           </Routes>
