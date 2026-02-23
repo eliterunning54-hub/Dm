@@ -62,11 +62,6 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/sobre" className="text-gray-400 hover:text-ocean-500 transition-colors">
-                  {t('nav.about')}
-                </Link>
-              </li>
-              <li>
                 <Link to="/galeria" className="text-gray-400 hover:text-ocean-500 transition-colors">
                   {t('nav.gallery')}
                 </Link>
