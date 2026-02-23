@@ -58,6 +58,14 @@
     "maintenance": {
       "title": "Manutenção Preventiva",
       "desc": "Cuidados regulares para garantir desempenho e segurança."
+    },
+    "inox": {
+      "title": "Trabalhos em Inox",
+      "desc": "Fabrico, reparação e polimento de peças em aço inoxidável para embarcações. Corrimões, suportes, escadas, antenas e qualquer estrutura em inox feita à medida com materiais de alta resistência à corrosão marinha."
+    },
+    "skipper": {
+      "title": "Serviço de Skipper",
+      "desc": "Disponibilizamos skippers profissionais experientes para transferências, entrega de embarcações, navegação costeira e apoio a bordo. Toda a documentação e seguros em conformidade com a regulamentação marítima portuguesa."
     }
   },
   "boatTypes": {
@@ -127,9 +135,15 @@
   },
   "testimonials": {
     "title": "O Que Dizem os Nossos Clientes",
-    "carlos": { "text": "Serviço excelente e atenção aos detalhes." },
-    "maria": { "text": "Profissionais competentes, o meu veleiro ficou como novo!" },
-    "joao": { "text": "Recomendo sem hesitar, ótima experiência." }
+    "carlos": {
+      "text": "Serviço excelente e atenção aos detalhes."
+    },
+    "maria": {
+      "text": "Profissionais competentes, o meu veleiro ficou como novo!"
+    },
+    "joao": {
+      "text": "Recomendo sem hesitar, ótima experiência."
+    }
   },
   "about": {
     "hero": {
@@ -230,15 +244,42 @@
       "Bimini": "Bimini"
     },
     "projects": {
-      "p1": { "title": "Serviço em Teka", "desc": "Reparo completo de Teka" },
-      "p2": { "title": "Serviço de Antifouling", "desc": "Serviço de antifouling e manutenção" },
-      "p3": { "title": "Serviço de Limpeza", "desc": "Serviço de Limpeza e Polimento" },
-      "p4": { "title": "Serviço de Pintura", "desc": "Pintura e gelcoat profissional" },
-      "p5": { "title": "Serviço de Verniz", "desc": "Serviços de Vernoiz e Acabamentos" },
-      "p6": { "title": "Serviço de Fibra de Vidro", "desc": "Serviços de Reparo em Fibra de Vidro" },
-      "p7": { "title": "Serviço de Rigging", "desc": "Inspeção e ajuste de rigging" },
-      "p8": { "title": "Serviço de Capotaria", "desc": "Serviços em Capotaria Náutica" },
-      "p9": { "title": "Tratamento de Casco", "desc": "Aplicação de antifouling profissional" }
+      "p1": {
+        "title": "Serviço em Teka",
+        "desc": "Reparo completo de Teka"
+      },
+      "p2": {
+        "title": "Serviço de Antifouling",
+        "desc": "Serviço de antifouling e manutenção"
+      },
+      "p3": {
+        "title": "Serviço de Limpeza",
+        "desc": "Serviço de Limpeza e Polimento"
+      },
+      "p4": {
+        "title": "Serviço de Pintura",
+        "desc": "Pintura e gelcoat profissional"
+      },
+      "p5": {
+        "title": "Serviço de Verniz",
+        "desc": "Serviços de Verniz e Acabamentos"
+      },
+      "p6": {
+        "title": "Serviço de Fibra de Vidro",
+        "desc": "Serviços de Reparo em Fibra de Vidro"
+      },
+      "p7": {
+        "title": "Serviço de Rigging",
+        "desc": "Inspeção e ajuste de rigging"
+      },
+      "p8": {
+        "title": "Serviço de Capotaria",
+        "desc": "Serviços em Capotaria Náutica"
+      },
+      "p9": {
+        "title": "Tratamento de Casco",
+        "desc": "Aplicação de antifouling profissional"
+      }
     },
     "viewDetails": "Ver Detalhes"
   },
@@ -323,12 +364,30 @@
     "process": {
       "title": "O Nosso Processo de Refit",
       "subtitle": "Etapas claras para um resultado excelente",
-      "s1": { "title": "Avaliação", "desc": "Inspeção detalhada do estado atual do barco." },
-      "s2": { "title": "Orçamento", "desc": "Proposta detalhada com prazos e custos." },
-      "s3": { "title": "Planeamento", "desc": "Definição do plano de trabalhos e prioridades." },
-      "s4": { "title": "Execução", "desc": "Trabalhos realizados por técnicos especializados." },
-      "s5": { "title": "Controlo de Qualidade", "desc": "Verificação rigorosa de cada etapa concluída." },
-      "s6": { "title": "Entrega", "desc": "Veleiro entregue com relatório completo dos trabalhos." }
+      "s1": {
+        "title": "Avaliação",
+        "desc": "Inspeção detalhada do estado atual do barco."
+      },
+      "s2": {
+        "title": "Orçamento",
+        "desc": "Proposta detalhada com prazos e custos."
+      },
+      "s3": {
+        "title": "Planeamento",
+        "desc": "Definição do plano de trabalhos e prioridades."
+      },
+      "s4": {
+        "title": "Execução",
+        "desc": "Trabalhos realizados por técnicos especializados."
+      },
+      "s5": {
+        "title": "Controlo de Qualidade",
+        "desc": "Verificação rigorosa de cada etapa concluída."
+      },
+      "s6": {
+        "title": "Entrega",
+        "desc": "Veleiro entregue com relatório completo dos trabalhos."
+      }
     },
     "why": {
       "title": "Porquê Fazer um Refit?",
@@ -345,9 +404,15 @@
       "title": "Projetos Realizados",
       "duration": "Duração",
       "months": "semanas",
-      "p1": { "desc": "Refit completo incluindo pintura, rigging e sistemas elétricos." },
-      "p2": { "desc": "Modernização completa com novos equipamentos de navegação." },
-      "p3": { "desc": "Refit parcial com foco no casco e acabamentos exteriores." }
+      "p1": {
+        "desc": "Refit completo incluindo pintura, rigging e sistemas elétricos."
+      },
+      "p2": {
+        "desc": "Modernização completa com novos equipamentos de navegação."
+      },
+      "p3": {
+        "desc": "Refit parcial com foco no casco e acabamentos exteriores."
+      }
     },
     "cta": {
       "title": "Pronto para renovar o seu barco?",
@@ -415,12 +480,30 @@
     "materials": {
       "title": "Materiais que Utilizamos",
       "subtitle": "Apenas materiais certificados e de alta qualidade",
-      "m1": { "name": "Cabo Dyneema", "desc": "Alta resistência e baixo peso para rigging de performance." },
-      "m2": { "name": "Aço Inox 316L", "desc": "Máxima resistência à corrosão em ambiente marinho." },
-      "m3": { "name": "Terminais Sta-Lok", "desc": "Terminais de precisão desmontáveis no local." },
-      "m4": { "name": "Winches Harken", "desc": "Equipamentos de alta performance e durabilidade." },
-      "m5": { "name": "Blocos Lewmar", "desc": "Blocos de baixa fricção para manobras suaves." },
-      "m6": { "name": "Cabo Dyform", "desc": "Cabo de aço compactado para menor alongamento." }
+      "m1": {
+        "name": "Cabo Dyneema",
+        "desc": "Alta resistência e baixo peso para rigging de performance."
+      },
+      "m2": {
+        "name": "Aço Inox 316L",
+        "desc": "Máxima resistência à corrosão em ambiente marinho."
+      },
+      "m3": {
+        "name": "Terminais Sta-Lok",
+        "desc": "Terminais de precisão desmontáveis no local."
+      },
+      "m4": {
+        "name": "Winches Harken",
+        "desc": "Equipamentos de alta performance e durabilidade."
+      },
+      "m5": {
+        "name": "Blocos Lewmar",
+        "desc": "Blocos de baixa fricção para manobras suaves."
+      },
+      "m6": {
+        "name": "Cabo Dyform",
+        "desc": "Cabo de aço compactado para menor alongamento."
+      }
     },
     "warnings": {
       "title": "Sinais de Alerta no Rigging",
@@ -436,10 +519,23 @@
       "alert": "Em caso de dúvida, contacte-nos imediatamente para uma inspeção."
     },
     "advantages": {
-      "adv1": { "title": "Experiência Comprovada", "desc": "Mais de 15 anos a trabalhar com rigging de veleiros no Algarve." },
-      "adv2": { "title": "Materiais Certificados", "desc": "Utilizamos apenas materiais de marcas reconhecidas e certificadas." },
-      "adv3": { "title": "Garantia de Trabalho", "desc": "Todos os nossos trabalhos têm garantia e relatório fotográfico." }
+      "adv1": {
+        "title": "Experiência Comprovada",
+        "desc": "Mais de 15 anos a trabalhar com rigging de veleiros no Algarve."
+      },
+      "adv2": {
+        "title": "Materiais Certificados",
+        "desc": "Utilizamos apenas materiais de marcas reconhecidas e certificadas."
+      },
+      "adv3": {
+        "title": "Garantia de Trabalho",
+        "desc": "Todos os nossos trabalhos têm garantia e relatório fotográfico."
+      }
     },
-    "cta": { "title": "Precisa de inspeção ou manutenção?", "subtitle": "Entre em contacto para agendar uma visita ao seu Barco.", "button": "Solicitar Orçamento" }
+    "cta": {
+      "title": "Precisa de inspeção ou manutenção?",
+      "subtitle": "Entre em contacto para agendar uma visita ao seu Barco.",
+      "button": "Solicitar Orçamento"
+    }
   }
 }
