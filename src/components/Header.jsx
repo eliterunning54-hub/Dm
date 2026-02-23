@@ -60,18 +60,18 @@ const Header = () => {
 
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2">
-            <div className="flex items-center justify-center" style={{ width: '72px', height: '72px' }}>
+            <div className="flex items-center justify-center" style={{ width: '110px', height: '110px' }}>
               <img 
                 src="https://hnaezacbzcpmyfoupdec.supabase.co/storage/v1/object/public/ANTARES%20ENERGIA/9%20LOGO%20SEM%20ESCRITA%20E%20SEM%20FUNDO.png" 
                 alt="DM Yacht Care Logo" 
                 className="lg:hidden object-contain"
-                style={{ width: '64px', height: '64px' }}
+                style={{ width: '90px', height: '90px' }}
               />
               <img 
                 src="https://hnaezacbzcpmyfoupdec.supabase.co/storage/v1/object/public/ANTARES%20ENERGIA/9%20LOGO%20SEM%20ESCRITA%20E%20SEM%20FUNDO.png" 
                 alt="DM Yacht Care Logo" 
                 className="hidden lg:block object-contain"
-                style={{ width: '72px', height: '72px' }}
+                style={{ width: '110px', height: '110px' }}
               />
             </div>
             <div className="hidden sm:flex flex-col justify-center">
