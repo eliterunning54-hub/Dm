@@ -141,7 +141,7 @@
       "p1": "Fundada em 2010, somos referência em manutenção no Algarve.",
       "p2": "Oferecemos serviços completos para veleiros de todas as dimensões.",
       "p3": "Priorizamos a qualidade, segurança e satisfação do cliente.",
-      "p4": "O nosso objetivo é prolongar a vida útil do seu veleiro com excelência."
+      "p4": "O nosso objetivo é prolongar a vida útil do seu barco com excelência."
     },
     "values": {
       "title": "Os Nossos Valores",
@@ -251,9 +251,9 @@
     },
     "services": {
       "sectionTitle": "Serviços de Refit",
-      "sectionSubtitle": "Soluções completas para o seu veleiro",
+      "sectionSubtitle": "Soluções completas para o seu barco",
       "title": "Serviços de Refit",
-      "subtitle": "Soluções completas para o seu veleiro",
+      "subtitle": "Soluções completas para o seu barco",
       "structural": "Reparações Estruturais",
       "hull": "Tratamento de Casco",
       "rigging": "Rigging e Instalação",
@@ -285,7 +285,7 @@
       },
       "aesthetic": {
         "title": "Estética e Acabamentos",
-        "desc": "Renovação visual completa do seu veleiro.",
+        "desc": "Renovação visual completa do seu barco.",
         "items": [
           "Pintura de casco e superestrutura",
           "Aplicação de gelcoat",
@@ -323,7 +323,7 @@
     "process": {
       "title": "O Nosso Processo de Refit",
       "subtitle": "Etapas claras para um resultado excelente",
-      "s1": { "title": "Avaliação", "desc": "Inspeção detalhada do estado atual do veleiro." },
+      "s1": { "title": "Avaliação", "desc": "Inspeção detalhada do estado atual do barco." },
       "s2": { "title": "Orçamento", "desc": "Proposta detalhada com prazos e custos." },
       "s3": { "title": "Planeamento", "desc": "Definição do plano de trabalhos e prioridades." },
       "s4": { "title": "Execução", "desc": "Trabalhos realizados por técnicos especializados." },
@@ -338,7 +338,7 @@
         "Reduz custos de manutenção futura",
         "Moderniza sistemas obsoletos",
         "Melhora a performance e o conforto",
-        "Prolonga a vida útil do veleiro"
+        "Prolonga a vida útil do barco"
       ]
     },
     "examples": {
@@ -440,6 +440,6 @@
       "adv2": { "title": "Materiais Certificados", "desc": "Utilizamos apenas materiais de marcas reconhecidas e certificadas." },
       "adv3": { "title": "Garantia de Trabalho", "desc": "Todos os nossos trabalhos têm garantia e relatório fotográfico." }
     },
-    "cta": { "title": "Precisa de inspeção ou manutenção?", "subtitle": "Entre em contacto para agendar uma visita ao seu veleiro.", "button": "Solicitar Orçamento" }
+    "cta": { "title": "Precisa de inspeção ou manutenção?", "subtitle": "Entre em contacto para agendar uma visita ao seu Barco.", "button": "Solicitar Orçamento" }
   }
 }
