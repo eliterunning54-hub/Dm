@@ -112,7 +112,7 @@ const Home = () => {
           }}
         />
         <div className="relative z-10 text-center text-white px-4 max-w-5xl mx-auto">
-          <h1 className="hero-title text-5xl md:text-7xl font-bold mb-6">
+          <h1 className="hero-title text-4xl md:text-7xl font-bold mb-6">
             {t('hero.title')}
           </h1>
           <p className="hero-subtitle text-xl md:text-2xl mb-8 text-gray-200">
