@@ -126,18 +126,13 @@ const Contact = () => {
                 </div>
               </div>
 
-              {/* Map */}
+              {/* Foto Marina */}
               <div className="bg-white p-4 rounded-2xl shadow-xl">
-                <div className="w-full h-80 bg-gray-200 rounded-lg overflow-hidden">
-                  <iframe
+                <div className="w-full h-80 rounded-lg overflow-hidden">
+                  <img
                     src="https://hnaezacbzcpmyfoupdec.supabase.co/storage/v1/object/public/ANTARES%20ENERGIA/8%20MARINA%20DE%20PORTIMAO.png"
-                    width="100%"
-                    height="100%"
-                    style={{ border: 0 }}
-                    allowFullScreen=""
-                    loading="lazy"
-                    referrerPolicy="no-referrer-when-downgrade"
-                    title="Localização DM Yacht Care"
+                    alt="Marina de Portimão"
+                    className="w-full h-full object-cover"
                   />
                 </div>
               </div>
