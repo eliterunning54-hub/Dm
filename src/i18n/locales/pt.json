@@ -430,7 +430,7 @@
       "title": "Os Nossos Serviços de Rigging",
       "subtitle": "Soluções completas para o aparelho do seu veleiro",
       "standing": {
-        "title": "Rigging Fixo",
+        "title": "Standing Rigging",
         "desc": "Instalação e manutenção de estais e brandais",
         "items": [
           "Inspeção completa de mastros",
@@ -442,7 +442,7 @@
         ]
       },
       "running": {
-        "title": "Standing Rigging",
+        "title": "Running Rigging",
         "desc": "Escotas, adriças e cabos de manobra",
         "items": [
           "Substituição de adriças",
