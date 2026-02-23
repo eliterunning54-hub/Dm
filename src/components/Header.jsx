@@ -60,20 +60,17 @@ const Header = () => {
 
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2">
-            <div className="flex items-center justify-center" style={{ width: '110px', height: '110px' }}>
-              <img 
-                src="https://hnaezacbzcpmyfoupdec.supabase.co/storage/v1/object/public/ANTARES%20ENERGIA/9%20LOGO%20SEM%20ESCRITA%20E%20SEM%20FUNDO.png" 
-                alt="DM Yacht Care Logo" 
-                className="lg:hidden object-contain"
-                style={{ width: '90px', height: '90px' }}
-              />
-              <img 
-                src="https://hnaezacbzcpmyfoupdec.supabase.co/storage/v1/object/public/ANTARES%20ENERGIA/9%20LOGO%20SEM%20ESCRITA%20E%20SEM%20FUNDO.png" 
-                alt="DM Yacht Care Logo" 
-                className="hidden lg:block object-contain"
-                style={{ width: '110px', height: '110px' }}
-              />
-            </div>
+            <img 
+              src="https://hnaezacbzcpmyfoupdec.supabase.co/storage/v1/object/public/ANTARES%20ENERGIA/9%20LOGO%20SEM%20ESCRITA%20E%20SEM%20FUNDO.png" 
+              alt="DM Yacht Care Logo" 
+              className="object-contain"
+              style={{ 
+                width: '110px', 
+                height: '110px',
+                objectPosition: 'center bottom',
+                marginBottom: '-8px'
+              }}
+            />
             <div className="hidden sm:flex flex-col justify-center">
               <h1 className="text-xl lg:text-2xl font-bold text-navy-900 leading-tight">DM Yacht Care</h1>
               <p className="text-xs lg:text-sm text-gray-600 leading-tight">Yacht Services & Solutions</p>
