@@ -22,7 +22,7 @@ const Header = () => {
   }, [location]);
 
   const LanguageSelector = () => (
-    <div className="flex items-center gap-3 ml-4 border-l pl-4 border-gray-200">
+    <div className="flex items-center gap-3 border-l pl-2 sm:pl-4 border-gray-200">
       <button 
         onClick={() => i18n.changeLanguage('pt')}
         className={`transition-transform hover:scale-110 ${i18n.language === 'pt' ? 'opacity-80 ring-2 ring-ocean-500 rounded-sm' : 'opacity-50'}`}
@@ -51,8 +51,8 @@ const Header = () => {
     <header 
       className={`fixed w-full top-0 z-50 transition-all duration-300 ${
         isScrolled 
-          ? 'bg-white shadow-lg py-4' 
-          : 'bg-white/95 backdrop-blur-sm py-6'
+          ? 'bg-white shadow-lg py-2 sm:py-4' 
+          : 'bg-white/95 backdrop-blur-sm py-2 sm:py-6'
       }`}
     >
       <div className="container mx-auto px-4">
@@ -72,7 +72,7 @@ const Header = () => {
               }}
             />
             <div className="hidden sm:flex flex-col justify-center">
-              <h1 className="text-xl lg:text-2xl font-bold text-navy-900 leading-tight">DM Yacht Care</h1>
+              <h1 className="text-lg sm:text-xl lg:text-2xl font-bold text-navy-900 leading-tight">DM Yacht Care</h1>
               <p className="text-xs lg:text-sm text-gray-600 leading-tight">Yacht Services & Solutions</p>
             </div>
           </Link>
@@ -106,8 +106,9 @@ const Header = () => {
             <LanguageSelector />
           </div>
 
-          {/* Mobile Menu Button */}
-          <div className="flex items-center gap-4 lg:hidden">
+          {/* Mobile Menu Button + Language */}
+          <div className="flex items-center gap-2 lg:hidden">
+            <LanguageSelector /> {/* bandeiras sempre visíveis */}
             <button
               onClick={() => setIsOpen(!isOpen)}
               className="text-navy-900 p-2"
@@ -121,10 +122,6 @@ const Header = () => {
         {isOpen && (
           <nav className="lg:hidden mt-6 pb-6 animate-in fade-in slide-in-from-top-4">
             <div className="flex flex-col gap-4">
-              <div className="flex justify-center py-2 bg-gray-50 rounded-lg">
-                <span className="text-sm text-gray-500 mr-4 self-center">Idioma:</span>
-                <LanguageSelector />
-              </div>
 
               {navItems.map((link) => (
                 <Link
