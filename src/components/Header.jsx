@@ -43,10 +43,10 @@ const Header = () => {
     { path: '/servicos', key: 'services' },
     { path: '/refit', key: 'refit' },
     { path: '/rigging', key: 'rigging' },
-    { path: '/sobre', key: 'about' },
     { path: '/galeria', key: 'gallery' },
     { path: '/contato', key: 'contact' }
   ];
+
 
   return (
     <header 
