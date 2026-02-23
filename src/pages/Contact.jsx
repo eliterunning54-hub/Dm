@@ -130,7 +130,7 @@ const Contact = () => {
               <div className="bg-white p-4 rounded-2xl shadow-xl">
                 <div className="w-full h-80 bg-gray-200 rounded-lg overflow-hidden">
                   <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3195.0!2d-8.1167!3d37.0833!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzfCsDA1JzAwLjAiTiA4wrAwNycwMC4wIlc!5e0!3m2!1spt-PT!2spt!4v1234567890"
+                    src="https://hnaezacbzcpmyfoupdec.supabase.co/storage/v1/object/public/ANTARES%20ENERGIA/8%20MARINA%20DE%20PORTIMAO.png"
                     width="100%"
                     height="100%"
                     style={{ border: 0 }}
