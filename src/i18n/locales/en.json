@@ -58,6 +58,14 @@
     "maintenance": {
       "title": "Preventive Maintenance",
       "desc": "Regular care to ensure performance and safety."
+    },
+    "inox": {
+      "title": "Stainless Steel Works",
+      "desc": "Fabrication, repair and polishing of stainless steel parts for boats. Handrails, brackets, ladders, antennas and any custom stainless structure made with high corrosion-resistant marine-grade materials."
+    },
+    "skipper": {
+      "title": "Skipper Service",
+      "desc": "We provide experienced professional skippers for transfers, boat deliveries, coastal navigation and onboard assistance. All documentation and insurance in compliance with Portuguese maritime regulations."
     }
   },
   "boatTypes": {
@@ -127,9 +135,15 @@
   },
   "testimonials": {
     "title": "What Our Clients Say",
-    "carlos": { "text": "Excellent service and attention to detail." },
-    "maria": { "text": "Highly skilled professionals, my sailboat looks like new!" },
-    "joao": { "text": "I highly recommend them, great experience." }
+    "carlos": {
+      "text": "Excellent service and attention to detail."
+    },
+    "maria": {
+      "text": "Highly skilled professionals, my sailboat looks like new!"
+    },
+    "joao": {
+      "text": "I highly recommend them, great experience."
+    }
   },
   "about": {
     "hero": {
@@ -230,15 +244,42 @@
       "Bimini": "Bimini"
     },
     "projects": {
-      "p1": { "title": "Teak Service", "desc": "Complete teak repair" },
-      "p2": { "title": "Antifouling Service", "desc": "Antifouling and maintenance service" },
-      "p3": { "title": "Cleaning Service", "desc": "Cleaning and polishing service" },
-      "p4": { "title": "Painting Service", "desc": "Professional painting and gelcoat" },
-      "p5": { "title": "Varnish Service", "desc": "Varnish and finishing services" },
-      "p6": { "title": "Fiberglass Service", "desc": "Fiberglass repair services" },
-      "p7": { "title": "Rigging Service", "desc": "Rigging inspection and adjustment" },
-      "p8": { "title": "Canvas & Bimini Service", "desc": "Marine canvas services" },
-      "p9": { "title": "Hull Treatment", "desc": "Professional antifouling application" }
+      "p1": {
+        "title": "Teak Service",
+        "desc": "Complete teak repair"
+      },
+      "p2": {
+        "title": "Antifouling Service",
+        "desc": "Antifouling and maintenance service"
+      },
+      "p3": {
+        "title": "Cleaning Service",
+        "desc": "Cleaning and polishing service"
+      },
+      "p4": {
+        "title": "Painting Service",
+        "desc": "Professional painting and gelcoat"
+      },
+      "p5": {
+        "title": "Varnish Service",
+        "desc": "Varnish and finishing services"
+      },
+      "p6": {
+        "title": "Fiberglass Service",
+        "desc": "Fiberglass repair services"
+      },
+      "p7": {
+        "title": "Rigging Service",
+        "desc": "Rigging inspection and adjustment"
+      },
+      "p8": {
+        "title": "Canvas & Bimini Service",
+        "desc": "Marine canvas services"
+      },
+      "p9": {
+        "title": "Hull Treatment",
+        "desc": "Professional antifouling application"
+      }
     },
     "viewDetails": "View Details"
   },
@@ -323,12 +364,30 @@
     "process": {
       "title": "Our Refit Process",
       "subtitle": "Clear steps for an excellent result",
-      "s1": { "title": "Evaluation", "desc": "Detailed inspection of the current state of the sailboat." },
-      "s2": { "title": "Quotation", "desc": "Detailed proposal with timelines and costs." },
-      "s3": { "title": "Planning", "desc": "Definition of work plan and priorities." },
-      "s4": { "title": "Execution", "desc": "Work performed by specialized technicians." },
-      "s5": { "title": "Quality Control", "desc": "Rigorous verification of each completed step." },
-      "s6": { "title": "Delivery", "desc": "Sailboat delivered with a complete work report." }
+      "s1": {
+        "title": "Evaluation",
+        "desc": "Detailed inspection of the current state of the sailboat."
+      },
+      "s2": {
+        "title": "Quotation",
+        "desc": "Detailed proposal with timelines and costs."
+      },
+      "s3": {
+        "title": "Planning",
+        "desc": "Definition of work plan and priorities."
+      },
+      "s4": {
+        "title": "Execution",
+        "desc": "Work performed by specialized technicians."
+      },
+      "s5": {
+        "title": "Quality Control",
+        "desc": "Rigorous verification of each completed step."
+      },
+      "s6": {
+        "title": "Delivery",
+        "desc": "Sailboat delivered with a complete work report."
+      }
     },
     "why": {
       "title": "Why Do a Refit?",
@@ -345,9 +404,15 @@
       "title": "Completed Projects",
       "duration": "Duration",
       "months": "weeks",
-      "p1": { "desc": "Complete refit including painting, rigging, and electrical systems." },
-      "p2": { "desc": "Full modernization with new navigation equipment." },
-      "p3": { "desc": "Partial refit focusing on hull and exterior finishes." }
+      "p1": {
+        "desc": "Complete refit including painting, rigging, and electrical systems."
+      },
+      "p2": {
+        "desc": "Full modernization with new navigation equipment."
+      },
+      "p3": {
+        "desc": "Partial refit focusing on hull and exterior finishes."
+      }
     },
     "cta": {
       "title": "Ready to renew your boat?",
@@ -415,12 +480,30 @@
     "materials": {
       "title": "Materials We Use",
       "subtitle": "Only certified, high-quality materials",
-      "m1": { "name": "Dyneema Rope", "desc": "High strength and low weight for performance rigging." },
-      "m2": { "name": "316L Stainless Steel", "desc": "Maximum corrosion resistance in marine environments." },
-      "m3": { "name": "Sta-Lok Terminals", "desc": "Precision terminals removable on site." },
-      "m4": { "name": "Harken Winches", "desc": "High-performance and durable equipment." },
-      "m5": { "name": "Lewmar Blocks", "desc": "Low-friction blocks for smooth handling." },
-      "m6": { "name": "Dyform Cable", "desc": "Compact steel cable for minimal stretch." }
+      "m1": {
+        "name": "Dyneema Rope",
+        "desc": "High strength and low weight for performance rigging."
+      },
+      "m2": {
+        "name": "316L Stainless Steel",
+        "desc": "Maximum corrosion resistance in marine environments."
+      },
+      "m3": {
+        "name": "Sta-Lok Terminals",
+        "desc": "Precision terminals removable on site."
+      },
+      "m4": {
+        "name": "Harken Winches",
+        "desc": "High-performance and durable equipment."
+      },
+      "m5": {
+        "name": "Lewmar Blocks",
+        "desc": "Low-friction blocks for smooth handling."
+      },
+      "m6": {
+        "name": "Dyform Cable",
+        "desc": "Compact steel cable for minimal stretch."
+      }
     },
     "warnings": {
       "title": "Rigging Warning Signs",
@@ -436,10 +519,23 @@
       "alert": "If in doubt, contact us immediately for an inspection."
     },
     "advantages": {
-      "adv1": { "title": "Proven Experience", "desc": "Over 15 years working with sailboat rigging in the Algarve." },
-      "adv2": { "title": "Certified Materials", "desc": "We use only recognized and certified brands." },
-      "adv3": { "title": "Work Guarantee", "desc": "All our work comes with a guarantee and photographic report." }
+      "adv1": {
+        "title": "Proven Experience",
+        "desc": "Over 15 years working with sailboat rigging in the Algarve."
+      },
+      "adv2": {
+        "title": "Certified Materials",
+        "desc": "We use only recognized and certified brands."
+      },
+      "adv3": {
+        "title": "Work Guarantee",
+        "desc": "All our work comes with a guarantee and photographic report."
+      }
     },
-    "cta": { "title": "Need inspection or maintenance?", "subtitle": "Contact us to schedule a visit to your sailboat.", "button": "Request Quote" }
+    "cta": {
+      "title": "Need inspection or maintenance?",
+      "subtitle": "Contact us to schedule a visit to your sailboat.",
+      "button": "Request Quote"
+    }
   }
 }
