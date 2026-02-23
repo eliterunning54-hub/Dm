@@ -15,7 +15,7 @@ const Footer = () => {
           <div>
             <div className="flex items-center gap-3 mb-4">
               <img 
-                src="https://hnaezacbzcpmyfoupdec.supabase.co/storage/v1/object/public/ANTARES%20ENERGIA/LOGO%20MAIOR%20.png" 
+                src="https://hnaezacbzcpmyfoupdec.supabase.co/storage/v1/object/public/ANTARES%20ENERGIA/9%20LOGO%20SEM%20ESCRITA%20E%20SEM%20FUNDO.png" 
                 alt="DM Yacht Care Logo" 
                 className="w-32 h-32 object-contain"
               />
