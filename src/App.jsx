@@ -7,7 +7,6 @@ import Home from './pages/Home';
 import Services from './pages/Services';
 import Refit from './pages/Refit';
 import Rigging from './pages/Rigging';
-import About from './pages/About';
 import Gallery from './pages/Gallery';
 import Contact from './pages/Contact';
 
