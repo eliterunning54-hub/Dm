@@ -436,7 +436,7 @@
           "Inspeção completa de mastros",
           "Substituição de cabos de aço inox",
           "Instalação de novos estais",
-          "Substituição de terminais Sta-Lok/Norseman",
+          "Substituição de terminais ",
           "Tensionamento e afinação do rig",
           "Verificação de parafusos e fixações"
         ]
@@ -447,7 +447,7 @@
         "items": [
           "Substituição de adriças",
           "Instalação de escotas novas",
-          "Cabos de alta performance (Dyneema)",
+          "Cabos de alta performance ",
           "Sistemas de redução de fricção",
           "Roldanas e blocos de qualidade",
           "Passadores e terminais especializados"
@@ -457,7 +457,7 @@
         "title": "Instalação de Equipamentos",
         "desc": "Guinchos, blocos e ferragens",
         "items": [
-          "Instalação de winches Harken/Lewmar",
+          "Instalação de winches ",
           "Montagem de blocos e roldanas",
           "Enroladores",
           "Carros de escota",
@@ -481,7 +481,7 @@
       "title": "Materiais que Utilizamos",
       "subtitle": "Apenas materiais certificados e de alta qualidade",
       "m1": {
-        "name": "Cabo Dyneema",
+        "name": "Cabo ",
         "desc": "Alta resistência e baixo peso para rigging de performance."
       },
       "m2": {
@@ -489,19 +489,19 @@
         "desc": "Máxima resistência à corrosão em ambiente marinho."
       },
       "m3": {
-        "name": "Terminais Sta-Lok",
+        "name": "Terminais ",
         "desc": "Terminais de precisão desmontáveis no local."
       },
       "m4": {
-        "name": "Winches Harken",
+        "name": "Winches ",
         "desc": "Equipamentos de alta performance e durabilidade."
       },
       "m5": {
-        "name": "Blocos Lewmar",
+        "name": "Blocos ",
         "desc": "Blocos de baixa fricção para manobras suaves."
       },
       "m6": {
-        "name": "Cabo Dyform",
+        "name": "Cabo ",
         "desc": "Cabo de aço compactado para menor alongamento."
       }
     },
