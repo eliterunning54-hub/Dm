@@ -61,11 +61,11 @@
     },
     "inox": {
       "title": "Stainless Steel Works",
-      "desc": "Manufacture, repair and polishing of stainless steel components for marine vessels. Production of handrails, brackets, ladders, antennas and custom-made stainless steel structures, using materials with high resistance to marine corrosion and durable finishes."
+      "desc": "Stainless steel fabrication, repair and polishing for marine applications."
     },
     "skipper": {
       "title": "Skipper Service",
-      "desc": "We provide experienced professional skippers for transfers, boat deliveries, coastal navigation and onboard assistance. All documentation and insurance in compliance with Portuguese maritime regulations."
+      "desc": "Professional skippers for transfers, yacht deliveries and coastal navigation support, with full compliance with Portuguese maritime regulations."
     }
   },
   "boatTypes": {
