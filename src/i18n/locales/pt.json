@@ -61,11 +61,11 @@
     },
     "inox": {
       "title": "Trabalhos em Inox",
-      "desc": "Fabricação, reparação e polimento de componentes em aço inoxidável para embarcações. Produção de corrimões, suportes, escadas, antenas e estruturas em inox feitas à medida, utilizando materiais de elevada resistência à corrosão marinha e acabamentos de alta durabilidade."
+      "desc": "Fabricação, reparação e polimento de inox para aplicações náuticas."
     },
     "skipper": {
       "title": "Serviço de Skipper",
-      "desc": "Disponibilizamos skippers profissionais experientes para transferências, entrega de embarcações, navegação costeira e apoio a bordo. Toda a documentação e seguros em conformidade com a regulamentação marítima portuguesa."
+      "desc": "Skippers profissionais para transferências e entrega de embarcações, com total conformidade legal."
     }
   },
   "boatTypes": {
