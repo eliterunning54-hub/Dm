@@ -89,8 +89,8 @@ const Home = () => {
     "https://hnaezacbzcpmyfoupdec.supabase.co/storage/v1/object/public/ANTARES%20ENERGIA/33%20DIRECT-SAILS%20DM.webp", 
     "https://hnaezacbzcpmyfoupdec.supabase.co/storage/v1/object/public/ANTARES%20ENERGIA/34%20TEMPOTEST%20DM.webp",
     "https://hnaezacbzcpmyfoupdec.supabase.co/storage/v1/object/public/ANTARES%20ENERGIA/24%20WICHARD%20DM.webp",
-    "https://hnaezacbzcpmyfoupdec.supabase.co/storage/v1/object/public/ANTARES%20ENERGIA/33%20DIRECT-SAILS%20DM.webp", 
-    ];
+     ];
+ 
     
   
   
