@@ -356,15 +356,7 @@ const Home = () => {
 
           <div className="w-full h-px bg-red-600/30 mt-16 max-w-5xl mx-auto" />
 
-          <div className="flex flex-wrap justify-center gap-6 mt-12">
-            <Link to="/servicos" className="px-10 py-2 border border-white text-white text-xs font-bold uppercase tracking-[0.2em] hover:bg-white hover:text-navy-900 transition-all">
-              {t('brands.btnServicos', 'Serviços')}
-            </Link>
-            <Link to="/produtos" className="px-10 py-2 border border-white text-white text-xs font-bold uppercase tracking-[0.2em] hover:bg-white hover:text-navy-900 transition-all">
-              {t('brands.btnProdutos', 'Produtos')}
-            </Link>
-            <Link to="/contato" className="px-10 py-2 bg-[#ff4d4d] text-white text-xs font-bold uppercase tracking-[0.2em] hover:bg-red-700 transition-all">
-              {t('brands.btnContatos', 'Contatos')}
+      
             </Link>
           </div>
         </div>
