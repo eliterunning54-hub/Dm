@@ -348,7 +348,7 @@ const Home = () => {
                 <img 
                   src={url} 
                   alt="Marca Parceira"
-                  className="h-8 md:h-10 w-auto object-contain brightness-0 invert opacity-80 hover:opacity-100 transition-all duration-300"
+                  className="h-16 md:h-20 w-auto object-contain brightness-0 invert opacity-80 hover:opacity-100 transition-all duration-300"
                 />
               </div>
             ))}
