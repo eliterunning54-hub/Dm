@@ -33,7 +33,7 @@ const Footer = () => {
             <div className="flex gap-4">
               {/* Facebook — Troque SEU_USUARIO pelo seu link real */}
               <a 
-                href="https://www.facebook.com/SEU_USUARIO" 
+                href="https://www.facebook.com/dmyachtcare?rdid=NK2oEMayYLNrKJ3C&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1AkrVRLM2" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full flex items-center justify-center transition-all hover:scale-110"
@@ -45,7 +45,8 @@ const Footer = () => {
 
               {/* Instagram — Troque SEU_USUARIO pelo seu link real */}
               <a 
-                href="https://www.instagram.com/SEU_USUARIO" 
+                href="https://www.instagram.com/dmyachtcare?igsh=N214cW51bXh5aW9h
+" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full flex items-center justify-center transition-all hover:scale-110"
