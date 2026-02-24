@@ -181,10 +181,10 @@ const Home = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <p className="text-gray-200 text-xl md:text-3xl max-w-4xl mx-auto leading-relaxed font-light">
-              {t('brands.description', 'Trabalhamos com as melhores marcas nacionais e internacionais e fornecemos peças e acessórios que o seu barco precisa.')}
+              {t('brands.description', 'Trabalhamos com as melhores marcas nacionais e internacionais e fornecemos as peças e acessórios de que o seu barco necessita.')}
             </p>
             <p className="text-gray-400 text-lg mt-6 font-medium">
-              {t('brands.contactLead', 'Venha nos conhecer, entre em contato através do e-mail ou pelo telefone.')}
+              {t('brands.contactLead', 'Venha conhecer-nos, entre em contacto através de e-mail ou por telefone.')}
             </p>
           </div>
 
