@@ -41,7 +41,7 @@ const Gallery = () => {
     {
       id: 7,
       category: 'Rigging',
-      image: 'https://hnaezacbzcpmyfoupdec.supabase.co/storage/v1/object/public/ANTARES%20ENERGIA/DM1%20WEBP.png',
+      image: 'https://hnaezacbzcpmyfoupdec.supabase.co/storage/v1/object/public/ANTARES%20ENERGIA/19%20DENIS%20NO%20MASTRO.webp',
     },
     {
       id: 8,
