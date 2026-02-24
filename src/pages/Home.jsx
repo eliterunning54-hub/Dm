@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Anchor, Shield, Award, ArrowRight, Phone, Zap, Droplets, Wind } from 'lucide-react';
 import gsap from 'gsap';
@@ -9,8 +9,20 @@ gsap.registerPlugin(ScrollTrigger);
 
 const Home = () => {
   const { t } = useTranslation();
+  const [currentImage, setCurrentImage] = useState(0);
+
+  // Array de fotos para a seção de serviço técnico (Veleiro)
+  const fotosServico = [
+    "https://hnaezacbzcpmyfoupdec.supabase.co/storage/v1/object/public/ANTARES%20ENERGIA/DM%20VELEIRO%202000X1328.webp",
+    "https://hnaezacbzcpmyfoupdec.supabase.co/storage/v1/object/public/ANTARES%20ENERGIA/14%20RODA%20DE%20LEME%20FOTO%20DM.webp"
+  ];
 
   useEffect(() => {
+    // Timer para troca de imagens (5 segundos)
+    const timer = setInterval(() => {
+      setCurrentImage((prev) => (prev === 0 ? 1 : 0));
+    }, 5000);
+
     gsap.from('.hero-title', { opacity: 0, y: 50, duration: 1, delay: 0.3 });
     gsap.from('.hero-subtitle', { opacity: 0, y: 30, duration: 1, delay: 0.6 });
     gsap.from('.hero-buttons', { opacity: 0, y: 30, duration: 1, delay: 0.9 });
@@ -46,13 +58,9 @@ const Home = () => {
         }
       });
     });
-  }, []);
 
-  const services = [
-    { icon: <Anchor className="w-12 h-12" />, title: t('services.hull.title'), description: t('services.hull.desc'), link: '/servicos' },
-    { icon: <Shield className="w-12 h-12" />, title: t('services.rigging.title'), description: t('services.rigging.desc'), link: '/rigging' },
-    { icon: <Award className="w-12 h-12" />, title: t('services.refit.title'), description: t('services.refit.desc'), link: '/refit' }
-  ];
+    return () => clearInterval(timer);
+  }, []);
 
   const testimonials = [
     { name: 'Carlos Silva', boat: 'Beneteau Oceanis 45', text: t('testimonials.carlos.text') },
@@ -79,12 +87,8 @@ const Home = () => {
     "https://hnaezacbzcpmyfoupdec.supabase.co/storage/v1/object/public/ANTARES%20ENERGIA/22%20STA-LOK%20%20DM.webp", 
     "https://hnaezacbzcpmyfoupdec.supabase.co/storage/v1/object/public/ANTARES%20ENERGIA/12%20HEMPEL%20DM.png", 
     "https://hnaezacbzcpmyfoupdec.supabase.co/storage/v1/object/public/ANTARES%20ENERGIA/10%20JOTUN%20DM.webp",
-    "https://hnaezacbzcpmyfoupdec.supabase.co/storage/v1/object/public/ANTARES%20ENERGIA/24%20WICHARD%20DM.webp",
-    "https://hnaezacbzcpmyfoupdec.supabase.co/storage/v1/object/public/ANTARES%20ENERGIA/25%20REGATTA%20DM.png", 
-    "https://hnaezacbzcpmyfoupdec.supabase.co/storage/v1/object/public/ANTARES%20ENERGIA/30%20MARINA%20LOGO%20DM.png",
-    "URL_DA_MARCA_10",
-    "URL_DA_MARCA_11", 
-    "URL_DA_MARCA_12"
+    "URL_DA_MARCA_7", "URL_DA_MARCA_8", "URL_DA_MARCA_9",
+    "URL_DA_MARCA_10", "URL_DA_MARCA_11", "URL_DA_MARCA_12"
   ];
 
   return (
@@ -141,13 +145,41 @@ const Home = () => {
         </div>
       </section>
 
-      {/* ── Veleiro Feature Section ── */}
+      {/* ── Veleiro Feature Section (Com troca de fotos) ── */}
       <section className="veleiro-section relative overflow-hidden bg-navy-900">
         <div className="grid lg:grid-cols-2 min-h-[600px]">
-          <div className="veleiro-image relative"><img src="https://hnaezacbzcpmyfoupdec.supabase.co/storage/v1/object/public/ANTARES%20ENERGIA/DM%20VELEIRO%202000X1328.webp" alt="Veleiro" className="w-full h-full object-cover" /></div>
+          <div className="veleiro-image relative overflow-hidden h-[500px] lg:h-full">
+            {fotosServico.map((url, index) => (
+              <img
+                key={index}
+                src={url}
+                alt="Serviço Técnico"
+                className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out ${
+                  currentImage === index ? 'opacity-100' : 'opacity-0'
+                }`}
+              />
+            ))}
+            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-navy-900/20 to-navy-900/90 hidden lg:block" />
+            <div className="absolute bottom-8 left-8 flex items-center gap-3 bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl px-5 py-3 shadow-xl z-20">
+              <div className="w-2 h-2 rounded-full bg-ocean-400 animate-pulse" />
+              <span className="text-white text-sm font-semibold tracking-wide uppercase">{t('veleiroSection.badge')}</span>
+            </div>
+          </div>
           <div className="veleiro-content p-10 lg:p-20 flex flex-col justify-center">
             <h2 className="text-4xl font-bold text-white mb-6">{t('veleiroSection.title')}</h2>
             <p className="text-gray-300 text-lg mb-10">{t('veleiroSection.subtitle')}</p>
+            <div className="space-y-4 mb-10">
+              {Array.isArray(veleiroFeatures) && veleiroFeatures.map((item, i) => (
+                <div key={i} className="flex items-center gap-4">
+                  <div className="flex-shrink-0 w-6 h-6 rounded-full bg-ocean-500/20 border border-ocean-500/50 flex items-center justify-center">
+                    <svg className="w-3 h-3 text-ocean-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                    </svg>
+                  </div>
+                  <span className="text-gray-200 font-medium">{item}</span>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
@@ -181,7 +213,7 @@ const Home = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <p className="text-gray-200 text-xl md:text-3xl max-w-4xl mx-auto leading-relaxed font-light">
-              {t('brands.description', 'Trabalhamos com as melhores marcas nacionais e internacionais e fornecemos as peças e acessórios de que o seu barco necessita.')}
+              {t('brands.description', 'Trabalhamos com as melhores marcas nacionais e internacionais e fornecemos as peças e os acessórios de que o seu barco necessita.')}
             </p>
             <p className="text-gray-400 text-lg mt-6 font-medium">
               {t('brands.contactLead', 'Venha conhecer-nos, entre em contacto através de e-mail ou por telefone.')}
