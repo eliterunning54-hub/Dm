@@ -87,8 +87,12 @@ const Home = () => {
     "https://hnaezacbzcpmyfoupdec.supabase.co/storage/v1/object/public/ANTARES%20ENERGIA/22%20STA-LOK%20%20DM.webp", 
     "https://hnaezacbzcpmyfoupdec.supabase.co/storage/v1/object/public/ANTARES%20ENERGIA/12%20HEMPEL%20DM.png", 
     "https://hnaezacbzcpmyfoupdec.supabase.co/storage/v1/object/public/ANTARES%20ENERGIA/10%20JOTUN%20DM.webp",
-    "URL_DA_MARCA_7", "URL_DA_MARCA_8", "URL_DA_MARCA_9",
-    "URL_DA_MARCA_10", "URL_DA_MARCA_11", "URL_DA_MARCA_12"
+    "https://hnaezacbzcpmyfoupdec.supabase.co/storage/v1/object/public/ANTARES%20ENERGIA/32%20RONSTAN%20DM.jpeg",
+    "https://hnaezacbzcpmyfoupdec.supabase.co/storage/v1/object/public/ANTARES%20ENERGIA/33%20DIRECT-SAILS%20DM.webp", 
+    "URL_DA_MARCA_9",
+    "URL_DA_MARCA_10", 
+    "URL_DA_MARCA_11",
+    "URL_DA_MARCA_12"
   ];
 
   return (
