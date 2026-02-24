@@ -107,7 +107,7 @@ const Home = () => {
   // Array de marcas - Substitua as URLs pelas do seu Supabase
   const marcasSupabase = [
     "https://hnaezacbzcpmyfoupdec.supabase.co/storage/v1/object/public/ANTARES%20ENERGIA/17%20FLEXITEEK%20DM.png", "https://hnaezacbzcpmyfoupdec.supabase.co/storage/v1/object/public/ANTARES%20ENERGIA/16%20COPPERCOAT%20DM.webp", "https://hnaezacbzcpmyfoupdec.supabase.co/storage/v1/object/public/ANTARES%20ENERGIA/20%20SELDEN%20DM.webp", 
-    "https://hnaezacbzcpmyfoupdec.supabase.co/storage/v1/object/public/ANTARES%20ENERGIA/22%20STA-LOK%20%20DM.webp", "https://hnaezacbzcpmyfoupdec.supabase.co/storage/v1/object/public/ANTARES%20ENERGIA/12%20HEMPEL%20DM.png", "https://hnaezacbzcpmyfoupdec.supabase.co/storage/v1/object/public/ANTARES%20ENERGIA/11%20AWLGRIP%20DM.png",
+    "https://hnaezacbzcpmyfoupdec.supabase.co/storage/v1/object/public/ANTARES%20ENERGIA/22%20STA-LOK%20%20DM.webp", "https://hnaezacbzcpmyfoupdec.supabase.co/storage/v1/object/public/ANTARES%20ENERGIA/12%20HEMPEL%20DM.png", "https://hnaezacbzcpmyfoupdec.supabase.co/storage/v1/object/public/ANTARES%20ENERGIA/10%20JOTUN%20DM.webp",
     "URL_DA_MARCA_7", "URL_DA_MARCA_8", "URL_DA_MARCA_9",
     "URL_DA_MARCA_10", "URL_DA_MARCA_11", "URL_DA_MARCA_12"
   ];
