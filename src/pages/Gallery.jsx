@@ -41,7 +41,7 @@ const Gallery = () => {
     {
       id: 7,
       category: 'Rigging',
-      image: 'https://hnaezacbzcpmyfoupdec.supabase.co/storage/v1/object/public/ANTARES%20ENERGIA/27%20DENNIS%20500X500.webp',
+      image: 'https://hnaezacbzcpmyfoupdec.supabase.co/storage/v1/object/public/ANTARES%20ENERGIA/31%20DENIS%20800X800.webp',
     },
     {
       id: 8,
