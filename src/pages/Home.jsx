@@ -87,13 +87,15 @@ const Home = () => {
     "https://hnaezacbzcpmyfoupdec.supabase.co/storage/v1/object/public/ANTARES%20ENERGIA/22%20STA-LOK%20%20DM.webp", 
     "https://hnaezacbzcpmyfoupdec.supabase.co/storage/v1/object/public/ANTARES%20ENERGIA/12%20HEMPEL%20DM.png", 
     "https://hnaezacbzcpmyfoupdec.supabase.co/storage/v1/object/public/ANTARES%20ENERGIA/35%20RONSTAN.png",
-    "",
-    "https://hnaezacbzcpmyfoupdec.supabase.co/storage/v1/object/public/ANTARES%20ENERGIA/33%20DIRECT-SAILS%20DM.webp", 
+   "https://hnaezacbzcpmyfoupdec.supabase.co/storage/v1/object/public/ANTARES%20ENERGIA/33%20DIRECT-SAILS%20DM.webp", 
     "https://hnaezacbzcpmyfoupdec.supabase.co/storage/v1/object/public/ANTARES%20ENERGIA/34%20TEMPOTEST%20DM.webp",
-    "https://hnaezacbzcpmyfoupdec.supabase.co/storage/v1/object/public/ANTARES%20ENERGIA/24%20WICHARD%20DM.webp", 
-    "URL_DA_MARCA_11",
-    "URL_DA_MARCA_12"
-  ];
+    "https://hnaezacbzcpmyfoupdec.supabase.co/storage/v1/object/public/ANTARES%20ENERGIA/24%20WICHARD%20DM.webp",
+    "https://hnaezacbzcpmyfoupdec.supabase.co/storage/v1/object/public/ANTARES%20ENERGIA/33%20DIRECT-SAILS%20DM.webp", 
+    ];
+    
+  
+  
+
 
   return (
     <div className="home-page">
