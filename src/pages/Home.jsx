@@ -80,7 +80,7 @@ const Home = () => {
     "https://hnaezacbzcpmyfoupdec.supabase.co/storage/v1/object/public/ANTARES%20ENERGIA/12%20HEMPEL%20DM.png", 
     "https://hnaezacbzcpmyfoupdec.supabase.co/storage/v1/object/public/ANTARES%20ENERGIA/10%20JOTUN%20DM.webp",
     "https://hnaezacbzcpmyfoupdec.supabase.co/storage/v1/object/public/ANTARES%20ENERGIA/24%20WICHARD%20DM.webp",
-    "URL_DA_MARCA_8", 
+    "https://hnaezacbzcpmyfoupdec.supabase.co/storage/v1/object/public/ANTARES%20ENERGIA/25%20REGATTA%20DM.png", 
     "URL_DA_MARCA_9",
     "URL_DA_MARCA_10",
     "URL_DA_MARCA_11", 
