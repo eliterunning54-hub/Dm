@@ -56,7 +56,7 @@ const Services = () => {
     },
     {
       icon: <Layers className="w-16 h-16" />,
-      title: t('Stainless Steel Structures.title'),
+      title: t('services.inox.title'),
       description: t('services.inox.desc'),
       link: '/contact'
     },
